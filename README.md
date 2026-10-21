@@ -2,7 +2,7 @@
 
 > A security-first catalog of Claude Code plugins, skills, MCP servers and the tools people hype on social media - each one read, rated and checked for CVEs.
 
-**38 tools** · machine-readable as [`tools.json`](tools.json) · advisories refreshed weekly
+**41 tools** · machine-readable as [`tools.json`](tools.json) · advisories refreshed weekly
 
 Community-maintained. Not affiliated with or endorsed by Anthropic.
 
@@ -104,6 +104,8 @@ Sorted by overall score. Click a tool for the full review: permissions, what lea
 
 | Tool | Verdict | Overall | Security | Stars | What it does |
 |---|---|---|---|---|---|
+| [shadcn/ui](catalog/shadcn-ui.md) | 🟢 Adopt | **5** | 5/5 | 126.1k | Accessible, composable React components you copy into your codebase with a CLI, plus the registry format most kits build on. |
+| [Magic UI](catalog/magic-ui.md) | 🟢 Adopt | **4.5** | 5/5 | 22.8k | Free, open-source animated components and effects for React, Tailwind and Motion, installed through the shadcn CLI. |
 | [Kokonut UI](catalog/kokonut-ui.md) | 🔵 Trial | **4.3** | 5/5 | 2.2k | Polished React components built on Tailwind, shadcn/ui and Motion, copied into your project. |
 | [React Bits](catalog/react-bits.md) | 🟢 Adopt | **4.3** | 5/5 | 49.8k | Large library of animated, interactive React components - text effects, backgrounds, cursors. |
 | [Bklit UI](catalog/bklit-ui.md) | 🟡 Assess | **3.8** | 5/5 | 1.8k | Open-source shadcn-style chart and utility components, plus a shadcn skill for agents. |
@@ -112,6 +114,7 @@ Sorted by overall score. Click a tool for the full review: permissions, what lea
 
 | Tool | Verdict | Overall | Security | Stars | What it does |
 |---|---|---|---|---|---|
+| [Motion (formerly Framer Motion)](catalog/motion.md) | 🟢 Adopt | **4.7** | 5/5 | 34.4k | Production animation library for React and JavaScript - gestures, layout and scroll animations, springs. |
 | [anime.js](catalog/anime-js.md) | 🟢 Adopt | **4.3** | 5/5 | 73.7k | Lightweight JavaScript animation engine for DOM, SVG, CSS and JS objects; v4 is a modular ESM rewrite. |
 
 ## How tools are rated

@@ -9,7 +9,7 @@
   },
   "anime-js": {
     "repo": "juliangarnier/anime",
-    "stars": 73740,
+    "stars": 73741,
     "pushed_at": "2026-08-21",
     "archived": false,
     "latest_release": "v4.5.0",
@@ -49,7 +49,7 @@
   },
   "ccstatusline": {
     "repo": "sirmalloc/ccstatusline",
-    "stars": 13354,
+    "stars": 13355,
     "pushed_at": "2026-10-19",
     "archived": false,
     "latest_release": "v2.2.32",
@@ -129,7 +129,7 @@
   },
   "claude-mem": {
     "repo": "thedotmack/claude-mem",
-    "stars": 101982,
+    "stars": 101983,
     "pushed_at": "2026-10-21",
     "archived": false,
     "latest_release": "v15.0.1",
@@ -200,7 +200,7 @@
   },
   "graphify": {
     "repo": "Graphify-Labs/graphify",
-    "stars": 130424,
+    "stars": 130425,
     "pushed_at": "2026-10-20",
     "archived": false,
     "latest_release": "v0.9.93",
@@ -259,9 +259,25 @@
     "latest_release": "v0.2.3",
     "advisories": []
   },
+  "magic-ui": {
+    "repo": "magicuidesign/magicui",
+    "stars": 22768,
+    "pushed_at": "2026-10-17",
+    "archived": false,
+    "latest_release": null,
+    "advisories": []
+  },
+  "motion": {
+    "repo": "motiondivision/motion",
+    "stars": 34399,
+    "pushed_at": "2026-10-20",
+    "archived": false,
+    "latest_release": null,
+    "advisories": []
+  },
   "omniroute": {
     "repo": "diegosouzapw/OmniRoute",
-    "stars": 79025,
+    "stars": 79026,
     "pushed_at": "2026-10-21",
     "archived": false,
     "latest_release": "v3.8.52",
@@ -306,7 +322,7 @@
   },
   "ponytail": {
     "repo": "DietrichGebert/ponytail",
-    "stars": 169982,
+    "stars": 169985,
     "pushed_at": "2026-10-18",
     "archived": false,
     "latest_release": "v5.3.2",
@@ -378,7 +394,7 @@
   },
   "ruflo": {
     "repo": "ruvnet/ruflo",
-    "stars": 77919,
+    "stars": 77918,
     "pushed_at": "2026-10-21",
     "archived": false,
     "latest_release": "v3.59.4",
@@ -440,6 +456,14 @@
       }
     ]
   },
+  "shadcn-ui": {
+    "repo": "shadcn-ui/ui",
+    "stars": 126066,
+    "pushed_at": "2026-10-20",
+    "archived": false,
+    "latest_release": "shadcn@4.22.1",
+    "advisories": []
+  },
   "spec-kit": {
     "repo": "github/spec-kit",
     "stars": 142182,
@@ -466,7 +490,7 @@
   },
   "superpowers": {
     "repo": "obra/superpowers",
-    "stars": 302660,
+    "stars": 302663,
     "pushed_at": "2026-10-21",
     "archived": false,
     "latest_release": "v7.0.0",

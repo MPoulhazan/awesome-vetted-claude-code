@@ -1,8 +1,68 @@
 {
   "schema_version": 1,
   "source": "https://github.com/MPoulhazan/awesome-vetted-claude-code",
-  "count": 38,
+  "count": 41,
   "tools": [
+    {
+      "id": "shadcn-ui",
+      "name": "shadcn/ui",
+      "repo": "shadcn-ui/ui",
+      "homepage": "https://ui.shadcn.com",
+      "category": "ui-library",
+      "tags": [
+        "react",
+        "tailwind",
+        "components",
+        "registry"
+      ],
+      "summary": "Accessible, composable React components you copy into your codebase with a CLI, plus the registry format most kits build on.",
+      "problem": "Agents produce inconsistent, hand-rolled UI. shadcn/ui gives them a well-known component set and conventions they already write fluently.",
+      "install": {
+        "scope": "dependency",
+        "commands": [
+          "npx shadcn@latest init",
+          "npx shadcn@latest add button"
+        ],
+        "notes": "Third-party registries (Kokonut UI, Magic UI, React Bits...) install through the same CLI; review what each registry adds."
+      },
+      "detect": {
+        "npm": [
+          "shadcn"
+        ]
+      },
+      "license": "MIT",
+      "maintainer": "company",
+      "verdict": "adopt",
+      "verdict_reason": "The de facto base for React + Tailwind UI, and the format agents handle best. Source lands in your repo.",
+      "scores": {
+        "usefulness": 5,
+        "security": 5,
+        "maturity": 5,
+        "cost": 5
+      },
+      "security": {
+        "runs_code": false,
+        "hooks": false,
+        "network": "none",
+        "background_process": false,
+        "notes": "The CLI copies source files and installs their dependencies. Components from third-party registries are someone else's code - read them like any copied snippet.",
+        "advisories": []
+      },
+      "overlaps": [],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/shadcn-ui/ui",
+        "https://ui.shadcn.com"
+      ],
+      "live": {
+        "stars": 126066,
+        "pushed_at": "2026-10-20",
+        "archived": false,
+        "latest_release": "shadcn@4.22.1"
+      },
+      "alerts": [],
+      "overall": 5
+    },
     {
       "id": "ccusage",
       "name": "ccusage",
@@ -59,6 +119,68 @@
         "pushed_at": "2026-10-21",
         "archived": false,
         "latest_release": "v20.0.37"
+      },
+      "alerts": [],
+      "overall": 4.7
+    },
+    {
+      "id": "motion",
+      "name": "Motion (formerly Framer Motion)",
+      "repo": "motiondivision/motion",
+      "homepage": "https://motion.dev",
+      "category": "animation-library",
+      "tags": [
+        "animation",
+        "react",
+        "gestures",
+        "layout"
+      ],
+      "summary": "Production animation library for React and JavaScript - gestures, layout and scroll animations, springs.",
+      "problem": "Smooth UI transitions and interactions in React without fighting CSS. It's also what most animated component kits depend on.",
+      "install": {
+        "scope": "dependency",
+        "commands": [
+          "npm install motion"
+        ],
+        "notes": "Projects still on the framer-motion package can keep it; new projects should use motion."
+      },
+      "detect": {
+        "npm": [
+          "motion",
+          "framer-motion"
+        ]
+      },
+      "license": "MIT",
+      "maintainer": "company",
+      "verdict": "adopt",
+      "verdict_reason": "The standard for React animation, mature, no advisories.",
+      "scores": {
+        "usefulness": 4,
+        "security": 5,
+        "maturity": 5,
+        "cost": 5
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": false,
+        "network": "none",
+        "background_process": false,
+        "notes": "A plain front-end library.",
+        "advisories": []
+      },
+      "overlaps": [
+        "anime-js"
+      ],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/motiondivision/motion",
+        "https://motion.dev"
+      ],
+      "live": {
+        "stars": 34399,
+        "pushed_at": "2026-10-20",
+        "archived": false,
+        "latest_release": null
       },
       "alerts": [],
       "overall": 4.7
@@ -189,6 +311,63 @@
       "overall": 4.5
     },
     {
+      "id": "magic-ui",
+      "name": "Magic UI",
+      "repo": "magicuidesign/magicui",
+      "homepage": "https://magicui.design",
+      "category": "ui-library",
+      "tags": [
+        "react",
+        "animation",
+        "landing-page",
+        "shadcn"
+      ],
+      "summary": "Free, open-source animated components and effects for React, Tailwind and Motion, installed through the shadcn CLI.",
+      "problem": "Landing pages and marketing sections that need motion without building effects by hand.",
+      "install": {
+        "scope": "dependency",
+        "commands": [
+          "npx shadcn@latest add <component URL from magicui.design>"
+        ],
+        "notes": "Each component page gives its exact command. A paid Pro tier of templates exists alongside the free components."
+      },
+      "license": "MIT",
+      "maintainer": "company",
+      "verdict": "adopt",
+      "verdict_reason": "Popular, MIT, copy-in model like shadcn/ui. Best on marketing pages.",
+      "scores": {
+        "usefulness": 4,
+        "security": 5,
+        "maturity": 4,
+        "cost": 5
+      },
+      "security": {
+        "runs_code": false,
+        "hooks": false,
+        "network": "none",
+        "background_process": false,
+        "notes": "Copied source into your repo.",
+        "advisories": []
+      },
+      "overlaps": [
+        "react-bits",
+        "kokonut-ui"
+      ],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/magicuidesign/magicui",
+        "https://magicui.design"
+      ],
+      "live": {
+        "stars": 22768,
+        "pushed_at": "2026-10-17",
+        "archived": false,
+        "latest_release": null
+      },
+      "alerts": [],
+      "overall": 4.5
+    },
+    {
       "id": "superpowers",
       "name": "Superpowers",
       "repo": "obra/superpowers",
@@ -242,7 +421,7 @@
         "https://github.com/obra/superpowers"
       ],
       "live": {
-        "stars": 302660,
+        "stars": 302663,
         "pushed_at": "2026-10-21",
         "archived": false,
         "latest_release": "v7.0.0"
@@ -301,7 +480,7 @@
         "https://animejs.com"
       ],
       "live": {
-        "stars": 73740,
+        "stars": 73741,
         "pushed_at": "2026-08-21",
         "archived": false,
         "latest_release": "v4.5.0"
@@ -707,7 +886,7 @@
         "https://www.mindstudio.ai/blog/ponytail-ai-coding-minimalism-plugin"
       ],
       "live": {
-        "stars": 169982,
+        "stars": 169985,
         "pushed_at": "2026-10-18",
         "archived": false,
         "latest_release": "v5.3.2"
@@ -1212,7 +1391,7 @@
         "https://github.com/sirmalloc/ccstatusline"
       ],
       "live": {
-        "stars": 13354,
+        "stars": 13355,
         "pushed_at": "2026-10-19",
         "archived": false,
         "latest_release": "v2.2.32"
@@ -1559,7 +1738,7 @@
         "https://www.augmentcode.com/learn/graphify-knowledge-graph-codebase-skill"
       ],
       "live": {
-        "stars": 130424,
+        "stars": 130425,
         "pushed_at": "2026-10-20",
         "archived": false,
         "latest_release": "v0.9.93"
@@ -2378,7 +2557,7 @@
         "https://www.augmentcode.com/learn/claude-mem-persistent-memory-claude-code"
       ],
       "live": {
-        "stars": 101982,
+        "stars": 101983,
         "pushed_at": "2026-10-21",
         "archived": false,
         "latest_release": "v15.0.1"
@@ -2536,7 +2715,7 @@
         "https://github.com/ruvnet/ruflo/security/advisories/GHSA-c4hm-4h84-2cf3"
       ],
       "live": {
-        "stars": 77919,
+        "stars": 77918,
         "pushed_at": "2026-10-21",
         "archived": false,
         "latest_release": "v3.59.4"
@@ -2618,7 +2797,7 @@
         "https://levelup.gitconnected.com/the-ai-tool-that-promises-1-6-billion-free-claude-tokens-and-why-you-shouldnt-touch-it-a63c687f7d91"
       ],
       "live": {
-        "stars": 79025,
+        "stars": 79026,
         "pushed_at": "2026-10-21",
         "archived": false,
         "latest_release": "v3.8.52"

@@ -1,0 +1,37 @@
+id: shadcn-ui
+name: shadcn/ui
+repo: shadcn-ui/ui
+homepage: https://ui.shadcn.com
+category: ui-library
+tags: [react, tailwind, components, registry]
+summary: Accessible, composable React components you copy into your codebase with a CLI, plus the registry format most kits build on.
+problem: Agents produce inconsistent, hand-rolled UI. shadcn/ui gives them a well-known component set and conventions they already write fluently.
+install:
+  scope: dependency
+  commands:
+    - npx shadcn@latest init
+    - npx shadcn@latest add button
+  notes: Third-party registries (Kokonut UI, Magic UI, React Bits...) install through the same CLI; review what each registry adds.
+detect:
+  npm: [shadcn]
+license: MIT
+maintainer: company
+verdict: adopt
+verdict_reason: The de facto base for React + Tailwind UI, and the format agents handle best. Source lands in your repo.
+scores:
+  usefulness: 5
+  security: 5
+  maturity: 5
+  cost: 5
+security:
+  runs_code: false
+  hooks: false
+  network: none
+  background_process: false
+  notes: The CLI copies source files and installs their dependencies. Components from third-party registries are someone else's code - read them like any copied snippet.
+  advisories: []
+overlaps: []
+last_reviewed: "2026-10-21"
+sources:
+  - https://github.com/shadcn-ui/ui
+  - https://ui.shadcn.com

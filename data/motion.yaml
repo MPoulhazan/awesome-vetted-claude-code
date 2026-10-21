@@ -1,0 +1,36 @@
+id: motion
+name: Motion (formerly Framer Motion)
+repo: motiondivision/motion
+homepage: https://motion.dev
+category: animation-library
+tags: [animation, react, gestures, layout]
+summary: Production animation library for React and JavaScript - gestures, layout and scroll animations, springs.
+problem: Smooth UI transitions and interactions in React without fighting CSS. It's also what most animated component kits depend on.
+install:
+  scope: dependency
+  commands:
+    - npm install motion
+  notes: Projects still on the framer-motion package can keep it; new projects should use motion.
+detect:
+  npm: [motion, framer-motion]
+license: MIT
+maintainer: company
+verdict: adopt
+verdict_reason: The standard for React animation, mature, no advisories.
+scores:
+  usefulness: 4
+  security: 5
+  maturity: 5
+  cost: 5
+security:
+  runs_code: true
+  hooks: false
+  network: none
+  background_process: false
+  notes: A plain front-end library.
+  advisories: []
+overlaps: [anime-js]
+last_reviewed: "2026-10-21"
+sources:
+  - https://github.com/motiondivision/motion
+  - https://motion.dev
