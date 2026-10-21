@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "https://github.com/MPoulhazan/awesome-vetted-claude-code",
-  "count": 23,
+  "count": 30,
   "tools": [
     {
       "id": "claude-code-setup",
@@ -58,7 +58,7 @@
         "https://aident.ai/blog/use-claude-code-setup-plugin-safely"
       ],
       "live": {
-        "stars": 43431,
+        "stars": 43433,
         "pushed_at": "2026-10-21",
         "archived": false,
         "latest_release": null
@@ -120,10 +120,72 @@
         "https://github.com/upstash/context7"
       ],
       "live": {
-        "stars": 63389,
+        "stars": 63390,
         "pushed_at": "2026-10-20",
         "archived": false,
         "latest_release": "@upstash/context7-mcp@4.4.4"
+      },
+      "alerts": [],
+      "overall": 4.5
+    },
+    {
+      "id": "superpowers",
+      "name": "Superpowers",
+      "repo": "obra/superpowers",
+      "category": "plugin",
+      "tags": [
+        "workflow",
+        "tdd",
+        "planning",
+        "methodology"
+      ],
+      "summary": "Skills framework and development methodology - brainstorm, plan, test-first, subagent-driven execution, review.",
+      "problem": "Agents jump straight to code. Superpowers enforces a design, plan, TDD and review loop through skills that trigger on their own.",
+      "install": {
+        "scope": "user",
+        "commands": [
+          "/plugin install superpowers@claude-plugins-official"
+        ]
+      },
+      "detect": {
+        "plugins": [
+          "superpowers@claude-plugins-official"
+        ]
+      },
+      "license": "MIT",
+      "maintainer": "individual",
+      "verdict": "adopt",
+      "verdict_reason": "The most adopted workflow pack, available in Anthropic's official marketplace, light footprint. Pick it or another workflow pack, not several.",
+      "scores": {
+        "usefulness": 5,
+        "security": 4,
+        "maturity": 5,
+        "cost": 4
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": true,
+        "network": "none",
+        "background_process": false,
+        "notes": "Markdown skills plus one SessionStart hook that injects its introduction into each session.",
+        "advisories": []
+      },
+      "overlaps": [
+        "agent-skills",
+        "superclaude",
+        "bmad-method",
+        "spec-kit",
+        "gsd-core"
+      ],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/obra/superpowers"
+      ],
+      "live": {
+        "stars": 302654,
+        "pushed_at": "2026-10-21",
+        "archived": false,
+        "latest_release": "v7.0.0"
       },
       "alerts": [],
       "overall": 4.5
@@ -179,7 +241,7 @@
         "https://animejs.com"
       ],
       "live": {
-        "stars": 73739,
+        "stars": 73740,
         "pushed_at": "2026-08-21",
         "archived": false,
         "latest_release": "v4.5.0"
@@ -302,6 +364,66 @@
       "overall": 4.3
     },
     {
+      "id": "spec-kit",
+      "name": "Spec Kit",
+      "repo": "github/spec-kit",
+      "category": "cli",
+      "tags": [
+        "spec-driven",
+        "planning",
+        "github"
+      ],
+      "summary": "GitHub's toolkit for spec-driven development - constitution, spec, plan, tasks, then implementation.",
+      "problem": "Vague prompts give vague code. Spec Kit makes the spec the source of truth and generates plans and task lists from it.",
+      "install": {
+        "scope": "project",
+        "commands": [
+          "uv tool install specify-cli",
+          "specify init . --integration claude"
+        ]
+      },
+      "detect": {
+        "pypi": [
+          "specify-cli"
+        ]
+      },
+      "license": "MIT",
+      "maintainer": "official",
+      "verdict": "adopt",
+      "verdict_reason": "Maintained by GitHub, simple, agent-agnostic. The safest way into spec-driven development.",
+      "scores": {
+        "usefulness": 4,
+        "security": 5,
+        "maturity": 4,
+        "cost": 4
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": false,
+        "network": "none",
+        "background_process": false,
+        "notes": "A small CLI that writes templates, commands and a few shell scripts into your project.",
+        "advisories": []
+      },
+      "overlaps": [
+        "bmad-method",
+        "gsd-core",
+        "superpowers"
+      ],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/github/spec-kit"
+      ],
+      "live": {
+        "stars": 142180,
+        "pushed_at": "2026-10-20",
+        "archived": false,
+        "latest_release": "v1.2.2"
+      },
+      "alerts": [],
+      "overall": 4.3
+    },
+    {
       "id": "anthropic-skills",
       "name": "Anthropic Skills",
       "repo": "anthropics/skills",
@@ -362,7 +484,7 @@
         "https://github.com/anthropics/skills"
       ],
       "live": {
-        "stars": 182528,
+        "stars": 182529,
         "pushed_at": "2026-10-09",
         "archived": false,
         "latest_release": null
@@ -525,7 +647,7 @@
         "https://www.mindstudio.ai/blog/ponytail-ai-coding-minimalism-plugin"
       ],
       "live": {
-        "stars": 169952,
+        "stars": 169960,
         "pushed_at": "2026-10-18",
         "archived": false,
         "latest_release": "v5.3.2"
@@ -642,7 +764,9 @@
         "advisories": []
       },
       "overlaps": [
-        "superpowers"
+        "superpowers",
+        "superclaude",
+        "wshobson-agents"
       ],
       "last_reviewed": "2026-10-20",
       "sources": [
@@ -650,7 +774,7 @@
         "https://dev.to/yimtheppariyapol/addy-osmani-agent-skills-review-24-production-skills-726k-stars-22em"
       ],
       "live": {
-        "stars": 109017,
+        "stars": 109018,
         "pushed_at": "2026-10-13",
         "archived": false,
         "latest_release": "0.6.13"
@@ -742,6 +866,61 @@
       "overall": 4
     },
     {
+      "id": "wshobson-agents",
+      "name": "wshobson/agents",
+      "repo": "wshobson/agents",
+      "category": "plugin",
+      "tags": [
+        "subagents",
+        "marketplace",
+        "specialists"
+      ],
+      "summary": "Plugin marketplace with about 90 plugins - 200 specialist subagents, 185 skills and 100 commands across languages and domains.",
+      "problem": "You want a specialist (Kubernetes, security audit, Python performance...) without writing it. Install just the plugin for that domain.",
+      "install": {
+        "scope": "user",
+        "commands": [
+          "/plugin marketplace add wshobson/agents",
+          "/plugin install <plugin-name>@claude-code-workflows"
+        ],
+        "notes": "Install only the plugins you need; installing many floods every session with agent descriptions."
+      },
+      "license": "MIT",
+      "maintainer": "individual",
+      "verdict": "trial",
+      "verdict_reason": "Good à la carte catalog. Each plugin is small, but some ship hooks or MCP configuration - read the one you install.",
+      "scores": {
+        "usefulness": 4,
+        "security": 4,
+        "maturity": 4,
+        "cost": 4
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": true,
+        "network": "none",
+        "background_process": false,
+        "notes": "Mostly Markdown agents and skills. A few plugins add hooks or MCP servers; check the plugin folder before installing.",
+        "advisories": []
+      },
+      "overlaps": [
+        "superclaude",
+        "agent-skills"
+      ],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/wshobson/agents"
+      ],
+      "live": {
+        "stars": 41299,
+        "pushed_at": "2026-10-19",
+        "archived": false,
+        "latest_release": null
+      },
+      "alerts": [],
+      "overall": 4
+    },
+    {
       "id": "bklit-ui",
       "name": "Bklit UI",
       "repo": "bklit/bklit-ui",
@@ -798,6 +977,69 @@
         "pushed_at": "2026-10-20",
         "archived": false,
         "latest_release": null
+      },
+      "alerts": [],
+      "overall": 3.8
+    },
+    {
+      "id": "bmad-method",
+      "name": "BMad Method",
+      "repo": "bmad-code-org/BMAD-METHOD",
+      "category": "skill",
+      "tags": [
+        "agile",
+        "planning",
+        "spec-driven",
+        "multi-agent"
+      ],
+      "summary": "Agile, AI-driven delivery method - analyst, PM, architect and dev agents producing briefs, PRDs, architecture and stories.",
+      "problem": "Large features built without product thinking. BMad walks the agent through roles and documents before code, like a small agile team.",
+      "install": {
+        "scope": "project",
+        "commands": [
+          "npx bmad-method install",
+          "npx skills add bmad-code-org/BMAD-METHOD --skill '*'"
+        ],
+        "notes": "Stable is v6.12; v7 is in preview with frequent changes. Needs uv for setup and Python scripts."
+      },
+      "detect": {
+        "npm": [
+          "bmad-method"
+        ]
+      },
+      "license": "MIT",
+      "license_notes": "The code is MIT; the BMad names are trademarks of BMad Code, LLC.",
+      "maintainer": "company",
+      "verdict": "trial",
+      "verdict_reason": "Strong for greenfield products and larger features, heavy for small fixes. Wait for v7 to settle if you start now.",
+      "scores": {
+        "usefulness": 4,
+        "security": 4,
+        "maturity": 4,
+        "cost": 3
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": false,
+        "network": "none",
+        "background_process": false,
+        "notes": "Installs many skills and helper Python scripts into your project.",
+        "advisories": []
+      },
+      "overlaps": [
+        "spec-kit",
+        "gsd-core",
+        "superpowers"
+      ],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/bmad-code-org/BMAD-METHOD"
+      ],
+      "live": {
+        "stars": 54387,
+        "pushed_at": "2026-10-20",
+        "archived": false,
+        "latest_release": "v6.12.4"
       },
       "alerts": [],
       "overall": 3.8
@@ -877,7 +1119,7 @@
         "https://github.com/ChromeDevTools/chrome-devtools-mcp"
       ],
       "live": {
-        "stars": 53909,
+        "stars": 53910,
         "pushed_at": "2026-10-20",
         "archived": false,
         "latest_release": "chrome-devtools-mcp-v1.11.0"
@@ -961,7 +1203,7 @@
         "https://www.augmentcode.com/learn/graphify-knowledge-graph-codebase-skill"
       ],
       "live": {
-        "stars": 130406,
+        "stars": 130414,
         "pushed_at": "2026-10-20",
         "archived": false,
         "latest_release": "v0.9.93"
@@ -1093,6 +1335,71 @@
       "overall": 3.5
     },
     {
+      "id": "gsd-core",
+      "name": "GSD Core (Get Shit Done)",
+      "repo": "open-gsd/gsd-core",
+      "category": "plugin",
+      "tags": [
+        "spec-driven",
+        "context-engineering",
+        "phases"
+      ],
+      "summary": "Lightweight meta-prompting and spec-driven system that splits work into phases with fresh context for each.",
+      "problem": "Long sessions rot their context and quality drops. GSD plans in phases and runs each with a clean context.",
+      "install": {
+        "scope": "user",
+        "commands": [
+          "npx @opengsd/gsd-core@latest"
+        ],
+        "notes": "The original repo (gsd-build/get-shit-done, 64k stars) is archived; development continues here. Use the installer rather than copying files."
+      },
+      "detect": {
+        "npm": [
+          "@opengsd/gsd-core",
+          "get-shit-done-cc"
+        ]
+      },
+      "license": "MIT",
+      "maintainer": "community",
+      "verdict": "trial",
+      "verdict_reason": "Popular method, but it just moved to a new home with a fraction of the old stars. Check that the new repo stays active before relying on it.",
+      "scores": {
+        "usefulness": 4,
+        "security": 3,
+        "maturity": 3,
+        "cost": 4
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": true,
+        "network": "none",
+        "background_process": true,
+        "notes": "Installs several Node hooks into your agent config, including an update checker that runs in the background.",
+        "red_flags": [
+          "Project moved from gsd-build/get-shit-done to open-gsd/gsd-core in 2026 - make sure you install from the new, official home."
+        ],
+        "advisories": []
+      },
+      "overlaps": [
+        "spec-kit",
+        "bmad-method",
+        "superpowers"
+      ],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/open-gsd/gsd-core",
+        "https://github.com/gsd-build/get-shit-done"
+      ],
+      "live": {
+        "stars": 10726,
+        "pushed_at": "2026-10-21",
+        "archived": false,
+        "latest_release": "v1.18.0"
+      },
+      "alerts": [],
+      "overall": 3.5
+    },
+    {
       "id": "claude-code-security-review",
       "name": "Claude Code Security Review",
       "repo": "anthropics/claude-code-security-review",
@@ -1141,7 +1448,7 @@
         "https://github.com/anthropics/claude-code-security-review"
       ],
       "live": {
-        "stars": 6463,
+        "stars": 6464,
         "pushed_at": "2026-02-11",
         "archived": false,
         "latest_release": null
@@ -1254,6 +1561,67 @@
           "level": "update-required"
         }
       ],
+      "overall": 3.3
+    },
+    {
+      "id": "superclaude",
+      "name": "SuperClaude Framework",
+      "repo": "SuperClaude-Org/SuperClaude_Framework",
+      "category": "plugin",
+      "tags": [
+        "workflow",
+        "personas",
+        "commands"
+      ],
+      "summary": "Configuration framework adding about 30 slash commands, specialist agents, behavior modes and optional MCP servers.",
+      "problem": "Generic agent behavior for every kind of task. SuperClaude adds personas and modes (architect, security, research...) you switch with commands.",
+      "install": {
+        "scope": "user",
+        "commands": [
+          "pipx install superclaude",
+          "superclaude install"
+        ],
+        "notes": "Writes into ~/.claude. MCP servers are a separate, optional install step - review each one."
+      },
+      "detect": {
+        "pypi": [
+          "superclaude"
+        ]
+      },
+      "license": "MIT",
+      "maintainer": "community",
+      "verdict": "assess",
+      "verdict_reason": "Popular, but large and slower-moving (last release March 2026). Its many commands and modes add context to every session and overlap with lighter packs.",
+      "scores": {
+        "usefulness": 3,
+        "security": 4,
+        "maturity": 3,
+        "cost": 3
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": false,
+        "network": "none",
+        "background_process": false,
+        "notes": "A Python installer that writes commands and agents into your user Claude config. The optional MCP servers bring their own risks.",
+        "advisories": []
+      },
+      "overlaps": [
+        "superpowers",
+        "agent-skills",
+        "wshobson-agents"
+      ],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/SuperClaude-Org/SuperClaude_Framework"
+      ],
+      "live": {
+        "stars": 23907,
+        "pushed_at": "2026-09-27",
+        "archived": false,
+        "latest_release": "v4.3.0"
+      },
+      "alerts": [],
       "overall": 3.3
     },
     {
@@ -1549,6 +1917,86 @@
       "overall": 2.8
     },
     {
+      "id": "ruflo",
+      "name": "Ruflo (formerly claude-flow)",
+      "repo": "ruvnet/ruflo",
+      "category": "plugin",
+      "tags": [
+        "multi-agent",
+        "swarms",
+        "orchestration",
+        "mcp"
+      ],
+      "summary": "Agent orchestration platform - swarms, 98 agents, 300+ MCP tools, hooks, a daemon with background workers and cross-machine federation.",
+      "problem": "Coordinating many agents on large autonomous tasks. Ruflo routes tasks, spawns swarms, keeps memory and runs workers in the background.",
+      "install": {
+        "scope": "project",
+        "commands": [
+          "npx ruflo@latest init wizard"
+        ],
+        "notes": "The plugin-only install (no hooks, no daemon) is much lighter than the full `init`. Don't use the default docker-compose deployment on a reachable network."
+      },
+      "detect": {
+        "npm": [
+          "ruflo",
+          "claude-flow"
+        ]
+      },
+      "license": "MIT",
+      "maintainer": "individual",
+      "verdict": "assess",
+      "verdict_reason": "Ambitious and hugely popular, but the full install is a large attack surface - hooks, daemon, 300+ tools, federation - and it had a critical unauthenticated RCE. Only for people who need swarms and will read what they install.",
+      "scores": {
+        "usefulness": 3,
+        "security": 2,
+        "maturity": 3,
+        "cost": 2
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": true,
+        "network": "listens",
+        "background_process": true,
+        "data_leaves_machine": "With federation enabled, tasks and results are exchanged with agents on other machines.",
+        "notes": "The full install registers hooks that route every task, starts a daemon with a dozen auto-triggered background workers, and exposes an MCP server with hundreds of tools. Releases ship almost daily.",
+        "red_flags": [
+          "Renamed from claude-flow; old npm and repo names still circulate.",
+          "Very large surface area for a single-maintainer project."
+        ],
+        "advisories": [
+          {
+            "id": "GHSA-c4hm-4h84-2cf3",
+            "cve": "CVE-2026-59726",
+            "severity": "critical",
+            "summary": "Unauthenticated remote code execution in the MCP bridge of the default docker-compose deployment.",
+            "affected": "< 3.16.3",
+            "patched": "3.16.3",
+            "url": "https://github.com/ruvnet/ruflo/security/advisories/GHSA-c4hm-4h84-2cf3"
+          }
+        ]
+      },
+      "overlaps": [],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/ruvnet/ruflo",
+        "https://github.com/ruvnet/ruflo/security/advisories/GHSA-c4hm-4h84-2cf3"
+      ],
+      "live": {
+        "stars": 77915,
+        "pushed_at": "2026-10-21",
+        "archived": false,
+        "latest_release": "v3.59.4"
+      },
+      "alerts": [
+        {
+          "advisory": "GHSA-c4hm-4h84-2cf3",
+          "severity": "critical",
+          "level": "update-required"
+        }
+      ],
+      "overall": 2.5
+    },
+    {
       "id": "omniroute",
       "name": "OmniRoute",
       "repo": "diegosouzapw/OmniRoute",
@@ -1614,7 +2062,7 @@
         "https://levelup.gitconnected.com/the-ai-tool-that-promises-1-6-billion-free-claude-tokens-and-why-you-shouldnt-touch-it-a63c687f7d91"
       ],
       "live": {
-        "stars": 79022,
+        "stars": 79023,
         "pushed_at": "2026-10-21",
         "archived": false,
         "latest_release": "v3.8.52"

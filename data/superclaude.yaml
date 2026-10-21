@@ -1,0 +1,35 @@
+id: superclaude
+name: SuperClaude Framework
+repo: SuperClaude-Org/SuperClaude_Framework
+category: plugin
+tags: [workflow, personas, commands]
+summary: Configuration framework adding about 30 slash commands, specialist agents, behavior modes and optional MCP servers.
+problem: Generic agent behavior for every kind of task. SuperClaude adds personas and modes (architect, security, research...) you switch with commands.
+install:
+  scope: user
+  commands:
+    - pipx install superclaude
+    - superclaude install
+  notes: Writes into ~/.claude. MCP servers are a separate, optional install step - review each one.
+detect:
+  pypi: [superclaude]
+license: MIT
+maintainer: community
+verdict: assess
+verdict_reason: Popular, but large and slower-moving (last release March 2026). Its many commands and modes add context to every session and overlap with lighter packs.
+scores:
+  usefulness: 3
+  security: 4
+  maturity: 3
+  cost: 3
+security:
+  runs_code: true
+  hooks: false
+  network: none
+  background_process: false
+  notes: A Python installer that writes commands and agents into your user Claude config. The optional MCP servers bring their own risks.
+  advisories: []
+overlaps: [superpowers, agent-skills, wshobson-agents]
+last_reviewed: "2026-10-21"
+sources:
+  - https://github.com/SuperClaude-Org/SuperClaude_Framework

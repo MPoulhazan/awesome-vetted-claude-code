@@ -1,0 +1,36 @@
+id: bmad-method
+name: BMad Method
+repo: bmad-code-org/BMAD-METHOD
+category: skill
+tags: [agile, planning, spec-driven, multi-agent]
+summary: Agile, AI-driven delivery method - analyst, PM, architect and dev agents producing briefs, PRDs, architecture and stories.
+problem: Large features built without product thinking. BMad walks the agent through roles and documents before code, like a small agile team.
+install:
+  scope: project
+  commands:
+    - npx bmad-method install
+    - npx skills add bmad-code-org/BMAD-METHOD --skill '*'
+  notes: Stable is v6.12; v7 is in preview with frequent changes. Needs uv for setup and Python scripts.
+detect:
+  npm: [bmad-method]
+license: MIT
+license_notes: The code is MIT; the BMad names are trademarks of BMad Code, LLC.
+maintainer: company
+verdict: trial
+verdict_reason: Strong for greenfield products and larger features, heavy for small fixes. Wait for v7 to settle if you start now.
+scores:
+  usefulness: 4
+  security: 4
+  maturity: 4
+  cost: 3
+security:
+  runs_code: true
+  hooks: false
+  network: none
+  background_process: false
+  notes: Installs many skills and helper Python scripts into your project.
+  advisories: []
+overlaps: [spec-kit, gsd-core, superpowers]
+last_reviewed: "2026-10-21"
+sources:
+  - https://github.com/bmad-code-org/BMAD-METHOD

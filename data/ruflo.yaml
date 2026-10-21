@@ -1,0 +1,46 @@
+id: ruflo
+name: Ruflo (formerly claude-flow)
+repo: ruvnet/ruflo
+category: plugin
+tags: [multi-agent, swarms, orchestration, mcp]
+summary: Agent orchestration platform - swarms, 98 agents, 300+ MCP tools, hooks, a daemon with background workers and cross-machine federation.
+problem: Coordinating many agents on large autonomous tasks. Ruflo routes tasks, spawns swarms, keeps memory and runs workers in the background.
+install:
+  scope: project
+  commands:
+    - npx ruflo@latest init wizard
+  notes: The plugin-only install (no hooks, no daemon) is much lighter than the full `init`. Don't use the default docker-compose deployment on a reachable network.
+detect:
+  npm: [ruflo, claude-flow]
+license: MIT
+maintainer: individual
+verdict: assess
+verdict_reason: Ambitious and hugely popular, but the full install is a large attack surface - hooks, daemon, 300+ tools, federation - and it had a critical unauthenticated RCE. Only for people who need swarms and will read what they install.
+scores:
+  usefulness: 3
+  security: 2
+  maturity: 3
+  cost: 2
+security:
+  runs_code: true
+  hooks: true
+  network: listens
+  background_process: true
+  data_leaves_machine: With federation enabled, tasks and results are exchanged with agents on other machines.
+  notes: The full install registers hooks that route every task, starts a daemon with a dozen auto-triggered background workers, and exposes an MCP server with hundreds of tools. Releases ship almost daily.
+  red_flags:
+    - Renamed from claude-flow; old npm and repo names still circulate.
+    - Very large surface area for a single-maintainer project.
+  advisories:
+    - id: GHSA-c4hm-4h84-2cf3
+      cve: CVE-2026-59726
+      severity: critical
+      summary: Unauthenticated remote code execution in the MCP bridge of the default docker-compose deployment.
+      affected: "< 3.16.3"
+      patched: 3.16.3
+      url: https://github.com/ruvnet/ruflo/security/advisories/GHSA-c4hm-4h84-2cf3
+overlaps: []
+last_reviewed: "2026-10-21"
+sources:
+  - https://github.com/ruvnet/ruflo
+  - https://github.com/ruvnet/ruflo/security/advisories/GHSA-c4hm-4h84-2cf3

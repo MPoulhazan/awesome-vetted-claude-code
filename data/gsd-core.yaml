@@ -1,0 +1,37 @@
+id: gsd-core
+name: GSD Core (Get Shit Done)
+repo: open-gsd/gsd-core
+category: plugin
+tags: [spec-driven, context-engineering, phases]
+summary: Lightweight meta-prompting and spec-driven system that splits work into phases with fresh context for each.
+problem: Long sessions rot their context and quality drops. GSD plans in phases and runs each with a clean context.
+install:
+  scope: user
+  commands:
+    - npx @opengsd/gsd-core@latest
+  notes: The original repo (gsd-build/get-shit-done, 64k stars) is archived; development continues here. Use the installer rather than copying files.
+detect:
+  npm: ["@opengsd/gsd-core", get-shit-done-cc]
+license: MIT
+maintainer: community
+verdict: trial
+verdict_reason: Popular method, but it just moved to a new home with a fraction of the old stars. Check that the new repo stays active before relying on it.
+scores:
+  usefulness: 4
+  security: 3
+  maturity: 3
+  cost: 4
+security:
+  runs_code: true
+  hooks: true
+  network: none
+  background_process: true
+  notes: Installs several Node hooks into your agent config, including an update checker that runs in the background.
+  red_flags:
+    - Project moved from gsd-build/get-shit-done to open-gsd/gsd-core in 2026 - make sure you install from the new, official home.
+  advisories: []
+overlaps: [spec-kit, bmad-method, superpowers]
+last_reviewed: "2026-10-21"
+sources:
+  - https://github.com/open-gsd/gsd-core
+  - https://github.com/gsd-build/get-shit-done

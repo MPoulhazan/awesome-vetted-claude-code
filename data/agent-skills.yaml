@@ -29,7 +29,7 @@ security:
   background_process: false
   notes: Mostly Markdown skills. Ships a few shell hooks (hooks/sdd-cache-*.sh); read them before enabling.
   advisories: []
-overlaps: [superpowers]
+overlaps: [superpowers, superclaude, wshobson-agents]
 last_reviewed: "2026-10-20"
 sources:
   - https://github.com/addyosmani/agent-skills

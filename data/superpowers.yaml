@@ -1,0 +1,33 @@
+id: superpowers
+name: Superpowers
+repo: obra/superpowers
+category: plugin
+tags: [workflow, tdd, planning, methodology]
+summary: Skills framework and development methodology - brainstorm, plan, test-first, subagent-driven execution, review.
+problem: Agents jump straight to code. Superpowers enforces a design, plan, TDD and review loop through skills that trigger on their own.
+install:
+  scope: user
+  commands:
+    - /plugin install superpowers@claude-plugins-official
+detect:
+  plugins: [superpowers@claude-plugins-official]
+license: MIT
+maintainer: individual
+verdict: adopt
+verdict_reason: The most adopted workflow pack, available in Anthropic's official marketplace, light footprint. Pick it or another workflow pack, not several.
+scores:
+  usefulness: 5
+  security: 4
+  maturity: 5
+  cost: 4
+security:
+  runs_code: true
+  hooks: true
+  network: none
+  background_process: false
+  notes: Markdown skills plus one SessionStart hook that injects its introduction into each session.
+  advisories: []
+overlaps: [agent-skills, superclaude, bmad-method, spec-kit, gsd-core]
+last_reviewed: "2026-10-21"
+sources:
+  - https://github.com/obra/superpowers

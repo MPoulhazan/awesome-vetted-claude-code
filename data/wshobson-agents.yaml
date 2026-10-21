@@ -1,0 +1,33 @@
+id: wshobson-agents
+name: wshobson/agents
+repo: wshobson/agents
+category: plugin
+tags: [subagents, marketplace, specialists]
+summary: Plugin marketplace with about 90 plugins - 200 specialist subagents, 185 skills and 100 commands across languages and domains.
+problem: You want a specialist (Kubernetes, security audit, Python performance...) without writing it. Install just the plugin for that domain.
+install:
+  scope: user
+  commands:
+    - /plugin marketplace add wshobson/agents
+    - /plugin install <plugin-name>@claude-code-workflows
+  notes: Install only the plugins you need; installing many floods every session with agent descriptions.
+license: MIT
+maintainer: individual
+verdict: trial
+verdict_reason: Good à la carte catalog. Each plugin is small, but some ship hooks or MCP configuration - read the one you install.
+scores:
+  usefulness: 4
+  security: 4
+  maturity: 4
+  cost: 4
+security:
+  runs_code: true
+  hooks: true
+  network: none
+  background_process: false
+  notes: Mostly Markdown agents and skills. A few plugins add hooks or MCP servers; check the plugin folder before installing.
+  advisories: []
+overlaps: [superclaude, agent-skills]
+last_reviewed: "2026-10-21"
+sources:
+  - https://github.com/wshobson/agents
