@@ -1,0 +1,37 @@
+id: bklit-ui
+name: Bklit UI
+repo: bklit/bklit-ui
+homepage: https://ui.bklit.com
+category: ui-library
+tags: [react, charts, shadcn]
+summary: Open-source shadcn-style chart and utility components, plus a shadcn skill for agents.
+problem: Good-looking, customizable charts in a shadcn codebase without a heavy chart library.
+install:
+  scope: dependency
+  commands:
+    - npx shadcn@latest add <component URL from ui.bklit.com>
+    - npx skills add bklit/bklit-ui --skill shadcn --agent claude-code
+  notes: Component pages give the exact command. The skill teaches the agent to drive the shadcn CLI with your package manager.
+detect:
+  skills: [shadcn]
+license: MIT
+maintainer: individual
+verdict: assess
+verdict_reason: Young but active. Worth a look for dashboards in shadcn projects.
+scores:
+  usefulness: 3
+  security: 5
+  maturity: 2
+  cost: 5
+security:
+  runs_code: false
+  hooks: false
+  network: none
+  background_process: false
+  notes: Copied source and a Markdown skill.
+  advisories: []
+overlaps: [kokonut-ui]
+last_reviewed: "2026-10-20"
+sources:
+  - https://github.com/bklit/bklit-ui
+  - https://claudeskills.info/skills/bklit/bklit-ui/shadcn/

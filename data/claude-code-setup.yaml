@@ -1,0 +1,39 @@
+id: claude-code-setup
+name: claude-code-setup
+repo: anthropics/claude-plugins-official
+homepage: https://github.com/anthropics/claude-plugins-official
+category: plugin
+tags: [onboarding, automation, recommendations]
+summary: Official plugin that reads a repo and recommends hooks, skills, MCP servers and subagents for it.
+problem: You don't know which Claude Code automations fit a given project. It inspects the codebase and proposes a short, stack-specific list, so you install by need rather than by hype.
+install:
+  scope: user
+  commands:
+    - /plugin install claude-code-setup@claude-plugins-official
+    - /reload-plugins
+  notes: Then ask "recommend automations for this repo" in each project.
+detect:
+  plugins: [claude-code-setup@claude-plugins-official]
+  skills: [claude-automation-recommender]
+license: Apache-2.0
+maintainer: official
+verdict: adopt
+verdict_reason: Made by Anthropic, only recommends, changes nothing on its own. The best first step before installing anything else on this list.
+scores:
+  usefulness: 4
+  security: 5
+  maturity: 4
+  cost: 5
+security:
+  runs_code: false
+  hooks: false
+  network: llm-api
+  background_process: false
+  data_leaves_machine: Only what Claude Code already sends to the model while reading the repo.
+  notes: A skill made of instructions. It suggests installs; you still decide and run them, so review each recommended plugin like any third-party code.
+  advisories: []
+overlaps: []
+last_reviewed: "2026-10-20"
+sources:
+  - https://github.com/anthropics/claude-plugins-official
+  - https://aident.ai/blog/use-claude-code-setup-plugin-safely

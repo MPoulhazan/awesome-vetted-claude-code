@@ -1,0 +1,899 @@
+{
+  "schema_version": 1,
+  "source": "https://github.com/MPoulhazan/awesome-vetted-claude-code",
+  "count": 13,
+  "tools": [
+    {
+      "id": "claude-code-setup",
+      "name": "claude-code-setup",
+      "repo": "anthropics/claude-plugins-official",
+      "homepage": "https://github.com/anthropics/claude-plugins-official",
+      "category": "plugin",
+      "tags": [
+        "onboarding",
+        "automation",
+        "recommendations"
+      ],
+      "summary": "Official plugin that reads a repo and recommends hooks, skills, MCP servers and subagents for it.",
+      "problem": "You don't know which Claude Code automations fit a given project. It inspects the codebase and proposes a short, stack-specific list, so you install by need rather than by hype.",
+      "install": {
+        "scope": "user",
+        "commands": [
+          "/plugin install claude-code-setup@claude-plugins-official",
+          "/reload-plugins"
+        ],
+        "notes": "Then ask \"recommend automations for this repo\" in each project."
+      },
+      "detect": {
+        "plugins": [
+          "claude-code-setup@claude-plugins-official"
+        ],
+        "skills": [
+          "claude-automation-recommender"
+        ]
+      },
+      "license": "Apache-2.0",
+      "maintainer": "official",
+      "verdict": "adopt",
+      "verdict_reason": "Made by Anthropic, only recommends, changes nothing on its own. The best first step before installing anything else on this list.",
+      "scores": {
+        "usefulness": 4,
+        "security": 5,
+        "maturity": 4,
+        "cost": 5
+      },
+      "security": {
+        "runs_code": false,
+        "hooks": false,
+        "network": "llm-api",
+        "background_process": false,
+        "data_leaves_machine": "Only what Claude Code already sends to the model while reading the repo.",
+        "notes": "A skill made of instructions. It suggests installs; you still decide and run them, so review each recommended plugin like any third-party code.",
+        "advisories": []
+      },
+      "overlaps": [],
+      "last_reviewed": "2026-10-20",
+      "sources": [
+        "https://github.com/anthropics/claude-plugins-official",
+        "https://aident.ai/blog/use-claude-code-setup-plugin-safely"
+      ],
+      "live": {
+        "stars": 43431,
+        "pushed_at": "2026-10-21",
+        "archived": false,
+        "latest_release": null
+      },
+      "alerts": [],
+      "overall": 4.5
+    },
+    {
+      "id": "anime-js",
+      "name": "anime.js",
+      "repo": "juliangarnier/anime",
+      "homepage": "https://animejs.com",
+      "category": "animation-library",
+      "tags": [
+        "animation",
+        "vanilla-js",
+        "svg"
+      ],
+      "summary": "Lightweight JavaScript animation engine for DOM, SVG, CSS and JS objects; v4 is a modular ESM rewrite.",
+      "problem": "Rich timelines and SVG animation without a framework. In React projects, Motion usually fits better.",
+      "install": {
+        "scope": "dependency",
+        "commands": [
+          "npm install animejs"
+        ]
+      },
+      "detect": {
+        "npm": [
+          "animejs"
+        ]
+      },
+      "license": "MIT",
+      "maintainer": "individual",
+      "verdict": "adopt",
+      "verdict_reason": "Mature, widely used, no advisories. Best on vanilla or non-React sites.",
+      "scores": {
+        "usefulness": 3,
+        "security": 5,
+        "maturity": 5,
+        "cost": 5
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": false,
+        "network": "none",
+        "background_process": false,
+        "notes": "A plain front-end library with no install scripts.",
+        "advisories": []
+      },
+      "overlaps": [
+        "motion"
+      ],
+      "last_reviewed": "2026-10-20",
+      "sources": [
+        "https://github.com/juliangarnier/anime",
+        "https://animejs.com"
+      ],
+      "live": {
+        "stars": 73739,
+        "pushed_at": "2026-08-21",
+        "archived": false,
+        "latest_release": "v4.5.0"
+      },
+      "alerts": [],
+      "overall": 4.3
+    },
+    {
+      "id": "kokonut-ui",
+      "name": "Kokonut UI",
+      "repo": "kokonut-labs/kokonutui",
+      "homepage": "https://kokonutui.com",
+      "category": "ui-library",
+      "tags": [
+        "react",
+        "tailwind",
+        "shadcn",
+        "motion"
+      ],
+      "summary": "Polished React components built on Tailwind, shadcn/ui and Motion, copied into your project.",
+      "problem": "shadcn/ui gives solid but plain building blocks. Kokonut adds ready-made, animated sections and cards in the same copy-the-code model.",
+      "install": {
+        "scope": "dependency",
+        "commands": [
+          "npx shadcn@latest add <component URL from kokonutui.com>"
+        ],
+        "notes": "Each component page gives its exact shadcn command. Fits any React + Tailwind project, especially one already on shadcn."
+      },
+      "license": "MIT",
+      "maintainer": "company",
+      "verdict": "trial",
+      "verdict_reason": "Source copied into your repo, MIT, sponsored by the Vercel OSS program. Smaller community than the big kits.",
+      "scores": {
+        "usefulness": 4,
+        "security": 5,
+        "maturity": 3,
+        "cost": 5
+      },
+      "security": {
+        "runs_code": false,
+        "hooks": false,
+        "network": "none",
+        "background_process": false,
+        "notes": "The shadcn CLI copies source into your repo, so you review exactly what ships. A separate paid Pro tier exists.",
+        "advisories": []
+      },
+      "overlaps": [
+        "react-bits",
+        "bklit-ui"
+      ],
+      "last_reviewed": "2026-10-20",
+      "sources": [
+        "https://github.com/kokonut-labs/kokonutui",
+        "https://kokonutui.com"
+      ],
+      "live": {
+        "stars": 2185,
+        "pushed_at": "2026-10-21",
+        "archived": false,
+        "latest_release": null
+      },
+      "alerts": [],
+      "overall": 4.3
+    },
+    {
+      "id": "react-bits",
+      "name": "React Bits",
+      "repo": "DavidHDev/react-bits",
+      "homepage": "https://reactbits.dev",
+      "category": "ui-library",
+      "tags": [
+        "react",
+        "animation",
+        "landing-page"
+      ],
+      "summary": "Large library of animated, interactive React components - text effects, backgrounds, cursors.",
+      "problem": "Landing pages that look generic. Drop in an eye-catching hero effect in minutes.",
+      "install": {
+        "scope": "dependency",
+        "commands": [
+          "npx shadcn@latest add @react-bits/SplitText-TS-TW",
+          "npx jsrepo@latest add https://reactbits.dev/r/SplitText-TS-TW"
+        ],
+        "notes": "The suffix picks JS or TS, then CSS or Tailwind. Use on marketing pages, sparingly inside app UIs."
+      },
+      "license": "MIT + Commons Clause",
+      "license_notes": "Free for any product, including paid ones, but you may not sell or redistribute the components themselves, e.g. in a template or UI kit.",
+      "maintainer": "individual",
+      "verdict": "adopt",
+      "verdict_reason": "Very popular, source copied into your repo, no runtime service. Mind the Commons Clause if you build templates.",
+      "scores": {
+        "usefulness": 4,
+        "security": 5,
+        "maturity": 4,
+        "cost": 4
+      },
+      "security": {
+        "runs_code": false,
+        "hooks": false,
+        "network": "none",
+        "background_process": false,
+        "notes": "Copied source. Some effects pull WebGL or animation dependencies; check bundle size.",
+        "advisories": []
+      },
+      "overlaps": [
+        "kokonut-ui"
+      ],
+      "last_reviewed": "2026-10-20",
+      "sources": [
+        "https://github.com/DavidHDev/react-bits",
+        "https://reactbits.dev"
+      ],
+      "live": {
+        "stars": 49812,
+        "pushed_at": "2026-10-19",
+        "archived": false,
+        "latest_release": null
+      },
+      "alerts": [],
+      "overall": 4.3
+    },
+    {
+      "id": "ponytail",
+      "name": "Ponytail",
+      "repo": "DietrichGebert/ponytail",
+      "category": "plugin",
+      "tags": [
+        "code-quality",
+        "minimalism",
+        "cost"
+      ],
+      "summary": "Ruleset that makes the agent write the least code a task needs, checking existing code and platform features first.",
+      "problem": "Agents over-build - new dependencies, hand-rolled components, extra abstractions. Ponytail makes them climb a ladder (does it need to exist, is it already in the repo, stdlib, platform, one line) before writing anything.",
+      "install": {
+        "scope": "project",
+        "commands": [
+          "/plugin marketplace add DietrichGebert/ponytail",
+          "/plugin install ponytail@ponytail"
+        ],
+        "notes": "Try it on one project for a week or two and compare diffs before making it global."
+      },
+      "detect": {
+        "plugins": [
+          "ponytail@ponytail"
+        ],
+        "skills": [
+          "ponytail"
+        ],
+        "npm": [
+          "@dietrichgebert/ponytail"
+        ]
+      },
+      "license": "MIT",
+      "maintainer": "individual",
+      "verdict": "trial",
+      "verdict_reason": "Cheap to try and easy to remove. Independent measurements show a real but much smaller effect than the README claims.",
+      "scores": {
+        "usefulness": 4,
+        "security": 4,
+        "maturity": 4,
+        "cost": 5
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": true,
+        "network": "none",
+        "background_process": false,
+        "notes": "Mostly instructions, plus lifecycle hook configs per agent and a status band module for Claude Code. Review hooks/ before trusting them.",
+        "red_flags": [
+          "Look-alike repos exist (e.g. mikrammullah/PonyTail). The author says the real one never ships .exe or .dll files; install only from DietrichGebert/ponytail or @dietrichgebert/ponytail on npm."
+        ],
+        "advisories": []
+      },
+      "overlaps": [],
+      "claims": [
+        {
+          "claim": "80-94% less code, 3-6x faster, 42-75% cheaper",
+          "independent": false,
+          "source": "https://github.com/DietrichGebert/ponytail"
+        },
+        {
+          "claim": "A JetBrains test measured about 15% less code and 10.3% lower cost",
+          "independent": true,
+          "source": "https://www.stork.ai/blog/this-plugin-slashed-my-claude-costs-by-80"
+        }
+      ],
+      "last_reviewed": "2026-10-20",
+      "sources": [
+        "https://github.com/DietrichGebert/ponytail",
+        "https://www.mindstudio.ai/blog/ponytail-ai-coding-minimalism-plugin"
+      ],
+      "live": {
+        "stars": 169920,
+        "pushed_at": "2026-10-18",
+        "archived": false,
+        "latest_release": "v5.3.2"
+      },
+      "alerts": [],
+      "overall": 4.2
+    },
+    {
+      "id": "agent-skills",
+      "name": "Agent Skills (Addy Osmani)",
+      "repo": "addyosmani/agent-skills",
+      "category": "skill",
+      "tags": [
+        "workflow",
+        "spec",
+        "tdd",
+        "code-review"
+      ],
+      "summary": "About 25 engineering-discipline skills and /spec, /plan, /build, /test, /review, /ship commands.",
+      "problem": "Agents skip steps - no spec, no tests, no review. Each skill encodes a senior-engineer habit and lists the excuses agents use to skip it, with rebuttals.",
+      "install": {
+        "scope": "user",
+        "commands": [
+          "/plugin marketplace add addyosmani/agent-skills",
+          "npx skills add addyosmani/agent-skills --list"
+        ],
+        "notes": "Install only the skills you want with --skill <name> rather than all of them."
+      },
+      "detect": {
+        "skills": [
+          "code-review-and-quality",
+          "test-driven-development",
+          "interview-me"
+        ]
+      },
+      "license": "MIT",
+      "maintainer": "individual",
+      "verdict": "trial",
+      "verdict_reason": "Well-written and popular. Pick it or another workflow pack (such as superpowers), not both - stacked workflow instructions contradict each other.",
+      "scores": {
+        "usefulness": 4,
+        "security": 4,
+        "maturity": 4,
+        "cost": 4
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": true,
+        "network": "none",
+        "background_process": false,
+        "notes": "Mostly Markdown skills. Ships a few shell hooks (hooks/sdd-cache-*.sh); read them before enabling.",
+        "advisories": []
+      },
+      "overlaps": [
+        "superpowers"
+      ],
+      "last_reviewed": "2026-10-20",
+      "sources": [
+        "https://github.com/addyosmani/agent-skills",
+        "https://dev.to/yimtheppariyapol/addy-osmani-agent-skills-review-24-production-skills-726k-stars-22em"
+      ],
+      "live": {
+        "stars": 109013,
+        "pushed_at": "2026-10-13",
+        "archived": false,
+        "latest_release": "0.6.13"
+      },
+      "alerts": [],
+      "overall": 4
+    },
+    {
+      "id": "bklit-ui",
+      "name": "Bklit UI",
+      "repo": "bklit/bklit-ui",
+      "homepage": "https://ui.bklit.com",
+      "category": "ui-library",
+      "tags": [
+        "react",
+        "charts",
+        "shadcn"
+      ],
+      "summary": "Open-source shadcn-style chart and utility components, plus a shadcn skill for agents.",
+      "problem": "Good-looking, customizable charts in a shadcn codebase without a heavy chart library.",
+      "install": {
+        "scope": "dependency",
+        "commands": [
+          "npx shadcn@latest add <component URL from ui.bklit.com>",
+          "npx skills add bklit/bklit-ui --skill shadcn --agent claude-code"
+        ],
+        "notes": "Component pages give the exact command. The skill teaches the agent to drive the shadcn CLI with your package manager."
+      },
+      "detect": {
+        "skills": [
+          "shadcn"
+        ]
+      },
+      "license": "MIT",
+      "maintainer": "individual",
+      "verdict": "assess",
+      "verdict_reason": "Young but active. Worth a look for dashboards in shadcn projects.",
+      "scores": {
+        "usefulness": 3,
+        "security": 5,
+        "maturity": 2,
+        "cost": 5
+      },
+      "security": {
+        "runs_code": false,
+        "hooks": false,
+        "network": "none",
+        "background_process": false,
+        "notes": "Copied source and a Markdown skill.",
+        "advisories": []
+      },
+      "overlaps": [
+        "kokonut-ui"
+      ],
+      "last_reviewed": "2026-10-20",
+      "sources": [
+        "https://github.com/bklit/bklit-ui",
+        "https://claudeskills.info/skills/bklit/bklit-ui/shadcn/"
+      ],
+      "live": {
+        "stars": 1795,
+        "pushed_at": "2026-10-20",
+        "archived": false,
+        "latest_release": null
+      },
+      "alerts": [],
+      "overall": 3.8
+    },
+    {
+      "id": "graphify",
+      "name": "graphify",
+      "repo": "Graphify-Labs/graphify",
+      "homepage": "https://docs.graphify.com",
+      "category": "cli",
+      "tags": [
+        "knowledge-graph",
+        "codebase-understanding",
+        "tokens"
+      ],
+      "summary": "Turns a folder of code, docs, schemas and PDFs into a queryable knowledge graph your agent can navigate.",
+      "problem": "On large or unfamiliar repos the agent burns tokens grepping and reading files one by one. graphify builds a graph once (graph.html, GRAPH_REPORT.md, graph.json) and steers the agent toward it.",
+      "install": {
+        "scope": "one-shot",
+        "commands": [
+          "uv tool install graphifyy",
+          "graphify install"
+        ],
+        "notes": "The PyPI package is graphifyy (two y). `graphify install` registers a skill and, on Claude Code, PreToolUse hooks; set it up per project if you only want occasional audits."
+      },
+      "detect": {
+        "skills": [
+          "graphify"
+        ],
+        "pypi": [
+          "graphifyy"
+        ]
+      },
+      "license": "Apache-2.0",
+      "maintainer": "company",
+      "verdict": "trial",
+      "verdict_reason": "Strong for onboarding or auditing a big repo. Keep it up to date - a file-exfiltration bug was fixed in 0.9.70 - and avoid indexing untrusted repos.",
+      "scores": {
+        "usefulness": 4,
+        "security": 3,
+        "maturity": 4,
+        "cost": 4
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": true,
+        "network": "llm-api",
+        "background_process": false,
+        "data_leaves_machine": "Code is parsed locally (tree-sitter). Docs, papers and images are sent to the model for concept extraction.",
+        "notes": "Installs PreToolUse hooks that fire before search and Read calls; they fail open and are time-bounded. An optional git hook regenerates exports on commit.",
+        "red_flags": [
+          "The package name graphifyy differs from the CLI name graphify, which makes typosquats easier. Double-check what you install.",
+          "The README pushes a paid hosted product (Graphify Cloud); the open-source CLI does not need it."
+        ],
+        "advisories": [
+          {
+            "id": "GHSA-pcc4-rvhr-2pr8",
+            "severity": "moderate",
+            "summary": "Fortran extractor include handling allows arbitrary host-file read and exfiltration when indexing an untrusted repo (the maintainers rate it high).",
+            "affected": ">= 0.7.2, < 0.9.70",
+            "patched": "0.9.70",
+            "published": "2026-10-19",
+            "url": "https://github.com/advisories/GHSA-pcc4-rvhr-2pr8"
+          }
+        ]
+      },
+      "overlaps": [],
+      "claims": [
+        {
+          "claim": "71.5x fewer tokens per query on a 52-file test repo",
+          "independent": false,
+          "source": "https://github.com/Graphify-Labs/graphify"
+        }
+      ],
+      "last_reviewed": "2026-10-20",
+      "sources": [
+        "https://github.com/Graphify-Labs/graphify",
+        "https://www.augmentcode.com/learn/graphify-knowledge-graph-codebase-skill"
+      ],
+      "live": {
+        "stars": 130380,
+        "pushed_at": "2026-10-20",
+        "archived": false,
+        "latest_release": "v0.9.93"
+      },
+      "alerts": [],
+      "overall": 3.7
+    },
+    {
+      "id": "brag",
+      "name": "brag",
+      "repo": "latent-spaces/brag",
+      "homepage": "https://latent-spaces.github.io/brag/",
+      "category": "skill",
+      "tags": [
+        "launch",
+        "video",
+        "marketing"
+      ],
+      "summary": "Skill that turns the project you just built into a short launch video with music, motion and share copy.",
+      "problem": "Shipping is easy, showing it is not. /brag reads your code, writes the story and renders brag.mp4 plus share text - handy for a README demo or a launch post.",
+      "install": {
+        "scope": "project",
+        "commands": [
+          "/plugin install brag@brag",
+          "npx skills add https://github.com/latent-spaces/brag --skill brag-slim"
+        ],
+        "notes": "Needs FFmpeg on PATH. /brag uses Hyperframes; /brag-slim needs nothing beyond tools already on your machine. Not to be confused with brag-document tools for performance reviews."
+      },
+      "detect": {
+        "plugins": [
+          "brag@brag"
+        ],
+        "skills": [
+          "brag",
+          "brag-slim"
+        ]
+      },
+      "license": "MIT",
+      "maintainer": "community",
+      "verdict": "trial",
+      "verdict_reason": "Single-purpose, run once per launch, easy to remove. Review the video before posting.",
+      "scores": {
+        "usefulness": 3,
+        "security": 4,
+        "maturity": 3,
+        "cost": 4
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": false,
+        "network": "llm-api",
+        "background_process": false,
+        "notes": "Runs render tooling (FFmpeg, Hyperframes) locally and writes to brag-output/. Check the video and share copy for anything private before posting.",
+        "advisories": []
+      },
+      "overlaps": [],
+      "last_reviewed": "2026-10-20",
+      "sources": [
+        "https://github.com/latent-spaces/brag",
+        "https://scriptxeno.github.io/posts/brag-claude-code-launch-video-skill/"
+      ],
+      "live": {
+        "stars": 17191,
+        "pushed_at": "2026-10-13",
+        "archived": false,
+        "latest_release": null
+      },
+      "alerts": [],
+      "overall": 3.5
+    },
+    {
+      "id": "task-observer",
+      "name": "task-observer",
+      "repo": "rebelytics/one-skill-to-rule-them-all",
+      "category": "skill",
+      "tags": [
+        "meta-skill",
+        "skills",
+        "continuous-improvement"
+      ],
+      "summary": "Meta-skill that watches your sessions and logs what should become a new skill or a skill fix, for your review.",
+      "problem": "Your skills drift and your repeated corrections never become skills. It captures patterns and judgement calls into an observation log you review weekly.",
+      "install": {
+        "scope": "user",
+        "commands": [
+          "npx skills add rebelytics/one-skill-to-rule-them-all --skill task-observer"
+        ],
+        "notes": "Installing is not enough - add the activation line from references/environments.md to CLAUDE.md. Most useful once you maintain several skills of your own."
+      },
+      "detect": {
+        "skills": [
+          "task-observer"
+        ]
+      },
+      "license": "CC-BY-4.0",
+      "maintainer": "individual",
+      "verdict": "assess",
+      "verdict_reason": "Clever and well-maintained, but it only pays off with a library of your own skills, and it adds context to every session.",
+      "scores": {
+        "usefulness": 3,
+        "security": 4,
+        "maturity": 3,
+        "cost": 3
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": false,
+        "network": "none",
+        "background_process": false,
+        "notes": "Instructions plus two small helper scripts (log migration, new observation). Writes only to its observation log until you approve changes.",
+        "advisories": []
+      },
+      "overlaps": [],
+      "last_reviewed": "2026-10-20",
+      "sources": [
+        "https://github.com/rebelytics/one-skill-to-rule-them-all",
+        "https://skillselion.com/guides/task-observer-skill-claude-code-guide"
+      ],
+      "live": {
+        "stars": 3469,
+        "pushed_at": "2026-10-16",
+        "archived": false,
+        "latest_release": "v3.7.0"
+      },
+      "alerts": [],
+      "overall": 3.3
+    },
+    {
+      "id": "claude-mem",
+      "name": "claude-mem",
+      "repo": "thedotmack/claude-mem",
+      "category": "plugin",
+      "tags": [
+        "memory",
+        "context",
+        "hooks"
+      ],
+      "summary": "Captures what the agent does in each session, compresses it with AI and injects relevant context into later sessions.",
+      "problem": "Each new session starts cold. claude-mem records tool use, file reads and edits via hooks, stores compressed observations in SQLite and retrieves them at session start.",
+      "install": {
+        "scope": "user",
+        "commands": [
+          "/plugin marketplace add thedotmack/claude-mem",
+          "/plugin install claude-mem"
+        ],
+        "notes": "The `npx claude-mem install` route asks you to sign in to a hosted memory service by default. Pass an explicit --provider or set CLAUDE_MEM_ONLINE_OPTIN=false to stay local."
+      },
+      "detect": {
+        "plugins": [
+          "claude-mem"
+        ],
+        "npm": [
+          "claude-mem"
+        ]
+      },
+      "license": "Apache-2.0",
+      "maintainer": "company",
+      "verdict": "assess",
+      "verdict_reason": "Claude Code now has built-in auto memory. claude-mem adds hooks on every tool call, a background worker and, by default, a hosted service - weigh that against what you gain.",
+      "scores": {
+        "usefulness": 3,
+        "security": 2,
+        "maturity": 4,
+        "cost": 3
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": true,
+        "network": "third-party",
+        "background_process": true,
+        "data_leaves_machine": "Session observations (tool calls, file contents read, edits) go to the hosted claude-mem observer if you sign in, or to OpenRouter or Gemini if you pick them. Local mode uses your Anthropic plan.",
+        "notes": "Lifecycle hooks on every tool call, a background worker, and a local SQLite store of everything the agent saw - including secrets it read. Its hooks can interfere with other tools that rely on hooks.",
+        "red_flags": [
+          "The installer defaults to a hosted, eventually paid memory service."
+        ],
+        "advisories": [
+          {
+            "id": "GHSA-5gvr-v6qv-h5mm",
+            "cve": "CVE-2026-11330",
+            "severity": "low",
+            "summary": "computeObservationContentHash is vulnerable to hash collision.",
+            "affected": "< 12.0.0",
+            "patched": "12.0.0",
+            "published": "2026-06-05",
+            "url": "https://github.com/advisories/GHSA-5gvr-v6qv-h5mm"
+          }
+        ]
+      },
+      "overlaps": [
+        "claude-code-auto-memory"
+      ],
+      "claims": [
+        {
+          "claim": "About 10x token savings through progressive disclosure",
+          "independent": false,
+          "source": "https://github.com/thedotmack/claude-mem"
+        }
+      ],
+      "last_reviewed": "2026-10-20",
+      "sources": [
+        "https://github.com/thedotmack/claude-mem",
+        "https://www.augmentcode.com/learn/claude-mem-persistent-memory-claude-code"
+      ],
+      "live": {
+        "stars": 101976,
+        "pushed_at": "2026-10-21",
+        "archived": false,
+        "latest_release": "v15.0.1"
+      },
+      "alerts": [],
+      "overall": 2.8
+    },
+    {
+      "id": "headroom",
+      "name": "Headroom",
+      "repo": "headroomlabs-ai/headroom",
+      "category": "cli",
+      "tags": [
+        "compression",
+        "tokens",
+        "proxy",
+        "mcp"
+      ],
+      "summary": "Compresses tool outputs, logs, files and RAG chunks before they reach the model. Library, proxy, agent wrapper or MCP server.",
+      "problem": "Pay-per-token apps and agents send huge JSON and logs to the model. Headroom shrinks them and keeps originals locally in case the model asks for them.",
+      "install": {
+        "scope": "dependency",
+        "commands": [
+          "pip install \"headroom-ai[all]\"",
+          "headroom proxy --port 8787"
+        ],
+        "notes": "Best fit is your own LLM backend paying per token. `headroom wrap claude` reroutes a coding agent through it; undo with `headroom unwrap claude`."
+      },
+      "detect": {
+        "pypi": [
+          "headroom-ai"
+        ]
+      },
+      "license": "Apache-2.0",
+      "maintainer": "company",
+      "verdict": "assess",
+      "verdict_reason": "Useful for API-billed backends, little gain on a flat Claude subscription. It had a high-severity WebSocket hijacking bug - run 0.35.0 or later.",
+      "scores": {
+        "usefulness": 3,
+        "security": 2,
+        "maturity": 3,
+        "cost": 4
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": false,
+        "network": "listens",
+        "background_process": true,
+        "data_leaves_machine": "Nothing extra in principle, but as a proxy it sees every prompt, response and API key in transit.",
+        "notes": "A local proxy in the path of all model traffic. `headroom learn` writes into CLAUDE.local.md or CLAUDE.md; `wrap` edits agent configs.",
+        "advisories": [
+          {
+            "id": "GHSA-h46j-26q3-rggf",
+            "cve": "CVE-2026-71416",
+            "severity": "high",
+            "summary": "Cross-Site WebSocket Hijacking - a web page you visit can talk to the local Headroom service.",
+            "affected": "< 0.35.0",
+            "patched": "0.35.0",
+            "published": "2026-10-02",
+            "url": "https://github.com/advisories/GHSA-h46j-26q3-rggf"
+          }
+        ]
+      },
+      "overlaps": [],
+      "claims": [
+        {
+          "claim": "60-95% fewer tokens on JSON, about 20% on coding agents, same answers",
+          "independent": false,
+          "source": "https://github.com/headroomlabs-ai/headroom"
+        }
+      ],
+      "last_reviewed": "2026-10-20",
+      "sources": [
+        "https://github.com/headroomlabs-ai/headroom",
+        "https://silenceper.com/en/article/2026-06-14-headroom-ai-agent-context-compression/"
+      ],
+      "live": {
+        "stars": 76806,
+        "pushed_at": "2026-10-21",
+        "archived": false,
+        "latest_release": "v0.41.0"
+      },
+      "alerts": [
+        {
+          "advisory": "GHSA-h46j-26q3-rggf",
+          "severity": "high",
+          "level": "update-required"
+        }
+      ],
+      "overall": 2.8
+    },
+    {
+      "id": "omniroute",
+      "name": "OmniRoute",
+      "repo": "diegosouzapw/OmniRoute",
+      "category": "gateway",
+      "tags": [
+        "llm-gateway",
+        "routing",
+        "free-models",
+        "proxy"
+      ],
+      "summary": "Self-hosted OpenAI-compatible gateway in front of hundreds of LLM providers, with quota-aware fallback.",
+      "problem": "Juggling many providers and free tiers. One endpoint routes each request to whichever provider still has quota.",
+      "install": {
+        "scope": "user",
+        "commands": [
+          "docker run -p 20128:20128 diegosouzapw/omniroute"
+        ],
+        "notes": "If you run it anyway - set INITIAL_PASSWORD, never expose port 20128, and use your own paid keys rather than unknown free providers for private code."
+      },
+      "detect": {
+        "npm": [
+          "omniroute"
+        ]
+      },
+      "license": "MIT",
+      "maintainer": "community",
+      "verdict": "hold",
+      "verdict_reason": "Critical remote code execution advisory, and sources disagree on whether it is fixed. It also sits in front of all your prompts, code and API keys, and free upstream providers may log what you send.",
+      "scores": {
+        "usefulness": 3,
+        "security": 1,
+        "maturity": 3,
+        "cost": 5
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": false,
+        "network": "listens",
+        "background_process": true,
+        "data_leaves_machine": "Every prompt and all code context, to whichever upstream provider is picked - including free providers with unknown data policies.",
+        "notes": "Stores provider credentials and proxies all agent traffic. Check the terms of each provider, including your Claude plan, before routing through a third-party gateway.",
+        "red_flags": [
+          "The dashboard admin password defaults to CHANGEME unless INITIAL_PASSWORD is set.",
+          "The maintainers' advisory says the RCE is fixed in 3.8.49; the GitHub Advisory Database lists <= 3.8.50 as affected with no fixed version."
+        ],
+        "advisories": [
+          {
+            "id": "GHSA-hf57-cqmx-p4gr",
+            "cve": "CVE-2026-88062",
+            "severity": "critical",
+            "summary": "Remote code execution through ACP custom agents.",
+            "affected": "<= 3.8.50",
+            "published": "2026-09-10",
+            "url": "https://github.com/advisories/GHSA-hf57-cqmx-p4gr"
+          }
+        ]
+      },
+      "overlaps": [],
+      "last_reviewed": "2026-10-20",
+      "sources": [
+        "https://github.com/diegosouzapw/OmniRoute",
+        "https://pinggy.io/amp/blog/omniroute_ai_gateway_security/",
+        "https://levelup.gitconnected.com/the-ai-tool-that-promises-1-6-billion-free-claude-tokens-and-why-you-shouldnt-touch-it-a63c687f7d91"
+      ],
+      "live": {
+        "stars": 79017,
+        "pushed_at": "2026-10-21",
+        "archived": false,
+        "latest_release": "v3.8.52"
+      },
+      "alerts": [
+        {
+          "advisory": "GHSA-hf57-cqmx-p4gr",
+          "severity": "critical",
+          "level": "unpatched"
+        }
+      ],
+      "overall": 1.5
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+id: headroom
+name: Headroom
+repo: headroomlabs-ai/headroom
+category: cli
+tags: [compression, tokens, proxy, mcp]
+summary: Compresses tool outputs, logs, files and RAG chunks before they reach the model. Library, proxy, agent wrapper or MCP server.
+problem: Pay-per-token apps and agents send huge JSON and logs to the model. Headroom shrinks them and keeps originals locally in case the model asks for them.
+install:
+  scope: dependency
+  commands:
+    - pip install "headroom-ai[all]"
+    - headroom proxy --port 8787
+  notes: Best fit is your own LLM backend paying per token. `headroom wrap claude` reroutes a coding agent through it; undo with `headroom unwrap claude`.
+detect:
+  pypi: [headroom-ai]
+license: Apache-2.0
+maintainer: company
+verdict: assess
+verdict_reason: Useful for API-billed backends, little gain on a flat Claude subscription. It had a high-severity WebSocket hijacking bug - run 0.35.0 or later.
+scores:
+  usefulness: 3
+  security: 2
+  maturity: 3
+  cost: 4
+security:
+  runs_code: true
+  hooks: false
+  network: listens
+  background_process: true
+  data_leaves_machine: Nothing extra in principle, but as a proxy it sees every prompt, response and API key in transit.
+  notes: A local proxy in the path of all model traffic. `headroom learn` writes into CLAUDE.local.md or CLAUDE.md; `wrap` edits agent configs.
+  advisories:
+    - id: GHSA-h46j-26q3-rggf
+      cve: CVE-2026-71416
+      severity: high
+      summary: Cross-Site WebSocket Hijacking - a web page you visit can talk to the local Headroom service.
+      affected: "< 0.35.0"
+      patched: 0.35.0
+      published: "2026-10-02"
+      url: https://github.com/advisories/GHSA-h46j-26q3-rggf
+overlaps: []
+claims:
+  - claim: 60-95% fewer tokens on JSON, about 20% on coding agents, same answers
+    independent: false
+    source: https://github.com/headroomlabs-ai/headroom
+last_reviewed: "2026-10-20"
+sources:
+  - https://github.com/headroomlabs-ai/headroom
+  - https://silenceper.com/en/article/2026-06-14-headroom-ai-agent-context-compression/

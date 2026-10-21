@@ -1,0 +1,148 @@
+{
+  "agent-skills": {
+    "repo": "addyosmani/agent-skills",
+    "stars": 109013,
+    "pushed_at": "2026-10-13",
+    "archived": false,
+    "latest_release": "0.6.13",
+    "advisories": []
+  },
+  "anime-js": {
+    "repo": "juliangarnier/anime",
+    "stars": 73739,
+    "pushed_at": "2026-08-21",
+    "archived": false,
+    "latest_release": "v4.5.0",
+    "advisories": []
+  },
+  "bklit-ui": {
+    "repo": "bklit/bklit-ui",
+    "stars": 1795,
+    "pushed_at": "2026-10-20",
+    "archived": false,
+    "latest_release": null,
+    "advisories": []
+  },
+  "brag": {
+    "repo": "latent-spaces/brag",
+    "stars": 17191,
+    "pushed_at": "2026-10-13",
+    "archived": false,
+    "latest_release": null,
+    "advisories": []
+  },
+  "claude-code-setup": {
+    "repo": "anthropics/claude-plugins-official",
+    "stars": 43431,
+    "pushed_at": "2026-10-21",
+    "archived": false,
+    "latest_release": null,
+    "advisories": []
+  },
+  "claude-mem": {
+    "repo": "thedotmack/claude-mem",
+    "stars": 101976,
+    "pushed_at": "2026-10-21",
+    "archived": false,
+    "latest_release": "v15.0.1",
+    "advisories": [
+      {
+        "id": "GHSA-5gvr-v6qv-h5mm",
+        "cve": "CVE-2026-11330",
+        "severity": "low",
+        "summary": "claude-mem: The computeObservationContentHash Function is Vulnerable to Hash Collision",
+        "affected": "< 12.0.0",
+        "patched": "12.0.0",
+        "published": "2026-06-05",
+        "url": "https://github.com/advisories/GHSA-5gvr-v6qv-h5mm"
+      }
+    ]
+  },
+  "graphify": {
+    "repo": "Graphify-Labs/graphify",
+    "stars": 130380,
+    "pushed_at": "2026-10-20",
+    "archived": false,
+    "latest_release": "v0.9.93",
+    "advisories": [
+      {
+        "id": "GHSA-pcc4-rvhr-2pr8",
+        "severity": "moderate",
+        "summary": "Graphify Fortran extractor: incomplete cpp #include hardening allows arbitrary host-file read/exfiltration when indexing an untrusted repo",
+        "affected": ">= 0.7.2, < 0.9.70",
+        "patched": "0.9.70",
+        "published": "2026-10-19",
+        "url": "https://github.com/advisories/GHSA-pcc4-rvhr-2pr8"
+      }
+    ]
+  },
+  "headroom": {
+    "repo": "headroomlabs-ai/headroom",
+    "stars": 76806,
+    "pushed_at": "2026-10-21",
+    "archived": false,
+    "latest_release": "v0.41.0",
+    "advisories": [
+      {
+        "id": "GHSA-h46j-26q3-rggf",
+        "cve": "CVE-2026-71416",
+        "severity": "high",
+        "summary": "Headroom vulnerable to Cross-Site WebSocket Hijacking (CSWSH)",
+        "affected": "< 0.35.0",
+        "patched": "0.35.0",
+        "published": "2026-10-02",
+        "url": "https://github.com/advisories/GHSA-h46j-26q3-rggf"
+      }
+    ]
+  },
+  "kokonut-ui": {
+    "repo": "kokonut-labs/kokonutui",
+    "stars": 2185,
+    "pushed_at": "2026-10-21",
+    "archived": false,
+    "latest_release": null,
+    "advisories": []
+  },
+  "omniroute": {
+    "repo": "diegosouzapw/OmniRoute",
+    "stars": 79017,
+    "pushed_at": "2026-10-21",
+    "archived": false,
+    "latest_release": "v3.8.52",
+    "advisories": [
+      {
+        "id": "GHSA-hf57-cqmx-p4gr",
+        "cve": "CVE-2026-88062",
+        "severity": "critical",
+        "summary": "OmniRoute ACP Custom-Agent Remote Code Execution (RCE)",
+        "affected": "<= 3.8.50",
+        "published": "2026-09-10",
+        "url": "https://github.com/advisories/GHSA-hf57-cqmx-p4gr"
+      }
+    ]
+  },
+  "ponytail": {
+    "repo": "DietrichGebert/ponytail",
+    "stars": 169920,
+    "pushed_at": "2026-10-18",
+    "archived": false,
+    "latest_release": "v5.3.2",
+    "advisories": []
+  },
+  "react-bits": {
+    "repo": "DavidHDev/react-bits",
+    "stars": 49812,
+    "pushed_at": "2026-10-19",
+    "archived": false,
+    "latest_release": null,
+    "advisories": []
+  },
+  "task-observer": {
+    "repo": "rebelytics/one-skill-to-rule-them-all",
+    "stars": 3469,
+    "pushed_at": "2026-10-16",
+    "archived": false,
+    "latest_release": "v3.7.0",
+    "advisories": []
+  }
+}

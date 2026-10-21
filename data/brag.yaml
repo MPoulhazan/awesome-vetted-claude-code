@@ -1,0 +1,38 @@
+id: brag
+name: brag
+repo: latent-spaces/brag
+homepage: https://latent-spaces.github.io/brag/
+category: skill
+tags: [launch, video, marketing]
+summary: Skill that turns the project you just built into a short launch video with music, motion and share copy.
+problem: Shipping is easy, showing it is not. /brag reads your code, writes the story and renders brag.mp4 plus share text - handy for a README demo or a launch post.
+install:
+  scope: project
+  commands:
+    - /plugin install brag@brag
+    - npx skills add https://github.com/latent-spaces/brag --skill brag-slim
+  notes: Needs FFmpeg on PATH. /brag uses Hyperframes; /brag-slim needs nothing beyond tools already on your machine. Not to be confused with brag-document tools for performance reviews.
+detect:
+  plugins: [brag@brag]
+  skills: [brag, brag-slim]
+license: MIT
+maintainer: community
+verdict: trial
+verdict_reason: Single-purpose, run once per launch, easy to remove. Review the video before posting.
+scores:
+  usefulness: 3
+  security: 4
+  maturity: 3
+  cost: 4
+security:
+  runs_code: true
+  hooks: false
+  network: llm-api
+  background_process: false
+  notes: Runs render tooling (FFmpeg, Hyperframes) locally and writes to brag-output/. Check the video and share copy for anything private before posting.
+  advisories: []
+overlaps: []
+last_reviewed: "2026-10-20"
+sources:
+  - https://github.com/latent-spaces/brag
+  - https://scriptxeno.github.io/posts/brag-claude-code-launch-video-skill/

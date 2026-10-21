@@ -1,0 +1,19 @@
+{
+  "name": "awesome-vetted-claude-code",
+  "private": true,
+  "type": "module",
+  "description": "Community-maintained, security-vetted catalog of Claude Code plugins, skills, MCP servers and tools.",
+  "license": "CC0-1.0",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "refresh": "node scripts/refresh.mjs"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "yaml": "^2.6.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

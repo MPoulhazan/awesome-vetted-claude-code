@@ -1,0 +1,35 @@
+id: anime-js
+name: anime.js
+repo: juliangarnier/anime
+homepage: https://animejs.com
+category: animation-library
+tags: [animation, vanilla-js, svg]
+summary: Lightweight JavaScript animation engine for DOM, SVG, CSS and JS objects; v4 is a modular ESM rewrite.
+problem: Rich timelines and SVG animation without a framework. In React projects, Motion usually fits better.
+install:
+  scope: dependency
+  commands:
+    - npm install animejs
+detect:
+  npm: [animejs]
+license: MIT
+maintainer: individual
+verdict: adopt
+verdict_reason: Mature, widely used, no advisories. Best on vanilla or non-React sites.
+scores:
+  usefulness: 3
+  security: 5
+  maturity: 5
+  cost: 5
+security:
+  runs_code: true
+  hooks: false
+  network: none
+  background_process: false
+  notes: A plain front-end library with no install scripts.
+  advisories: []
+overlaps: [motion]
+last_reviewed: "2026-10-20"
+sources:
+  - https://github.com/juliangarnier/anime
+  - https://animejs.com

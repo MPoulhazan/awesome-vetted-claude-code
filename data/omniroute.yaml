@@ -1,0 +1,47 @@
+id: omniroute
+name: OmniRoute
+repo: diegosouzapw/OmniRoute
+category: gateway
+tags: [llm-gateway, routing, free-models, proxy]
+summary: Self-hosted OpenAI-compatible gateway in front of hundreds of LLM providers, with quota-aware fallback.
+problem: Juggling many providers and free tiers. One endpoint routes each request to whichever provider still has quota.
+install:
+  scope: user
+  commands:
+    - docker run -p 20128:20128 diegosouzapw/omniroute
+  notes: If you run it anyway - set INITIAL_PASSWORD, never expose port 20128, and use your own paid keys rather than unknown free providers for private code.
+detect:
+  npm: [omniroute]
+license: MIT
+maintainer: community
+verdict: hold
+verdict_reason: Critical remote code execution advisory, and sources disagree on whether it is fixed. It also sits in front of all your prompts, code and API keys, and free upstream providers may log what you send.
+scores:
+  usefulness: 3
+  security: 1
+  maturity: 3
+  cost: 5
+security:
+  runs_code: true
+  hooks: false
+  network: listens
+  background_process: true
+  data_leaves_machine: Every prompt and all code context, to whichever upstream provider is picked - including free providers with unknown data policies.
+  notes: Stores provider credentials and proxies all agent traffic. Check the terms of each provider, including your Claude plan, before routing through a third-party gateway.
+  red_flags:
+    - The dashboard admin password defaults to CHANGEME unless INITIAL_PASSWORD is set.
+    - The maintainers' advisory says the RCE is fixed in 3.8.49; the GitHub Advisory Database lists <= 3.8.50 as affected with no fixed version.
+  advisories:
+    - id: GHSA-hf57-cqmx-p4gr
+      cve: CVE-2026-88062
+      severity: critical
+      summary: Remote code execution through ACP custom agents.
+      affected: "<= 3.8.50"
+      published: "2026-09-10"
+      url: https://github.com/advisories/GHSA-hf57-cqmx-p4gr
+overlaps: []
+last_reviewed: "2026-10-20"
+sources:
+  - https://github.com/diegosouzapw/OmniRoute
+  - https://pinggy.io/amp/blog/omniroute_ai_gateway_security/
+  - https://levelup.gitconnected.com/the-ai-tool-that-promises-1-6-billion-free-claude-tokens-and-why-you-shouldnt-touch-it-a63c687f7d91

@@ -1,0 +1,36 @@
+id: agent-skills
+name: Agent Skills (Addy Osmani)
+repo: addyosmani/agent-skills
+category: skill
+tags: [workflow, spec, tdd, code-review]
+summary: About 25 engineering-discipline skills and /spec, /plan, /build, /test, /review, /ship commands.
+problem: Agents skip steps - no spec, no tests, no review. Each skill encodes a senior-engineer habit and lists the excuses agents use to skip it, with rebuttals.
+install:
+  scope: user
+  commands:
+    - /plugin marketplace add addyosmani/agent-skills
+    - npx skills add addyosmani/agent-skills --list
+  notes: Install only the skills you want with --skill <name> rather than all of them.
+detect:
+  skills: [code-review-and-quality, test-driven-development, interview-me]
+license: MIT
+maintainer: individual
+verdict: trial
+verdict_reason: Well-written and popular. Pick it or another workflow pack (such as superpowers), not both - stacked workflow instructions contradict each other.
+scores:
+  usefulness: 4
+  security: 4
+  maturity: 4
+  cost: 4
+security:
+  runs_code: true
+  hooks: true
+  network: none
+  background_process: false
+  notes: Mostly Markdown skills. Ships a few shell hooks (hooks/sdd-cache-*.sh); read them before enabling.
+  advisories: []
+overlaps: [superpowers]
+last_reviewed: "2026-10-20"
+sources:
+  - https://github.com/addyosmani/agent-skills
+  - https://dev.to/yimtheppariyapol/addy-osmani-agent-skills-review-24-production-skills-726k-stars-22em

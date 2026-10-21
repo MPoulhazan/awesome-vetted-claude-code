@@ -1,0 +1,35 @@
+id: task-observer
+name: task-observer
+repo: rebelytics/one-skill-to-rule-them-all
+category: skill
+tags: [meta-skill, skills, continuous-improvement]
+summary: Meta-skill that watches your sessions and logs what should become a new skill or a skill fix, for your review.
+problem: Your skills drift and your repeated corrections never become skills. It captures patterns and judgement calls into an observation log you review weekly.
+install:
+  scope: user
+  commands:
+    - npx skills add rebelytics/one-skill-to-rule-them-all --skill task-observer
+  notes: Installing is not enough - add the activation line from references/environments.md to CLAUDE.md. Most useful once you maintain several skills of your own.
+detect:
+  skills: [task-observer]
+license: CC-BY-4.0
+maintainer: individual
+verdict: assess
+verdict_reason: Clever and well-maintained, but it only pays off with a library of your own skills, and it adds context to every session.
+scores:
+  usefulness: 3
+  security: 4
+  maturity: 3
+  cost: 3
+security:
+  runs_code: true
+  hooks: false
+  network: none
+  background_process: false
+  notes: Instructions plus two small helper scripts (log migration, new observation). Writes only to its observation log until you approve changes.
+  advisories: []
+overlaps: []
+last_reviewed: "2026-10-20"
+sources:
+  - https://github.com/rebelytics/one-skill-to-rule-them-all
+  - https://skillselion.com/guides/task-observer-skill-claude-code-guide

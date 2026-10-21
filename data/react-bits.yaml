@@ -1,0 +1,36 @@
+id: react-bits
+name: React Bits
+repo: DavidHDev/react-bits
+homepage: https://reactbits.dev
+category: ui-library
+tags: [react, animation, landing-page]
+summary: Large library of animated, interactive React components - text effects, backgrounds, cursors.
+problem: Landing pages that look generic. Drop in an eye-catching hero effect in minutes.
+install:
+  scope: dependency
+  commands:
+    - npx shadcn@latest add @react-bits/SplitText-TS-TW
+    - npx jsrepo@latest add https://reactbits.dev/r/SplitText-TS-TW
+  notes: The suffix picks JS or TS, then CSS or Tailwind. Use on marketing pages, sparingly inside app UIs.
+license: MIT + Commons Clause
+license_notes: Free for any product, including paid ones, but you may not sell or redistribute the components themselves, e.g. in a template or UI kit.
+maintainer: individual
+verdict: adopt
+verdict_reason: Very popular, source copied into your repo, no runtime service. Mind the Commons Clause if you build templates.
+scores:
+  usefulness: 4
+  security: 5
+  maturity: 4
+  cost: 4
+security:
+  runs_code: false
+  hooks: false
+  network: none
+  background_process: false
+  notes: Copied source. Some effects pull WebGL or animation dependencies; check bundle size.
+  advisories: []
+overlaps: [kokonut-ui]
+last_reviewed: "2026-10-20"
+sources:
+  - https://github.com/DavidHDev/react-bits
+  - https://reactbits.dev

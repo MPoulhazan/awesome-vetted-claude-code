@@ -1,0 +1,21 @@
+name: Suggest a tool
+description: Propose a plugin, skill, MCP server or tool for review
+labels: [new-tool]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Link
+      description: GitHub repo or homepage
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it's worth reviewing
+      description: What it does for you, where you heard about it
+  - type: textarea
+    id: concerns
+    attributes:
+      label: Security concerns you noticed
+      description: Hooks, background services, data sent to third parties, known advisories...

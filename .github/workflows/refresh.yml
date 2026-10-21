@@ -1,0 +1,46 @@
+name: Weekly refresh
+
+# Pulls stars, releases and security advisories for every tool, rebuilds the
+# catalog and opens a pull request when anything changed.
+on:
+  schedule:
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run refresh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: npm run build
+      - name: List new advisories
+        id: advisories
+        run: |
+          {
+            echo 'body<<EOF'
+            git diff -U0 generated/live.json | grep -E '^\+ +"id": "GHSA' | sed -E 's/.*"(GHSA[^"]+)".*/- https:\/\/github.com\/advisories\/\1/' || true
+            echo EOF
+          } >> "$GITHUB_OUTPUT"
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: weekly-refresh
+          commit-message: Refresh stars, releases and advisories
+          title: Weekly refresh of stars, releases and advisories
+          body: |
+            Automated refresh from the GitHub Advisory Database and GitHub API.
+
+            New advisories to review (curate them in `data/<tool>.yaml` and adjust scores and verdicts):
+            ${{ steps.advisories.outputs.body || '- none' }}
+          labels: refresh

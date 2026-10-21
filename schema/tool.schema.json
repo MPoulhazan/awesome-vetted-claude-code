@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MPoulhazan/awesome-vetted-claude-code/schema/tool.schema.json",
+  "title": "Tool entry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "repo", "category", "summary", "problem", "install", "license", "verdict", "scores", "security", "last_reviewed", "sources"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$", "description": "Stable slug, also the data file name. Never change it once published." },
+    "name": { "type": "string" },
+    "repo": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$", "description": "GitHub owner/name, used to refresh stars and advisories." },
+    "homepage": { "type": "string", "format": "uri" },
+    "category": { "enum": ["plugin", "skill", "cli", "mcp-server", "gateway", "ui-library", "animation-library"] },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "summary": { "type": "string", "maxLength": 140, "description": "One line: what it is." },
+    "problem": { "type": "string", "description": "The problem it solves, and for whom." },
+    "install": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scope", "commands"],
+      "properties": {
+        "scope": { "enum": ["user", "project", "dependency", "one-shot"], "description": "Where we recommend installing it." },
+        "commands": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "notes": { "type": "string" }
+      }
+    },
+    "detect": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "How a tool such as AgentHub can tell this is installed on a machine.",
+      "properties": {
+        "plugins": { "type": "array", "items": { "type": "string" }, "description": "Claude Code plugin ids, name@marketplace." },
+        "skills": { "type": "array", "items": { "type": "string" }, "description": "Skill folder names under .claude/skills." },
+        "npm": { "type": "array", "items": { "type": "string" } },
+        "pypi": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "license": { "type": "string", "description": "SPDX id, or a short custom label." },
+    "license_notes": { "type": "string" },
+    "maintainer": { "enum": ["official", "company", "individual", "community"] },
+    "verdict": { "enum": ["adopt", "trial", "assess", "hold"] },
+    "verdict_reason": { "type": "string" },
+    "scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["usefulness", "security", "maturity", "cost"],
+      "properties": {
+        "usefulness": { "$ref": "#/$defs/score" },
+        "security": { "$ref": "#/$defs/score" },
+        "maturity": { "$ref": "#/$defs/score" },
+        "cost": { "$ref": "#/$defs/score", "description": "5 = free and light; 1 = expensive in money, tokens or complexity." }
+      }
+    },
+    "security": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["runs_code", "hooks", "network", "background_process", "notes"],
+      "properties": {
+        "runs_code": { "type": "boolean", "description": "Ships executable code (scripts, binaries, packages), not just instructions." },
+        "hooks": { "type": "boolean", "description": "Registers agent lifecycle hooks that run on every session or tool call." },
+        "network": { "enum": ["none", "llm-api", "third-party", "listens"], "description": "Worst case: listens = opens a local port or proxy." },
+        "background_process": { "type": "boolean" },
+        "data_leaves_machine": { "type": "string", "description": "What leaves your machine, and to whom." },
+        "notes": { "type": "string" },
+        "red_flags": { "type": "array", "items": { "type": "string" } },
+        "advisories": { "type": "array", "items": { "$ref": "#/$defs/advisory" } }
+      }
+    },
+    "overlaps": { "type": "array", "items": { "type": "string" }, "description": "Tools that do the same job; don't stack them." },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["claim", "independent"],
+        "properties": {
+          "claim": { "type": "string" },
+          "independent": { "type": "boolean", "description": "false = the vendor's own number." },
+          "source": { "type": "string", "format": "uri" }
+        }
+      }
+    },
+    "last_reviewed": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "sources": { "type": "array", "items": { "type": "string", "format": "uri" }, "minItems": 1 }
+  },
+  "$defs": {
+    "score": { "type": "integer", "minimum": 1, "maximum": 5 },
+    "advisory": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "severity", "summary", "url"],
+      "properties": {
+        "id": { "type": "string", "description": "GHSA, PYSEC or OSV id." },
+        "cve": { "type": "string" },
+        "severity": { "enum": ["low", "moderate", "high", "critical"] },
+        "summary": { "type": "string" },
+        "affected": { "type": "string", "description": "Affected version range." },
+        "patched": { "type": "string", "description": "First fixed version; leave out when no fix is confirmed." },
+        "published": { "type": "string" },
+        "url": { "type": "string", "format": "uri" }
+      }
+    }
+  }
+}

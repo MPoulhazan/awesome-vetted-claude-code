@@ -1,0 +1,53 @@
+id: graphify
+name: graphify
+repo: Graphify-Labs/graphify
+homepage: https://docs.graphify.com
+category: cli
+tags: [knowledge-graph, codebase-understanding, tokens]
+summary: Turns a folder of code, docs, schemas and PDFs into a queryable knowledge graph your agent can navigate.
+problem: On large or unfamiliar repos the agent burns tokens grepping and reading files one by one. graphify builds a graph once (graph.html, GRAPH_REPORT.md, graph.json) and steers the agent toward it.
+install:
+  scope: one-shot
+  commands:
+    - uv tool install graphifyy
+    - graphify install
+  notes: The PyPI package is graphifyy (two y). `graphify install` registers a skill and, on Claude Code, PreToolUse hooks; set it up per project if you only want occasional audits.
+detect:
+  skills: [graphify]
+  pypi: [graphifyy]
+license: Apache-2.0
+maintainer: company
+verdict: trial
+verdict_reason: Strong for onboarding or auditing a big repo. Keep it up to date - a file-exfiltration bug was fixed in 0.9.70 - and avoid indexing untrusted repos.
+scores:
+  usefulness: 4
+  security: 3
+  maturity: 4
+  cost: 4
+security:
+  runs_code: true
+  hooks: true
+  network: llm-api
+  background_process: false
+  data_leaves_machine: Code is parsed locally (tree-sitter). Docs, papers and images are sent to the model for concept extraction.
+  notes: Installs PreToolUse hooks that fire before search and Read calls; they fail open and are time-bounded. An optional git hook regenerates exports on commit.
+  red_flags:
+    - The package name graphifyy differs from the CLI name graphify, which makes typosquats easier. Double-check what you install.
+    - The README pushes a paid hosted product (Graphify Cloud); the open-source CLI does not need it.
+  advisories:
+    - id: GHSA-pcc4-rvhr-2pr8
+      severity: moderate
+      summary: Fortran extractor include handling allows arbitrary host-file read and exfiltration when indexing an untrusted repo (the maintainers rate it high).
+      affected: ">= 0.7.2, < 0.9.70"
+      patched: 0.9.70
+      published: "2026-10-19"
+      url: https://github.com/advisories/GHSA-pcc4-rvhr-2pr8
+overlaps: []
+claims:
+  - claim: 71.5x fewer tokens per query on a 52-file test repo
+    independent: false
+    source: https://github.com/Graphify-Labs/graphify
+last_reviewed: "2026-10-20"
+sources:
+  - https://github.com/Graphify-Labs/graphify
+  - https://www.augmentcode.com/learn/graphify-knowledge-graph-codebase-skill

@@ -1,0 +1,52 @@
+id: claude-mem
+name: claude-mem
+repo: thedotmack/claude-mem
+category: plugin
+tags: [memory, context, hooks]
+summary: Captures what the agent does in each session, compresses it with AI and injects relevant context into later sessions.
+problem: Each new session starts cold. claude-mem records tool use, file reads and edits via hooks, stores compressed observations in SQLite and retrieves them at session start.
+install:
+  scope: user
+  commands:
+    - /plugin marketplace add thedotmack/claude-mem
+    - /plugin install claude-mem
+  notes: The `npx claude-mem install` route asks you to sign in to a hosted memory service by default. Pass an explicit --provider or set CLAUDE_MEM_ONLINE_OPTIN=false to stay local.
+detect:
+  plugins: [claude-mem]
+  npm: [claude-mem]
+license: Apache-2.0
+maintainer: company
+verdict: assess
+verdict_reason: Claude Code now has built-in auto memory. claude-mem adds hooks on every tool call, a background worker and, by default, a hosted service - weigh that against what you gain.
+scores:
+  usefulness: 3
+  security: 2
+  maturity: 4
+  cost: 3
+security:
+  runs_code: true
+  hooks: true
+  network: third-party
+  background_process: true
+  data_leaves_machine: Session observations (tool calls, file contents read, edits) go to the hosted claude-mem observer if you sign in, or to OpenRouter or Gemini if you pick them. Local mode uses your Anthropic plan.
+  notes: Lifecycle hooks on every tool call, a background worker, and a local SQLite store of everything the agent saw - including secrets it read. Its hooks can interfere with other tools that rely on hooks.
+  red_flags:
+    - The installer defaults to a hosted, eventually paid memory service.
+  advisories:
+    - id: GHSA-5gvr-v6qv-h5mm
+      cve: CVE-2026-11330
+      severity: low
+      summary: computeObservationContentHash is vulnerable to hash collision.
+      affected: "< 12.0.0"
+      patched: 12.0.0
+      published: "2026-06-05"
+      url: https://github.com/advisories/GHSA-5gvr-v6qv-h5mm
+overlaps: [claude-code-auto-memory]
+claims:
+  - claim: About 10x token savings through progressive disclosure
+    independent: false
+    source: https://github.com/thedotmack/claude-mem
+last_reviewed: "2026-10-20"
+sources:
+  - https://github.com/thedotmack/claude-mem
+  - https://www.augmentcode.com/learn/claude-mem-persistent-memory-claude-code

@@ -1,0 +1,47 @@
+id: ponytail
+name: Ponytail
+repo: DietrichGebert/ponytail
+category: plugin
+tags: [code-quality, minimalism, cost]
+summary: Ruleset that makes the agent write the least code a task needs, checking existing code and platform features first.
+problem: Agents over-build - new dependencies, hand-rolled components, extra abstractions. Ponytail makes them climb a ladder (does it need to exist, is it already in the repo, stdlib, platform, one line) before writing anything.
+install:
+  scope: project
+  commands:
+    - /plugin marketplace add DietrichGebert/ponytail
+    - /plugin install ponytail@ponytail
+  notes: Try it on one project for a week or two and compare diffs before making it global.
+detect:
+  plugins: [ponytail@ponytail]
+  skills: [ponytail]
+  npm: ["@dietrichgebert/ponytail"]
+license: MIT
+maintainer: individual
+verdict: trial
+verdict_reason: Cheap to try and easy to remove. Independent measurements show a real but much smaller effect than the README claims.
+scores:
+  usefulness: 4
+  security: 4
+  maturity: 4
+  cost: 5
+security:
+  runs_code: true
+  hooks: true
+  network: none
+  background_process: false
+  notes: Mostly instructions, plus lifecycle hook configs per agent and a status band module for Claude Code. Review hooks/ before trusting them.
+  red_flags:
+    - Look-alike repos exist (e.g. mikrammullah/PonyTail). The author says the real one never ships .exe or .dll files; install only from DietrichGebert/ponytail or @dietrichgebert/ponytail on npm.
+  advisories: []
+overlaps: []
+claims:
+  - claim: 80-94% less code, 3-6x faster, 42-75% cheaper
+    independent: false
+    source: https://github.com/DietrichGebert/ponytail
+  - claim: A JetBrains test measured about 15% less code and 10.3% lower cost
+    independent: true
+    source: https://www.stork.ai/blog/this-plugin-slashed-my-claude-costs-by-80
+last_reviewed: "2026-10-20"
+sources:
+  - https://github.com/DietrichGebert/ponytail
+  - https://www.mindstudio.ai/blog/ponytail-ai-coding-minimalism-plugin
