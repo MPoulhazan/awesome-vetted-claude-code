@@ -1,0 +1,45 @@
+id: claude-code-router
+name: Claude Code Router
+repo: musistudio/claude-code-router
+homepage: https://ccrdesk.top
+category: gateway
+tags: [llm-gateway, routing, multi-provider, proxy]
+summary: Local gateway that routes Claude Code and other agents to the model and provider you choose, with a web UI.
+problem: Using other models (DeepSeek, Gemini, Kimi, local) inside Claude Code, or routing background tasks to cheaper models.
+install:
+  scope: user
+  commands:
+    - npm install -g @musistudio/claude-code-router
+    - ccr ui
+  notes: The gateway listens on 127.0.0.1:3456 and the UI on 3458. Read the Docker guide before exposing it anywhere.
+detect:
+  npm: ["@musistudio/claude-code-router"]
+license: MIT
+maintainer: individual
+verdict: assess
+verdict_reason: Better track record than other gateways, but it still holds your provider keys and sees every prompt. Worth it only if you really need other models.
+scores:
+  usefulness: 3
+  security: 3
+  maturity: 4
+  cost: 4
+security:
+  runs_code: true
+  hooks: false
+  network: listens
+  background_process: true
+  data_leaves_machine: Every prompt and all code context, to whichever provider you route to.
+  notes: Stores provider API keys and proxies all agent traffic. Check each provider's data policy and your Claude plan's terms.
+  advisories:
+    - id: GHSA-8hmm-4crw-vm2c
+      cve: CVE-2025-57755
+      severity: high
+      summary: Improper CORS configuration let web pages call the local router (the maintainers rate it low).
+      affected: "< 1.0.34"
+      patched: 1.0.34
+      published: "2025-08-21"
+      url: https://github.com/advisories/GHSA-8hmm-4crw-vm2c
+overlaps: [omniroute]
+last_reviewed: "2026-10-21"
+sources:
+  - https://github.com/musistudio/claude-code-router

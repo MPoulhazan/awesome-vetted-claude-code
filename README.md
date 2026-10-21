@@ -2,7 +2,7 @@
 
 > A security-first catalog of Claude Code plugins, skills, MCP servers and the tools people hype on social media - each one read, rated and checked for CVEs.
 
-**30 tools** · machine-readable as [`tools.json`](tools.json) · advisories refreshed weekly
+**38 tools** · machine-readable as [`tools.json`](tools.json) · advisories refreshed weekly
 
 Community-maintained. Not affiliated with or endorsed by Anthropic.
 
@@ -15,16 +15,22 @@ New tools ship every day, and many run code with your permissions, hook into eve
 | [OmniRoute](catalog/omniroute.md) | [GHSA-hf57-cqmx-p4gr](https://github.com/advisories/GHSA-hf57-cqmx-p4gr) / CVE-2026-88062 | 🚨 Critical | **No confirmed fix** |
 | [Ruflo (formerly claude-flow)](catalog/ruflo.md) | [GHSA-c4hm-4h84-2cf3](https://github.com/ruvnet/ruflo/security/advisories/GHSA-c4hm-4h84-2cf3) / CVE-2026-59726 | 🚨 Critical | 3.16.3 |
 | [Serena](catalog/serena.md) | [GHSA-pp25-4cg4-qcr9](https://github.com/oraios/serena/security/advisories/GHSA-pp25-4cg4-qcr9) | 🚨 Critical | 1.7.0 |
+| [Claude Code Router](catalog/claude-code-router.md) | [GHSA-8hmm-4crw-vm2c](https://github.com/advisories/GHSA-8hmm-4crw-vm2c) / CVE-2025-57755 | ⚠ High | 1.0.34 |
 | [GitHub MCP Server](catalog/github-mcp-server.md) | [GHSA-w4q6-qw23-4rg7](https://github.com/advisories/GHSA-w4q6-qw23-4rg7) / CVE-2026-47427 | ⚠ High | 1.1.0 |
 | [Headroom](catalog/headroom.md) | [GHSA-h46j-26q3-rggf](https://github.com/advisories/GHSA-h46j-26q3-rggf) / CVE-2026-71416 | ⚠ High | 0.35.0 |
 | [Playwright MCP](catalog/playwright-mcp.md) | [GHSA-6fg3-hvw7-2fwq](https://github.com/advisories/GHSA-6fg3-hvw7-2fwq) / CVE-2025-9611 | ⚠ High | 0.0.40 |
+| [Repomix](catalog/repomix.md) | [GHSA-4p5g-gh74-q524](https://github.com/yamadashy/repomix/security/advisories/GHSA-4p5g-gh74-q524) | ⚠ High | 1.18.1 |
+| [Repomix](catalog/repomix.md) | [GHSA-9mm9-rqhj-j5mx](https://github.com/advisories/GHSA-9mm9-rqhj-j5mx) / CVE-2026-49987 | ⚠ High | 1.14.1 |
 | [Serena](catalog/serena.md) | [GHSA-37h2-6p4f-mp3q](https://github.com/advisories/GHSA-37h2-6p4f-mp3q) / CVE-2026-49471 | ⚠ High | 1.5.2 |
 | [Serena](catalog/serena.md) | [GHSA-pp6p-xvxf-8hhx](https://github.com/oraios/serena/security/advisories/GHSA-pp6p-xvxf-8hhx) | ⚠ High | 2.0.0 |
 | [Chrome DevTools MCP](catalog/chrome-devtools-mcp.md) | [GHSA-3pvj-jv98-qhjq](https://github.com/advisories/GHSA-3pvj-jv98-qhjq) / CVE-2026-53765 | Moderate | 1.1.0 |
 | [Chrome DevTools MCP](catalog/chrome-devtools-mcp.md) | [GHSA-8qf9-62x2-82pp](https://github.com/advisories/GHSA-8qf9-62x2-82pp) / CVE-2026-53766 | Moderate | 1.1.0 |
 | [GitHub MCP Server](catalog/github-mcp-server.md) | [GHSA-pjp5-fpmr-3349](https://github.com/advisories/GHSA-pjp5-fpmr-3349) / CVE-2026-48529 | Moderate | 1.1.2 |
 | [graphify](catalog/graphify.md) | [GHSA-pcc4-rvhr-2pr8](https://github.com/advisories/GHSA-pcc4-rvhr-2pr8) | Moderate | 0.9.70 |
+| [Repomix](catalog/repomix.md) | [GHSA-hwpp-h97w-2h3j](https://github.com/advisories/GHSA-hwpp-h97w-2h3j) / CVE-2026-49988 | Moderate | 1.14.1 |
+| [Repomix](catalog/repomix.md) | [GHSA-w8cw-mgw9-74h7](https://github.com/yamadashy/repomix/security/advisories/GHSA-w8cw-mgw9-74h7) | Moderate | 1.18.0 |
 | [claude-mem](catalog/claude-mem.md) | [GHSA-5gvr-v6qv-h5mm](https://github.com/advisories/GHSA-5gvr-v6qv-h5mm) / CVE-2026-11330 | Low | 12.0.0 |
+| [Repomix](catalog/repomix.md) | [GHSA-rpmv-562j-qxrv](https://github.com/yamadashy/repomix/security/advisories/GHSA-rpmv-562j-qxrv) | Low | 1.18.0 |
 
 ## Catalog
 
@@ -62,6 +68,7 @@ Sorted by overall score. Click a tool for the full review: permissions, what lea
 | [Sentry MCP](catalog/sentry-mcp.md) | 🟢 Adopt | **4.2** | 4/5 | 936 | Sentry's hosted MCP server - issues, stack traces, traces and Seer analysis, built for debugging in the editor. |
 | [Playwright MCP](catalog/playwright-mcp.md) | 🟢 Adopt | **4** | 3/5 ⚠ | 38.4k | Microsoft's MCP server that lets the agent drive a real browser through Playwright's accessibility snapshots. |
 | [Chrome DevTools MCP](catalog/chrome-devtools-mcp.md) | 🟢 Adopt | **3.7** | 3/5 | 53.9k | Google's MCP server giving the agent Chrome DevTools - console, network, performance traces and page control. |
+| [container-use](catalog/container-use.md) | 🔵 Trial | **3.7** | 4/5 | 4.1k | Dagger's MCP server that gives each agent its own container and git branch, so several can work safely in parallel. |
 | [Supabase MCP](catalog/supabase-mcp.md) | 🔵 Trial | **3.7** | 3/5 | 3.0k | Official Supabase MCP server - tables, SQL, migrations, logs, edge functions and docs for your projects. |
 | [Serena](catalog/serena.md) | 🔵 Trial | **3.3** | 2/5 ⚠ | 30.5k | Coding toolkit that gives the agent IDE-like, symbol-level navigation and editing through language servers. |
 | [21st Magic MCP](catalog/magic-mcp.md) | 🟡 Assess | **3** | 3/5 | 6.2k | Generates React UI components from a prompt using 21st.dev's component library; now part of the unified 21st MCP. |
@@ -70,8 +77,14 @@ Sorted by overall score. Click a tool for the full review: permissions, what lea
 
 | Tool | Verdict | Overall | Security | Stars | What it does |
 |---|---|---|---|---|---|
+| [ccusage](catalog/ccusage.md) | 🟢 Adopt | **4.7** | 5/5 | 19.1k | Reads Claude Code's local logs and reports token usage and estimated cost by day, month, session or billing block. |
 | [Spec Kit](catalog/spec-kit.md) | 🟢 Adopt | **4.3** | 5/5 | 142.2k | GitHub's toolkit for spec-driven development - constitution, spec, plan, tasks, then implementation. |
+| [Claude Squad](catalog/claude-squad.md) | 🔵 Trial | **4** | 4/5 | 8.6k | Terminal app that runs several Claude Code, Codex or other agents in parallel, each in its own tmux session and git worktree. |
+| [ccstatusline](catalog/ccstatusline.md) | 🟢 Adopt | **3.8** | 4/5 | 13.4k | Customizable Claude Code status line - model, git branch, token usage, context and more, with powerline themes. |
+| [Repomix](catalog/repomix.md) | 🔵 Trial | **3.8** | 3/5 ⚠ | 28.9k | Packs a whole repository into one AI-friendly file, with token counts and secret scanning; also runs as an MCP server. |
 | [graphify](catalog/graphify.md) | 🔵 Trial | **3.7** | 3/5 | 130.4k | Turns a folder of code, docs, schemas and PDFs into a queryable knowledge graph your agent can navigate. |
+| [opcode (formerly Claudia)](catalog/opcode.md) | 🟡 Assess | **3** | 3/5 | 22.4k | Desktop GUI for Claude Code - projects and sessions, custom agents, background runs, usage analytics and MCP management. |
+| [Vibe Kanban](catalog/vibe-kanban.md) | 🔴 Hold | **3** | 3/5 | 28.4k | Kanban board that hands tasks to coding agents, each in its own worktree, and lets you review their diffs. |
 | [Headroom](catalog/headroom.md) | 🟡 Assess | **2.8** | 2/5 ⚠ | 76.8k | Compresses tool outputs, logs, files and RAG chunks before they reach the model. Library, proxy, agent wrapper or MCP server. |
 
 ### CI and GitHub Actions
@@ -84,6 +97,7 @@ Sorted by overall score. Click a tool for the full review: permissions, what lea
 
 | Tool | Verdict | Overall | Security | Stars | What it does |
 |---|---|---|---|---|---|
+| [Claude Code Router](catalog/claude-code-router.md) | 🟡 Assess | **3.3** | 3/5 ⚠ | 37.8k | Local gateway that routes Claude Code and other agents to the model and provider you choose, with a web UI. |
 | [OmniRoute](catalog/omniroute.md) | 🔴 Hold | **1.5** | 1/5 🚨 | 79.0k | Self-hosted OpenAI-compatible gateway in front of hundreds of LLM providers, with quota-aware fallback. |
 
 ### UI libraries

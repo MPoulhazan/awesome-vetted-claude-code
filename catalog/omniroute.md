@@ -56,6 +56,7 @@ If you run it anyway - set INITIAL_PASSWORD, never expose port 20128, and use yo
 - **License:** MIT
 - **Maintainer:** community
 - **Stars:** 79.0k · last push 2026-10-21 · latest release v3.8.52
+- **Overlaps with:** claude-code-router - pick one
 - **Tags:** llm-gateway, routing, free-models, proxy
 - **Last reviewed:** 2026-10-20
 

@@ -1,7 +1,7 @@
 {
   "agent-skills": {
     "repo": "addyosmani/agent-skills",
-    "stars": 109018,
+    "stars": 109019,
     "pushed_at": "2026-10-13",
     "archived": false,
     "latest_release": "0.6.13",
@@ -17,7 +17,7 @@
   },
   "anthropic-skills": {
     "repo": "anthropics/skills",
-    "stars": 182529,
+    "stars": 182531,
     "pushed_at": "2026-10-09",
     "archived": false,
     "latest_release": null,
@@ -33,7 +33,7 @@
   },
   "bmad-method": {
     "repo": "bmad-code-org/BMAD-METHOD",
-    "stars": 54387,
+    "stars": 54389,
     "pushed_at": "2026-10-20",
     "archived": false,
     "latest_release": "v6.12.4",
@@ -45,6 +45,22 @@
     "pushed_at": "2026-10-13",
     "archived": false,
     "latest_release": null,
+    "advisories": []
+  },
+  "ccstatusline": {
+    "repo": "sirmalloc/ccstatusline",
+    "stars": 13354,
+    "pushed_at": "2026-10-19",
+    "archived": false,
+    "latest_release": "v2.2.32",
+    "advisories": []
+  },
+  "ccusage": {
+    "repo": "ccusage/ccusage",
+    "stars": 19101,
+    "pushed_at": "2026-10-21",
+    "archived": false,
+    "latest_release": "v20.0.37",
     "advisories": []
   },
   "chrome-devtools-mcp": {
@@ -76,6 +92,25 @@
       }
     ]
   },
+  "claude-code-router": {
+    "repo": "musistudio/claude-code-router",
+    "stars": 37773,
+    "pushed_at": "2026-10-10",
+    "archived": false,
+    "latest_release": "v3.1.3",
+    "advisories": [
+      {
+        "id": "GHSA-8hmm-4crw-vm2c",
+        "cve": "CVE-2025-57755",
+        "severity": "high",
+        "summary": "@musistudio/claude-code-router has improper CORS configuration",
+        "affected": "< 1.0.34",
+        "patched": "1.0.34",
+        "published": "2025-08-21",
+        "url": "https://github.com/advisories/GHSA-8hmm-4crw-vm2c"
+      }
+    ]
+  },
   "claude-code-security-review": {
     "repo": "anthropics/claude-code-security-review",
     "stars": 6464,
@@ -86,7 +121,7 @@
   },
   "claude-code-setup": {
     "repo": "anthropics/claude-plugins-official",
-    "stars": 43433,
+    "stars": 43435,
     "pushed_at": "2026-10-21",
     "archived": false,
     "latest_release": null,
@@ -94,7 +129,7 @@
   },
   "claude-mem": {
     "repo": "thedotmack/claude-mem",
-    "stars": 101980,
+    "stars": 101982,
     "pushed_at": "2026-10-21",
     "archived": false,
     "latest_release": "v15.0.1",
@@ -110,6 +145,22 @@
         "url": "https://github.com/advisories/GHSA-5gvr-v6qv-h5mm"
       }
     ]
+  },
+  "claude-squad": {
+    "repo": "smtg-ai/claude-squad",
+    "stars": 8639,
+    "pushed_at": "2026-08-20",
+    "archived": false,
+    "latest_release": "v1.0.20",
+    "advisories": []
+  },
+  "container-use": {
+    "repo": "dagger/container-use",
+    "stars": 4074,
+    "pushed_at": "2026-09-21",
+    "archived": false,
+    "latest_release": "v0.4.2",
+    "advisories": []
   },
   "context7": {
     "repo": "upstash/context7",
@@ -149,7 +200,7 @@
   },
   "graphify": {
     "repo": "Graphify-Labs/graphify",
-    "stars": 130414,
+    "stars": 130424,
     "pushed_at": "2026-10-20",
     "archived": false,
     "latest_release": "v0.9.93",
@@ -175,7 +226,7 @@
   },
   "headroom": {
     "repo": "headroomlabs-ai/headroom",
-    "stars": 76812,
+    "stars": 76819,
     "pushed_at": "2026-10-21",
     "archived": false,
     "latest_release": "v0.41.0",
@@ -210,7 +261,7 @@
   },
   "omniroute": {
     "repo": "diegosouzapw/OmniRoute",
-    "stars": 79023,
+    "stars": 79025,
     "pushed_at": "2026-10-21",
     "archived": false,
     "latest_release": "v3.8.52",
@@ -225,6 +276,14 @@
         "url": "https://github.com/advisories/GHSA-hf57-cqmx-p4gr"
       }
     ]
+  },
+  "opcode": {
+    "repo": "winfunc/opcode",
+    "stars": 22417,
+    "pushed_at": "2026-09-18",
+    "archived": false,
+    "latest_release": "v0.2.0",
+    "advisories": []
   },
   "playwright-mcp": {
     "repo": "microsoft/playwright-mcp",
@@ -247,7 +306,7 @@
   },
   "ponytail": {
     "repo": "DietrichGebert/ponytail",
-    "stars": 169960,
+    "stars": 169982,
     "pushed_at": "2026-10-18",
     "archived": false,
     "latest_release": "v5.3.2",
@@ -261,9 +320,65 @@
     "latest_release": null,
     "advisories": []
   },
+  "repomix": {
+    "repo": "yamadashy/repomix",
+    "stars": 28941,
+    "pushed_at": "2026-10-18",
+    "archived": false,
+    "latest_release": "v1.18.1",
+    "advisories": [
+      {
+        "id": "GHSA-4p5g-gh74-q524",
+        "severity": "high",
+        "summary": "Repomix CLI executes repository-level git config helpers (gpg.program, diff.external, core.fsmonitor) when packing a directory with a crafted .git",
+        "affected": ">= 0.2.41, < 1.18.1",
+        "patched": "1.18.1",
+        "published": "2026-09-21",
+        "url": "https://github.com/yamadashy/repomix/security/advisories/GHSA-4p5g-gh74-q524"
+      },
+      {
+        "id": "GHSA-9mm9-rqhj-j5mx",
+        "cve": "CVE-2026-49987",
+        "severity": "high",
+        "summary": "repomix Vulnerable to Command Injection (RCE) via `--remote-branch` Argument Injection",
+        "affected": "< 1.14.1",
+        "patched": "1.14.1",
+        "published": "2026-07-01",
+        "url": "https://github.com/advisories/GHSA-9mm9-rqhj-j5mx"
+      },
+      {
+        "id": "GHSA-hwpp-h97w-2h3j",
+        "cve": "CVE-2026-49988",
+        "severity": "moderate",
+        "summary": "repomix: attach_packed_output can bypass file-read secret scanning for supported local files",
+        "affected": "<= 1.14.0",
+        "patched": "1.14.1",
+        "published": "2026-07-01",
+        "url": "https://github.com/advisories/GHSA-hwpp-h97w-2h3j"
+      },
+      {
+        "id": "GHSA-rpmv-562j-qxrv",
+        "severity": "low",
+        "summary": "Repomix MCP file system tools claimed protections that were not implemented",
+        "affected": "<= 1.17.0",
+        "patched": "1.18.0",
+        "published": "2026-08-11",
+        "url": "https://github.com/yamadashy/repomix/security/advisories/GHSA-rpmv-562j-qxrv"
+      },
+      {
+        "id": "GHSA-w8cw-mgw9-74h7",
+        "severity": "moderate",
+        "summary": "Cleartext Credential Exposure via Unredacted URL Logging in Remote Repository Processing",
+        "affected": "<= 1.17.0",
+        "patched": "1.18.0",
+        "published": "2026-08-11",
+        "url": "https://github.com/yamadashy/repomix/security/advisories/GHSA-w8cw-mgw9-74h7"
+      }
+    ]
+  },
   "ruflo": {
     "repo": "ruvnet/ruflo",
-    "stars": 77915,
+    "stars": 77919,
     "pushed_at": "2026-10-21",
     "archived": false,
     "latest_release": "v3.59.4",
@@ -290,7 +405,7 @@
   },
   "serena": {
     "repo": "oraios/serena",
-    "stars": 30518,
+    "stars": 30520,
     "pushed_at": "2026-10-20",
     "archived": false,
     "latest_release": "v2.1.0",
@@ -327,7 +442,7 @@
   },
   "spec-kit": {
     "repo": "github/spec-kit",
-    "stars": 142180,
+    "stars": 142182,
     "pushed_at": "2026-10-20",
     "archived": false,
     "latest_release": "v1.2.2",
@@ -351,7 +466,7 @@
   },
   "superpowers": {
     "repo": "obra/superpowers",
-    "stars": 302654,
+    "stars": 302660,
     "pushed_at": "2026-10-21",
     "archived": false,
     "latest_release": "v7.0.0",
@@ -365,9 +480,17 @@
     "latest_release": "v3.7.0",
     "advisories": []
   },
+  "vibe-kanban": {
+    "repo": "BloopAI/vibe-kanban",
+    "stars": 28413,
+    "pushed_at": "2026-09-19",
+    "archived": false,
+    "latest_release": "v0.1.44-20260424091429",
+    "advisories": []
+  },
   "wshobson-agents": {
     "repo": "wshobson/agents",
-    "stars": 41299,
+    "stars": 41304,
     "pushed_at": "2026-10-19",
     "archived": false,
     "latest_release": null,

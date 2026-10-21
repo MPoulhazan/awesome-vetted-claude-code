@@ -1,0 +1,34 @@
+id: container-use
+name: container-use
+repo: dagger/container-use
+homepage: https://container-use.com
+category: mcp-server
+tags: [sandbox, containers, isolation, multi-agent]
+summary: Dagger's MCP server that gives each agent its own container and git branch, so several can work safely in parallel.
+problem: Agents running commands directly on your machine, and parallel agents stepping on each other. Each one works in an isolated container you can inspect and merge.
+install:
+  scope: user
+  commands:
+    - brew install dagger/tap/container-use
+    - claude mcp add container-use -- container-use stdio
+  notes: Needs Docker. Marked experimental by its maintainers.
+license: Apache-2.0
+maintainer: company
+verdict: trial
+verdict_reason: One of the few tools that reduces risk instead of adding it. Still experimental, with no release since August 2025.
+scores:
+  usefulness: 4
+  security: 4
+  maturity: 2
+  cost: 4
+security:
+  runs_code: true
+  hooks: false
+  network: none
+  background_process: true
+  notes: Agent commands run inside containers, not on your host. Isolation is as strong as your Docker setup.
+  advisories: []
+overlaps: [claude-squad]
+last_reviewed: "2026-10-21"
+sources:
+  - https://github.com/dagger/container-use

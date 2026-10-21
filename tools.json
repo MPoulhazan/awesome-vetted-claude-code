@@ -1,8 +1,68 @@
 {
   "schema_version": 1,
   "source": "https://github.com/MPoulhazan/awesome-vetted-claude-code",
-  "count": 30,
+  "count": 38,
   "tools": [
+    {
+      "id": "ccusage",
+      "name": "ccusage",
+      "repo": "ccusage/ccusage",
+      "category": "cli",
+      "tags": [
+        "usage",
+        "cost",
+        "tokens",
+        "analytics"
+      ],
+      "summary": "Reads Claude Code's local logs and reports token usage and estimated cost by day, month, session or billing block.",
+      "problem": "You can't see how much you burn per day or per project, or how close you are to your plan limits. One command answers it.",
+      "install": {
+        "scope": "one-shot",
+        "commands": [
+          "npx ccusage@latest"
+        ],
+        "notes": "Add --offline to use bundled pricing instead of fetching current model prices."
+      },
+      "detect": {
+        "npm": [
+          "ccusage"
+        ]
+      },
+      "license": "MIT",
+      "maintainer": "individual",
+      "verdict": "adopt",
+      "verdict_reason": "Read-only, local, nothing to configure. The reference tool for usage tracking.",
+      "scores": {
+        "usefulness": 4,
+        "security": 5,
+        "maturity": 5,
+        "cost": 5
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": false,
+        "network": "third-party",
+        "background_process": false,
+        "data_leaves_machine": "Nothing about you. Without --offline it downloads public model pricing data.",
+        "notes": "Only reads the JSONL session logs Claude Code writes locally.",
+        "advisories": []
+      },
+      "overlaps": [
+        "ccstatusline"
+      ],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/ccusage/ccusage"
+      ],
+      "live": {
+        "stars": 19101,
+        "pushed_at": "2026-10-21",
+        "archived": false,
+        "latest_release": "v20.0.37"
+      },
+      "alerts": [],
+      "overall": 4.7
+    },
     {
       "id": "claude-code-setup",
       "name": "claude-code-setup",
@@ -58,7 +118,7 @@
         "https://aident.ai/blog/use-claude-code-setup-plugin-safely"
       ],
       "live": {
-        "stars": 43433,
+        "stars": 43435,
         "pushed_at": "2026-10-21",
         "archived": false,
         "latest_release": null
@@ -182,7 +242,7 @@
         "https://github.com/obra/superpowers"
       ],
       "live": {
-        "stars": 302654,
+        "stars": 302660,
         "pushed_at": "2026-10-21",
         "archived": false,
         "latest_release": "v7.0.0"
@@ -415,7 +475,7 @@
         "https://github.com/github/spec-kit"
       ],
       "live": {
-        "stars": 142180,
+        "stars": 142182,
         "pushed_at": "2026-10-20",
         "archived": false,
         "latest_release": "v1.2.2"
@@ -484,7 +544,7 @@
         "https://github.com/anthropics/skills"
       ],
       "live": {
-        "stars": 182529,
+        "stars": 182531,
         "pushed_at": "2026-10-09",
         "archived": false,
         "latest_release": null
@@ -647,7 +707,7 @@
         "https://www.mindstudio.ai/blog/ponytail-ai-coding-minimalism-plugin"
       ],
       "live": {
-        "stars": 169960,
+        "stars": 169982,
         "pushed_at": "2026-10-18",
         "archived": false,
         "latest_release": "v5.3.2"
@@ -774,10 +834,68 @@
         "https://dev.to/yimtheppariyapol/addy-osmani-agent-skills-review-24-production-skills-726k-stars-22em"
       ],
       "live": {
-        "stars": 109018,
+        "stars": 109019,
         "pushed_at": "2026-10-13",
         "archived": false,
         "latest_release": "0.6.13"
+      },
+      "alerts": [],
+      "overall": 4
+    },
+    {
+      "id": "claude-squad",
+      "name": "Claude Squad",
+      "repo": "smtg-ai/claude-squad",
+      "category": "cli",
+      "tags": [
+        "multi-session",
+        "tmux",
+        "worktrees",
+        "tui"
+      ],
+      "summary": "Terminal app that runs several Claude Code, Codex or other agents in parallel, each in its own tmux session and git worktree.",
+      "problem": "Running several agents on one repo means conflicting edits and lost terminals. Each gets an isolated worktree you review and push from one screen.",
+      "install": {
+        "scope": "user",
+        "commands": [
+          "brew install claude-squad"
+        ],
+        "notes": "Needs tmux and git. The curl install script is also offered - read it before piping it into bash."
+      },
+      "license": "AGPL-3.0",
+      "maintainer": "company",
+      "verdict": "trial",
+      "verdict_reason": "Simple, local, and worktrees keep agents apart. Avoid its auto-accept mode on anything you care about.",
+      "scores": {
+        "usefulness": 4,
+        "security": 4,
+        "maturity": 3,
+        "cost": 5
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": false,
+        "network": "none",
+        "background_process": true,
+        "notes": "Agents keep running in background tmux sessions. The auto-yes mode accepts every permission prompt.",
+        "red_flags": [
+          "Auto-accept (\"yolo\") mode removes your permission checks."
+        ],
+        "advisories": []
+      },
+      "overlaps": [
+        "vibe-kanban",
+        "opcode"
+      ],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/smtg-ai/claude-squad"
+      ],
+      "live": {
+        "stars": 8639,
+        "pushed_at": "2026-08-20",
+        "archived": false,
+        "latest_release": "v1.0.20"
       },
       "alerts": [],
       "overall": 4
@@ -912,7 +1030,7 @@
         "https://github.com/wshobson/agents"
       ],
       "live": {
-        "stars": 41299,
+        "stars": 41304,
         "pushed_at": "2026-10-19",
         "archived": false,
         "latest_release": null
@@ -1036,12 +1154,194 @@
         "https://github.com/bmad-code-org/BMAD-METHOD"
       ],
       "live": {
-        "stars": 54387,
+        "stars": 54389,
         "pushed_at": "2026-10-20",
         "archived": false,
         "latest_release": "v6.12.4"
       },
       "alerts": [],
+      "overall": 3.8
+    },
+    {
+      "id": "ccstatusline",
+      "name": "ccstatusline",
+      "repo": "sirmalloc/ccstatusline",
+      "category": "cli",
+      "tags": [
+        "statusline",
+        "ui",
+        "tokens"
+      ],
+      "summary": "Customizable Claude Code status line - model, git branch, token usage, context and more, with powerline themes.",
+      "problem": "The default status line shows little. ccstatusline puts model, branch, context use and cost under your prompt.",
+      "install": {
+        "scope": "user",
+        "commands": [
+          "npx ccstatusline@latest"
+        ],
+        "notes": "The interactive setup writes the statusLine command into your Claude Code settings."
+      },
+      "detect": {
+        "npm": [
+          "ccstatusline"
+        ]
+      },
+      "license": "MIT",
+      "maintainer": "individual",
+      "verdict": "adopt",
+      "verdict_reason": "Small, popular, local. Note that the status line command runs on every refresh.",
+      "scores": {
+        "usefulness": 3,
+        "security": 4,
+        "maturity": 4,
+        "cost": 5
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": false,
+        "network": "none",
+        "background_process": false,
+        "notes": "Runs as your status line command, so it executes constantly with your permissions. Pin a version rather than @latest in settings.",
+        "advisories": []
+      },
+      "overlaps": [
+        "ccusage"
+      ],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/sirmalloc/ccstatusline"
+      ],
+      "live": {
+        "stars": 13354,
+        "pushed_at": "2026-10-19",
+        "archived": false,
+        "latest_release": "v2.2.32"
+      },
+      "alerts": [],
+      "overall": 3.8
+    },
+    {
+      "id": "repomix",
+      "name": "Repomix",
+      "repo": "yamadashy/repomix",
+      "homepage": "https://repomix.com",
+      "category": "cli",
+      "tags": [
+        "context",
+        "packing",
+        "repository",
+        "mcp"
+      ],
+      "summary": "Packs a whole repository into one AI-friendly file, with token counts and secret scanning; also runs as an MCP server.",
+      "problem": "Giving a chat model or another agent the full picture of a codebase. One file with structure and contents, secrets left out.",
+      "install": {
+        "scope": "one-shot",
+        "commands": [
+          "npx repomix@latest"
+        ],
+        "notes": "In MCP mode, run with --sandbox to confine file tools to the project. Never pack untrusted repos with an old version."
+      },
+      "detect": {
+        "npm": [
+          "repomix"
+        ]
+      },
+      "license": "MIT",
+      "maintainer": "individual",
+      "verdict": "trial",
+      "verdict_reason": "Very handy and actively fixed, but five advisories in 2026, including two command-execution bugs. Run 1.18.1 or later.",
+      "scores": {
+        "usefulness": 4,
+        "security": 3,
+        "maturity": 4,
+        "cost": 5
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": false,
+        "network": "none",
+        "background_process": false,
+        "data_leaves_machine": "Nothing by itself - but the packed file is your whole repo, so check where you paste it.",
+        "notes": "Secret scanning via Secretlint catches known credential formats, not everything. Past bugs let a crafted repo or argument run commands.",
+        "red_flags": [
+          "Five advisories in 2026; packing an untrusted repository was the main attack path."
+        ],
+        "advisories": [
+          {
+            "id": "GHSA-4p5g-gh74-q524",
+            "severity": "high",
+            "summary": "Packing a directory with a crafted .git runs repository-level git config helpers (gpg.program, diff.external, core.fsmonitor).",
+            "affected": ">= 0.2.41, < 1.18.1",
+            "patched": "1.18.1",
+            "published": "2026-09-21",
+            "url": "https://github.com/yamadashy/repomix/security/advisories/GHSA-4p5g-gh74-q524"
+          },
+          {
+            "id": "GHSA-9mm9-rqhj-j5mx",
+            "cve": "CVE-2026-49987",
+            "severity": "high",
+            "summary": "Command injection through the --remote-branch argument.",
+            "affected": "< 1.14.1",
+            "patched": "1.14.1",
+            "published": "2026-07-01",
+            "url": "https://github.com/advisories/GHSA-9mm9-rqhj-j5mx"
+          },
+          {
+            "id": "GHSA-hwpp-h97w-2h3j",
+            "cve": "CVE-2026-49988",
+            "severity": "moderate",
+            "summary": "attach_packed_output can bypass secret scanning on local files.",
+            "affected": "<= 1.14.0",
+            "patched": "1.14.1",
+            "published": "2026-07-01",
+            "url": "https://github.com/advisories/GHSA-hwpp-h97w-2h3j"
+          },
+          {
+            "id": "GHSA-w8cw-mgw9-74h7",
+            "severity": "moderate",
+            "summary": "Credentials in remote repository URLs were logged in cleartext.",
+            "affected": "<= 1.17.0",
+            "patched": "1.18.0",
+            "published": "2026-08-11",
+            "url": "https://github.com/yamadashy/repomix/security/advisories/GHSA-w8cw-mgw9-74h7"
+          },
+          {
+            "id": "GHSA-rpmv-562j-qxrv",
+            "severity": "low",
+            "summary": "MCP file-system tools claimed protections that were not implemented.",
+            "affected": "<= 1.17.0",
+            "patched": "1.18.0",
+            "published": "2026-08-11",
+            "url": "https://github.com/yamadashy/repomix/security/advisories/GHSA-rpmv-562j-qxrv"
+          }
+        ]
+      },
+      "overlaps": [
+        "graphify"
+      ],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/yamadashy/repomix",
+        "https://github.com/yamadashy/repomix/security/advisories"
+      ],
+      "live": {
+        "stars": 28941,
+        "pushed_at": "2026-10-18",
+        "archived": false,
+        "latest_release": "v1.18.1"
+      },
+      "alerts": [
+        {
+          "advisory": "GHSA-4p5g-gh74-q524",
+          "severity": "high",
+          "level": "update-required"
+        },
+        {
+          "advisory": "GHSA-9mm9-rqhj-j5mx",
+          "severity": "high",
+          "level": "update-required"
+        }
+      ],
       "overall": 3.8
     },
     {
@@ -1128,6 +1428,62 @@
       "overall": 3.7
     },
     {
+      "id": "container-use",
+      "name": "container-use",
+      "repo": "dagger/container-use",
+      "homepage": "https://container-use.com",
+      "category": "mcp-server",
+      "tags": [
+        "sandbox",
+        "containers",
+        "isolation",
+        "multi-agent"
+      ],
+      "summary": "Dagger's MCP server that gives each agent its own container and git branch, so several can work safely in parallel.",
+      "problem": "Agents running commands directly on your machine, and parallel agents stepping on each other. Each one works in an isolated container you can inspect and merge.",
+      "install": {
+        "scope": "user",
+        "commands": [
+          "brew install dagger/tap/container-use",
+          "claude mcp add container-use -- container-use stdio"
+        ],
+        "notes": "Needs Docker. Marked experimental by its maintainers."
+      },
+      "license": "Apache-2.0",
+      "maintainer": "company",
+      "verdict": "trial",
+      "verdict_reason": "One of the few tools that reduces risk instead of adding it. Still experimental, with no release since August 2025.",
+      "scores": {
+        "usefulness": 4,
+        "security": 4,
+        "maturity": 2,
+        "cost": 4
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": false,
+        "network": "none",
+        "background_process": true,
+        "notes": "Agent commands run inside containers, not on your host. Isolation is as strong as your Docker setup.",
+        "advisories": []
+      },
+      "overlaps": [
+        "claude-squad"
+      ],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/dagger/container-use"
+      ],
+      "live": {
+        "stars": 4074,
+        "pushed_at": "2026-09-21",
+        "archived": false,
+        "latest_release": "v0.4.2"
+      },
+      "alerts": [],
+      "overall": 3.7
+    },
+    {
       "id": "graphify",
       "name": "graphify",
       "repo": "Graphify-Labs/graphify",
@@ -1203,7 +1559,7 @@
         "https://www.augmentcode.com/learn/graphify-knowledge-graph-codebase-skill"
       ],
       "live": {
-        "stars": 130414,
+        "stars": 130424,
         "pushed_at": "2026-10-20",
         "archived": false,
         "latest_release": "v0.9.93"
@@ -1400,6 +1756,85 @@
       "overall": 3.5
     },
     {
+      "id": "claude-code-router",
+      "name": "Claude Code Router",
+      "repo": "musistudio/claude-code-router",
+      "homepage": "https://ccrdesk.top",
+      "category": "gateway",
+      "tags": [
+        "llm-gateway",
+        "routing",
+        "multi-provider",
+        "proxy"
+      ],
+      "summary": "Local gateway that routes Claude Code and other agents to the model and provider you choose, with a web UI.",
+      "problem": "Using other models (DeepSeek, Gemini, Kimi, local) inside Claude Code, or routing background tasks to cheaper models.",
+      "install": {
+        "scope": "user",
+        "commands": [
+          "npm install -g @musistudio/claude-code-router",
+          "ccr ui"
+        ],
+        "notes": "The gateway listens on 127.0.0.1:3456 and the UI on 3458. Read the Docker guide before exposing it anywhere."
+      },
+      "detect": {
+        "npm": [
+          "@musistudio/claude-code-router"
+        ]
+      },
+      "license": "MIT",
+      "maintainer": "individual",
+      "verdict": "assess",
+      "verdict_reason": "Better track record than other gateways, but it still holds your provider keys and sees every prompt. Worth it only if you really need other models.",
+      "scores": {
+        "usefulness": 3,
+        "security": 3,
+        "maturity": 4,
+        "cost": 4
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": false,
+        "network": "listens",
+        "background_process": true,
+        "data_leaves_machine": "Every prompt and all code context, to whichever provider you route to.",
+        "notes": "Stores provider API keys and proxies all agent traffic. Check each provider's data policy and your Claude plan's terms.",
+        "advisories": [
+          {
+            "id": "GHSA-8hmm-4crw-vm2c",
+            "cve": "CVE-2025-57755",
+            "severity": "high",
+            "summary": "Improper CORS configuration let web pages call the local router (the maintainers rate it low).",
+            "affected": "< 1.0.34",
+            "patched": "1.0.34",
+            "published": "2025-08-21",
+            "url": "https://github.com/advisories/GHSA-8hmm-4crw-vm2c"
+          }
+        ]
+      },
+      "overlaps": [
+        "omniroute"
+      ],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/musistudio/claude-code-router"
+      ],
+      "live": {
+        "stars": 37773,
+        "pushed_at": "2026-10-10",
+        "archived": false,
+        "latest_release": "v3.1.3"
+      },
+      "alerts": [
+        {
+          "advisory": "GHSA-8hmm-4crw-vm2c",
+          "severity": "high",
+          "level": "update-required"
+        }
+      ],
+      "overall": 3.3
+    },
+    {
       "id": "claude-code-security-review",
       "name": "Claude Code Security Review",
       "repo": "anthropics/claude-code-security-review",
@@ -1539,7 +1974,7 @@
         "https://github.com/oraios/serena/security/advisories"
       ],
       "live": {
-        "stars": 30518,
+        "stars": 30520,
         "pushed_at": "2026-10-20",
         "archived": false,
         "latest_release": "v2.1.0"
@@ -1748,6 +2183,125 @@
       "overall": 3
     },
     {
+      "id": "opcode",
+      "name": "opcode (formerly Claudia)",
+      "repo": "winfunc/opcode",
+      "category": "cli",
+      "tags": [
+        "desktop-app",
+        "sessions",
+        "gui",
+        "usage"
+      ],
+      "summary": "Desktop GUI for Claude Code - projects and sessions, custom agents, background runs, usage analytics and MCP management.",
+      "problem": "Managing many Claude Code sessions and agents from a terminal is hard to follow. opcode gives them a desktop interface.",
+      "install": {
+        "scope": "user",
+        "commands": [
+          "Download a release or build from source (Tauri)"
+        ],
+        "notes": "The last tagged release is v0.2.0 from August 2025; newer code means building from source."
+      },
+      "license": "AGPL-3.0",
+      "maintainer": "company",
+      "verdict": "assess",
+      "verdict_reason": "Nice idea and popular, but no release in over a year. Building an unsigned desktop app from source is a hurdle for most people.",
+      "scores": {
+        "usefulness": 3,
+        "security": 3,
+        "maturity": 2,
+        "cost": 4
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": false,
+        "network": "none",
+        "background_process": true,
+        "notes": "A desktop app with full access to your Claude Code projects and sessions, able to run agents in the background.",
+        "red_flags": [
+          "No release since August 2025."
+        ],
+        "advisories": []
+      },
+      "overlaps": [
+        "claude-squad",
+        "vibe-kanban"
+      ],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/winfunc/opcode"
+      ],
+      "live": {
+        "stars": 22417,
+        "pushed_at": "2026-09-18",
+        "archived": false,
+        "latest_release": "v0.2.0"
+      },
+      "alerts": [],
+      "overall": 3
+    },
+    {
+      "id": "vibe-kanban",
+      "name": "Vibe Kanban",
+      "repo": "BloopAI/vibe-kanban",
+      "category": "cli",
+      "tags": [
+        "kanban",
+        "multi-agent",
+        "orchestration"
+      ],
+      "summary": "Kanban board that hands tasks to coding agents, each in its own worktree, and lets you review their diffs.",
+      "problem": "Planning and tracking many parallel agent tasks. Cards become agent runs you review and merge.",
+      "install": {
+        "scope": "user",
+        "commands": [
+          "npx vibe-kanban"
+        ]
+      },
+      "detect": {
+        "npm": [
+          "vibe-kanban"
+        ]
+      },
+      "license": "Apache-2.0",
+      "maintainer": "company",
+      "verdict": "hold",
+      "verdict_reason": "The maintainers announced it is sunsetting, and the last release dates from April 2026. Don't build a workflow on it.",
+      "scores": {
+        "usefulness": 3,
+        "security": 3,
+        "maturity": 2,
+        "cost": 4
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": false,
+        "network": "listens",
+        "background_process": true,
+        "notes": "Runs a local web server and drives agents on your machine. Builds can include PostHog analytics when keys are set at build time.",
+        "red_flags": [
+          "Sunsetting - security fixes may stop."
+        ],
+        "advisories": []
+      },
+      "overlaps": [
+        "claude-squad",
+        "opcode"
+      ],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/BloopAI/vibe-kanban"
+      ],
+      "live": {
+        "stars": 28413,
+        "pushed_at": "2026-09-19",
+        "archived": false,
+        "latest_release": "v0.1.44-20260424091429"
+      },
+      "alerts": [],
+      "overall": 3
+    },
+    {
       "id": "claude-mem",
       "name": "claude-mem",
       "repo": "thedotmack/claude-mem",
@@ -1824,7 +2378,7 @@
         "https://www.augmentcode.com/learn/claude-mem-persistent-memory-claude-code"
       ],
       "live": {
-        "stars": 101980,
+        "stars": 101982,
         "pushed_at": "2026-10-21",
         "archived": false,
         "latest_release": "v15.0.1"
@@ -1902,7 +2456,7 @@
         "https://silenceper.com/en/article/2026-06-14-headroom-ai-agent-context-compression/"
       ],
       "live": {
-        "stars": 76812,
+        "stars": 76819,
         "pushed_at": "2026-10-21",
         "archived": false,
         "latest_release": "v0.41.0"
@@ -1982,7 +2536,7 @@
         "https://github.com/ruvnet/ruflo/security/advisories/GHSA-c4hm-4h84-2cf3"
       ],
       "live": {
-        "stars": 77915,
+        "stars": 77919,
         "pushed_at": "2026-10-21",
         "archived": false,
         "latest_release": "v3.59.4"
@@ -2054,7 +2608,9 @@
           }
         ]
       },
-      "overlaps": [],
+      "overlaps": [
+        "claude-code-router"
+      ],
       "last_reviewed": "2026-10-20",
       "sources": [
         "https://github.com/diegosouzapw/OmniRoute",
@@ -2062,7 +2618,7 @@
         "https://levelup.gitconnected.com/the-ai-tool-that-promises-1-6-billion-free-claude-tokens-and-why-you-shouldnt-touch-it-a63c687f7d91"
       ],
       "live": {
-        "stars": 79023,
+        "stars": 79025,
         "pushed_at": "2026-10-21",
         "archived": false,
         "latest_release": "v3.8.52"

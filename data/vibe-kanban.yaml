@@ -1,0 +1,35 @@
+id: vibe-kanban
+name: Vibe Kanban
+repo: BloopAI/vibe-kanban
+category: cli
+tags: [kanban, multi-agent, orchestration]
+summary: Kanban board that hands tasks to coding agents, each in its own worktree, and lets you review their diffs.
+problem: Planning and tracking many parallel agent tasks. Cards become agent runs you review and merge.
+install:
+  scope: user
+  commands:
+    - npx vibe-kanban
+detect:
+  npm: [vibe-kanban]
+license: Apache-2.0
+maintainer: company
+verdict: hold
+verdict_reason: The maintainers announced it is sunsetting, and the last release dates from April 2026. Don't build a workflow on it.
+scores:
+  usefulness: 3
+  security: 3
+  maturity: 2
+  cost: 4
+security:
+  runs_code: true
+  hooks: false
+  network: listens
+  background_process: true
+  notes: Runs a local web server and drives agents on your machine. Builds can include PostHog analytics when keys are set at build time.
+  red_flags:
+    - Sunsetting - security fixes may stop.
+  advisories: []
+overlaps: [claude-squad, opcode]
+last_reviewed: "2026-10-21"
+sources:
+  - https://github.com/BloopAI/vibe-kanban

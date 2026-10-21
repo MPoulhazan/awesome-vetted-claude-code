@@ -39,7 +39,7 @@ security:
       affected: "<= 3.8.50"
       published: "2026-09-10"
       url: https://github.com/advisories/GHSA-hf57-cqmx-p4gr
-overlaps: []
+overlaps: [claude-code-router]
 last_reviewed: "2026-10-20"
 sources:
   - https://github.com/diegosouzapw/OmniRoute

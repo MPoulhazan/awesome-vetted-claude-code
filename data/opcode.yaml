@@ -1,0 +1,34 @@
+id: opcode
+name: opcode (formerly Claudia)
+repo: winfunc/opcode
+category: cli
+tags: [desktop-app, sessions, gui, usage]
+summary: Desktop GUI for Claude Code - projects and sessions, custom agents, background runs, usage analytics and MCP management.
+problem: Managing many Claude Code sessions and agents from a terminal is hard to follow. opcode gives them a desktop interface.
+install:
+  scope: user
+  commands:
+    - Download a release or build from source (Tauri)
+  notes: The last tagged release is v0.2.0 from August 2025; newer code means building from source.
+license: AGPL-3.0
+maintainer: company
+verdict: assess
+verdict_reason: Nice idea and popular, but no release in over a year. Building an unsigned desktop app from source is a hurdle for most people.
+scores:
+  usefulness: 3
+  security: 3
+  maturity: 2
+  cost: 4
+security:
+  runs_code: true
+  hooks: false
+  network: none
+  background_process: true
+  notes: A desktop app with full access to your Claude Code projects and sessions, able to run agents in the background.
+  red_flags:
+    - No release since August 2025.
+  advisories: []
+overlaps: [claude-squad, vibe-kanban]
+last_reviewed: "2026-10-21"
+sources:
+  - https://github.com/winfunc/opcode

@@ -1,0 +1,35 @@
+id: ccusage
+name: ccusage
+repo: ccusage/ccusage
+category: cli
+tags: [usage, cost, tokens, analytics]
+summary: Reads Claude Code's local logs and reports token usage and estimated cost by day, month, session or billing block.
+problem: You can't see how much you burn per day or per project, or how close you are to your plan limits. One command answers it.
+install:
+  scope: one-shot
+  commands:
+    - npx ccusage@latest
+  notes: Add --offline to use bundled pricing instead of fetching current model prices.
+detect:
+  npm: [ccusage]
+license: MIT
+maintainer: individual
+verdict: adopt
+verdict_reason: Read-only, local, nothing to configure. The reference tool for usage tracking.
+scores:
+  usefulness: 4
+  security: 5
+  maturity: 5
+  cost: 5
+security:
+  runs_code: true
+  hooks: false
+  network: third-party
+  background_process: false
+  data_leaves_machine: Nothing about you. Without --offline it downloads public model pricing data.
+  notes: Only reads the JSONL session logs Claude Code writes locally.
+  advisories: []
+overlaps: [ccstatusline]
+last_reviewed: "2026-10-21"
+sources:
+  - https://github.com/ccusage/ccusage
