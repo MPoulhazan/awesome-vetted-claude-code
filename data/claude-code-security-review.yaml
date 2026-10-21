@@ -1,0 +1,37 @@
+id: claude-code-security-review
+name: Claude Code Security Review
+repo: anthropics/claude-code-security-review
+category: ci
+tags: [security, code-review, github-actions]
+summary: Anthropic's GitHub Action that reviews pull requests for vulnerabilities, and the source of the built-in /security-review command.
+problem: Security bugs slip through code review. It reads each PR diff with Claude, flags likely vulnerabilities and comments on the PR.
+install:
+  scope: project
+  commands:
+    - "uses: anthropics/claude-code-security-review@main"
+    - /security-review
+  notes: The /security-review command already ships with Claude Code; copy security-review.md into .claude/commands/ to customize it. The Action needs a Claude API key, billed per use.
+license: MIT
+maintainer: official
+verdict: adopt
+verdict_reason: Use /security-review freely. Run the Action only on trusted pull requests - Anthropic states it is not hardened against prompt injection.
+scores:
+  usefulness: 4
+  security: 3
+  maturity: 3
+  cost: 3
+security:
+  runs_code: true
+  hooks: false
+  network: llm-api
+  background_process: false
+  data_leaves_machine: PR diffs and surrounding code, sent to the Claude API.
+  notes: A malicious PR can try to steer the reviewer. Enable "Require approval for all external contributors" so the workflow only runs after a maintainer looks at the PR.
+  red_flags:
+    - Not hardened against prompt injection, per its own README.
+    - The README pins @main rather than a release; pin a commit SHA in your workflow.
+  advisories: []
+overlaps: []
+last_reviewed: "2026-10-21"
+sources:
+  - https://github.com/anthropics/claude-code-security-review

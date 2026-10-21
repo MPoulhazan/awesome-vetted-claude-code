@@ -1,7 +1,7 @@
 {
   "agent-skills": {
     "repo": "addyosmani/agent-skills",
-    "stars": 109013,
+    "stars": 109017,
     "pushed_at": "2026-10-13",
     "archived": false,
     "latest_release": "0.6.13",
@@ -15,6 +15,14 @@
     "latest_release": "v4.5.0",
     "advisories": []
   },
+  "anthropic-skills": {
+    "repo": "anthropics/skills",
+    "stars": 182528,
+    "pushed_at": "2026-10-09",
+    "archived": false,
+    "latest_release": null,
+    "advisories": []
+  },
   "bklit-ui": {
     "repo": "bklit/bklit-ui",
     "stars": 1795,
@@ -25,8 +33,45 @@
   },
   "brag": {
     "repo": "latent-spaces/brag",
-    "stars": 17191,
+    "stars": 17194,
     "pushed_at": "2026-10-13",
+    "archived": false,
+    "latest_release": null,
+    "advisories": []
+  },
+  "chrome-devtools-mcp": {
+    "repo": "ChromeDevTools/chrome-devtools-mcp",
+    "stars": 53909,
+    "pushed_at": "2026-10-20",
+    "archived": false,
+    "latest_release": "chrome-devtools-mcp-v1.11.0",
+    "advisories": [
+      {
+        "id": "GHSA-3pvj-jv98-qhjq",
+        "cve": "CVE-2026-53765",
+        "severity": "moderate",
+        "summary": "Chrome DevTools for agents: daemon.pid write follows symlinks in /tmp fallback runtime directory",
+        "affected": ">= 0.20.0, <= 1.0.1",
+        "patched": "1.1.0",
+        "published": "2026-06-17",
+        "url": "https://github.com/advisories/GHSA-3pvj-jv98-qhjq"
+      },
+      {
+        "id": "GHSA-8qf9-62x2-82pp",
+        "cve": "CVE-2026-53766",
+        "severity": "moderate",
+        "summary": "chrome-devtools-mcp: validatePath() does not canonicalize symlinks before enforcing roots",
+        "affected": ">= 0.24.0, <= 1.0.1",
+        "patched": "1.1.0",
+        "published": "2026-08-17",
+        "url": "https://github.com/advisories/GHSA-8qf9-62x2-82pp"
+      }
+    ]
+  },
+  "claude-code-security-review": {
+    "repo": "anthropics/claude-code-security-review",
+    "stars": 6463,
+    "pushed_at": "2026-02-11",
     "archived": false,
     "latest_release": null,
     "advisories": []
@@ -41,7 +86,7 @@
   },
   "claude-mem": {
     "repo": "thedotmack/claude-mem",
-    "stars": 101976,
+    "stars": 101980,
     "pushed_at": "2026-10-21",
     "archived": false,
     "latest_release": "v15.0.1",
@@ -58,9 +103,45 @@
       }
     ]
   },
+  "context7": {
+    "repo": "upstash/context7",
+    "stars": 63389,
+    "pushed_at": "2026-10-20",
+    "archived": false,
+    "latest_release": "@upstash/context7-mcp@4.4.4",
+    "advisories": []
+  },
+  "github-mcp-server": {
+    "repo": "github/github-mcp-server",
+    "stars": 33806,
+    "pushed_at": "2026-10-19",
+    "archived": false,
+    "latest_release": "v2.0.2",
+    "advisories": [
+      {
+        "id": "GHSA-pjp5-fpmr-3349",
+        "cve": "CVE-2026-48529",
+        "severity": "moderate",
+        "summary": "Lockdown mode singleton in HTTP server causes cross-user GraphQL client confusion",
+        "affected": ">= 0.22.0, < 1.1.2",
+        "patched": "1.1.2",
+        "published": "2026-06-09",
+        "url": "https://github.com/github/github-mcp-server/security/advisories/GHSA-pjp5-fpmr-3349"
+      },
+      {
+        "id": "GHSA-w4q6-qw23-4rg7",
+        "cve": "CVE-2026-47427",
+        "severity": "high",
+        "summary": "Nil Pointer Dereference DoS in completion/complete Handler",
+        "affected": "<= 0.33.0 (also affects latest main)",
+        "published": "2026-07-20",
+        "url": "https://github.com/github/github-mcp-server/security/advisories/GHSA-w4q6-qw23-4rg7"
+      }
+    ]
+  },
   "graphify": {
     "repo": "Graphify-Labs/graphify",
-    "stars": 130383,
+    "stars": 130406,
     "pushed_at": "2026-10-20",
     "archived": false,
     "latest_release": "v0.9.93",
@@ -78,7 +159,7 @@
   },
   "headroom": {
     "repo": "headroomlabs-ai/headroom",
-    "stars": 76806,
+    "stars": 76812,
     "pushed_at": "2026-10-21",
     "archived": false,
     "latest_release": "v0.41.0",
@@ -103,9 +184,17 @@
     "latest_release": null,
     "advisories": []
   },
+  "magic-mcp": {
+    "repo": "21st-dev/magic-mcp",
+    "stars": 6154,
+    "pushed_at": "2026-09-09",
+    "archived": false,
+    "latest_release": "v0.2.3",
+    "advisories": []
+  },
   "omniroute": {
     "repo": "diegosouzapw/OmniRoute",
-    "stars": 79017,
+    "stars": 79022,
     "pushed_at": "2026-10-21",
     "archived": false,
     "latest_release": "v3.8.52",
@@ -121,9 +210,28 @@
       }
     ]
   },
+  "playwright-mcp": {
+    "repo": "microsoft/playwright-mcp",
+    "stars": 38445,
+    "pushed_at": "2026-10-19",
+    "archived": false,
+    "latest_release": "v0.0.83",
+    "advisories": [
+      {
+        "id": "GHSA-6fg3-hvw7-2fwq",
+        "cve": "CVE-2025-9611",
+        "severity": "high",
+        "summary": "Microsoft Playwright MCP Server vulnerable to DNS Rebinding Attack; Allows Attackers Access to All Server Tools",
+        "affected": "< 0.0.40",
+        "patched": "0.0.40",
+        "published": "2026-01-07",
+        "url": "https://github.com/advisories/GHSA-6fg3-hvw7-2fwq"
+      }
+    ]
+  },
   "ponytail": {
     "repo": "DietrichGebert/ponytail",
-    "stars": 169921,
+    "stars": 169952,
     "pushed_at": "2026-10-18",
     "archived": false,
     "latest_release": "v5.3.2",
@@ -137,9 +245,62 @@
     "latest_release": null,
     "advisories": []
   },
+  "sentry-mcp": {
+    "repo": "getsentry/toolkit",
+    "stars": 936,
+    "pushed_at": "2026-10-21",
+    "archived": false,
+    "latest_release": "cli@0.47.0",
+    "advisories": []
+  },
+  "serena": {
+    "repo": "oraios/serena",
+    "stars": 30518,
+    "pushed_at": "2026-10-20",
+    "archived": false,
+    "latest_release": "v2.1.0",
+    "advisories": [
+      {
+        "id": "GHSA-37h2-6p4f-mp3q",
+        "cve": "CVE-2026-49471",
+        "severity": "high",
+        "summary": "Serena: Unauthenticated Flask dashboard on fixed port enables DNS rebinding → memory poisoning → RCE",
+        "affected": "< 1.5.2",
+        "patched": "1.5.2",
+        "published": "2026-07-08",
+        "url": "https://github.com/advisories/GHSA-37h2-6p4f-mp3q"
+      },
+      {
+        "id": "GHSA-pp25-4cg4-qcr9",
+        "severity": "critical",
+        "summary": "Server-Side Template Injection (SSTI) in mode/context prompt rendering → RCE on project activation, bypassing `trusted_project_path_patterns`",
+        "affected": "<= 1.6.1",
+        "patched": "1.7.0",
+        "published": "2026-08-09",
+        "url": "https://github.com/oraios/serena/security/advisories/GHSA-pp25-4cg4-qcr9"
+      },
+      {
+        "id": "GHSA-pp6p-xvxf-8hhx",
+        "severity": "high",
+        "summary": "Remote Code Execution via insecure pickle deserialization of LSP symbol cache (malicious   repository → RCE on project activation)",
+        "affected": "<= 1.7.1",
+        "patched": "2.0.0",
+        "published": "2026-10-14",
+        "url": "https://github.com/oraios/serena/security/advisories/GHSA-pp6p-xvxf-8hhx"
+      }
+    ]
+  },
+  "supabase-mcp": {
+    "repo": "supabase/mcp",
+    "stars": 2966,
+    "pushed_at": "2026-10-20",
+    "archived": false,
+    "latest_release": "mcp-server-supabase-v0.14.0",
+    "advisories": []
+  },
   "task-observer": {
     "repo": "rebelytics/one-skill-to-rule-them-all",
-    "stars": 3469,
+    "stars": 3470,
     "pushed_at": "2026-10-16",
     "archived": false,
     "latest_release": "v3.7.0",

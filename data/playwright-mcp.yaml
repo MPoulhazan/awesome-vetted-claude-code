@@ -1,0 +1,47 @@
+id: playwright-mcp
+name: Playwright MCP
+repo: microsoft/playwright-mcp
+category: mcp-server
+tags: [browser, testing, automation]
+summary: Microsoft's MCP server that lets the agent drive a real browser through Playwright's accessibility snapshots.
+problem: The agent can't see or click your web app. With Playwright MCP it navigates, fills forms, reads the page and checks its own UI changes.
+install:
+  scope: user
+  commands:
+    - claude mcp add playwright npx @playwright/mcp@latest
+  notes: Add --isolated to keep the browser profile in memory instead of a persistent profile with your logins. Microsoft notes the Playwright CLI is cheaper in tokens for plain test runs.
+detect:
+  plugins: [playwright@claude-plugins-official]
+  npm: ["@playwright/mcp"]
+license: Apache-2.0
+maintainer: company
+verdict: adopt
+verdict_reason: The reference browser MCP, maintained by Microsoft. Run a version after the DNS rebinding fix and prefer isolated profiles.
+scores:
+  usefulness: 5
+  security: 3
+  maturity: 4
+  cost: 4
+security:
+  runs_code: true
+  hooks: false
+  network: third-party
+  background_process: true
+  data_leaves_machine: Requests to every site the agent opens, with whatever session the browser profile holds.
+  notes: Launches a browser that can reach any site by default. Pages are untrusted input and can carry prompt injection. --allowed-origins is explicitly not a security boundary.
+  red_flags:
+    - The default profile persists to disk, so logins the agent makes stay around between sessions.
+  advisories:
+    - id: GHSA-6fg3-hvw7-2fwq
+      cve: CVE-2025-9611
+      severity: high
+      summary: DNS rebinding lets a malicious website reach all the server's tools.
+      affected: "< 0.0.40"
+      patched: 0.0.40
+      published: "2026-01-07"
+      url: https://github.com/advisories/GHSA-6fg3-hvw7-2fwq
+overlaps: [chrome-devtools-mcp]
+last_reviewed: "2026-10-21"
+sources:
+  - https://github.com/microsoft/playwright-mcp
+  - https://github.com/advisories/GHSA-6fg3-hvw7-2fwq

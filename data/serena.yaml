@@ -1,0 +1,59 @@
+id: serena
+name: Serena
+repo: oraios/serena
+category: mcp-server
+tags: [code-navigation, language-server, refactoring]
+summary: Coding toolkit that gives the agent IDE-like, symbol-level navigation and editing through language servers.
+problem: On big codebases the agent reads whole files to find one function. Serena lets it find symbols, references and definitions, and edit at symbol level.
+install:
+  scope: user
+  commands:
+    - uv tool install -p 3.13 serena-agent
+  notes: The maintainers ask you not to install it from MCP or plugin marketplaces, whose commands are outdated. Some languages need extra language servers.
+detect:
+  pypi: [serena-agent]
+license: GPL-3.0-or-later
+license_notes: The Serena application is GPL-3.0-or-later; its SolidLSP component is MIT.
+maintainer: company
+verdict: trial
+verdict_reason: Genuinely useful on large repos, but it has had three remote-code-execution advisories in a few months. Stay on 2.0.0 or later and only open repos you trust.
+scores:
+  usefulness: 4
+  security: 2
+  maturity: 4
+  cost: 4
+security:
+  runs_code: true
+  hooks: false
+  network: listens
+  background_process: true
+  data_leaves_machine: Nothing beyond the model; language servers and the dashboard run locally.
+  notes: Runs language servers over the whole project and a local web dashboard. Past bugs let a malicious repository or a web page run code on your machine.
+  red_flags:
+    - Three RCE-class advisories in 2026 (all fixed). Opening an untrusted repository was the main attack path.
+  advisories:
+    - id: GHSA-pp25-4cg4-qcr9
+      severity: critical
+      summary: Server-side template injection in mode and context prompt rendering gives code execution on project activation, bypassing trusted_project_path_patterns.
+      affected: "<= 1.6.1"
+      patched: 1.7.0
+      url: https://github.com/oraios/serena/security/advisories/GHSA-pp25-4cg4-qcr9
+    - id: GHSA-pp6p-xvxf-8hhx
+      severity: high
+      summary: Insecure pickle deserialization of the language-server symbol cache - a malicious repository runs code on project activation.
+      affected: "<= 1.7.1"
+      patched: 2.0.0
+      url: https://github.com/oraios/serena/security/advisories/GHSA-pp6p-xvxf-8hhx
+    - id: GHSA-37h2-6p4f-mp3q
+      cve: CVE-2026-49471
+      severity: high
+      summary: Unauthenticated Flask dashboard on a fixed port enables DNS rebinding, memory poisoning and code execution.
+      affected: "< 1.5.2"
+      patched: 1.5.2
+      published: "2026-07-08"
+      url: https://github.com/advisories/GHSA-37h2-6p4f-mp3q
+overlaps: [graphify]
+last_reviewed: "2026-10-21"
+sources:
+  - https://github.com/oraios/serena
+  - https://github.com/oraios/serena/security/advisories

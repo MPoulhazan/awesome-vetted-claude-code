@@ -1,0 +1,37 @@
+id: context7
+name: Context7
+repo: upstash/context7
+homepage: https://context7.com
+category: mcp-server
+tags: [documentation, libraries, up-to-date]
+summary: Feeds the agent current, version-specific library documentation and code examples, as an MCP server or a CLI plus skill.
+problem: The model writes code against APIs from its training data, which are often a year old. Context7 fetches current docs for the exact library and version.
+install:
+  scope: user
+  commands:
+    - npx ctx7 setup --claude
+  notes: Lets you pick CLI + skill mode (no MCP) or MCP mode. A free API key raises rate limits. Remove with `npx ctx7 remove`.
+detect:
+  npm: ["@upstash/context7-mcp", ctx7]
+  mcp_urls: [https://mcp.context7.com/mcp]
+license: MIT
+maintainer: company
+verdict: adopt
+verdict_reason: Fixes a daily, real problem at no cost. Only library names and questions leave your machine.
+scores:
+  usefulness: 5
+  security: 4
+  maturity: 4
+  cost: 5
+security:
+  runs_code: true
+  hooks: false
+  network: third-party
+  background_process: false
+  data_leaves_machine: The library names and questions the agent looks up, sent to Upstash's Context7 service.
+  notes: Documentation comes from third-party repos indexed by the service; treat it as untrusted text that could carry prompt injection.
+  advisories: []
+overlaps: []
+last_reviewed: "2026-10-21"
+sources:
+  - https://github.com/upstash/context7

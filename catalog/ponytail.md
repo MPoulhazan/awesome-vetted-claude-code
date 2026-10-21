@@ -55,7 +55,7 @@ Try it on one project for a week or two and compare diffs before making it globa
 - **Category:** Claude Code plugins
 - **License:** MIT
 - **Maintainer:** individual
-- **Stars:** 169.9k · last push 2026-10-18 · latest release v5.3.2
+- **Stars:** 170.0k · last push 2026-10-18 · latest release v5.3.2
 - **Tags:** code-quality, minimalism, cost
 - **Last reviewed:** 2026-10-20
 

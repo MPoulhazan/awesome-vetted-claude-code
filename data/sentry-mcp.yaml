@@ -1,0 +1,38 @@
+id: sentry-mcp
+name: Sentry MCP
+repo: getsentry/toolkit
+homepage: https://mcp.sentry.dev
+category: mcp-server
+tags: [errors, monitoring, debugging]
+summary: Sentry's hosted MCP server - issues, stack traces, traces and Seer analysis, built for debugging in the editor.
+problem: Production errors live in a dashboard far from the code. The agent pulls the issue, the stack trace and the context, then fixes it in place.
+install:
+  scope: user
+  commands:
+    - claude plugin marketplace add getsentry/sentry-mcp
+  notes: Remote server at mcp.sentry.dev with OAuth into your Sentry organization. The repo was renamed from getsentry/sentry-mcp to getsentry/toolkit.
+detect:
+  npm: ["@sentry/mcp-server"]
+  mcp_urls: [https://mcp.sentry.dev/mcp]
+license: FSL-1.1-Apache-2.0
+license_notes: Functional Source License - source-available, each version becomes Apache-2.0 after two years. Fine to use, not to offer as a competing service.
+maintainer: official
+verdict: adopt
+verdict_reason: Official, focused on read and debug workflows, nothing to run locally. A must if you already use Sentry.
+scores:
+  usefulness: 4
+  security: 4
+  maturity: 4
+  cost: 5
+security:
+  runs_code: false
+  hooks: false
+  network: third-party
+  background_process: false
+  data_leaves_machine: Error events, which can contain user data and request payloads, come into the model's context.
+  notes: Acts with your Sentry OAuth rights. Error messages are partly attacker-controlled text, so treat them as untrusted input.
+  advisories: []
+overlaps: []
+last_reviewed: "2026-10-21"
+sources:
+  - https://github.com/getsentry/toolkit

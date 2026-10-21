@@ -1,0 +1,39 @@
+id: magic-mcp
+name: 21st Magic MCP
+repo: 21st-dev/magic-mcp
+homepage: https://21st.dev/mcp
+category: mcp-server
+tags: [ui-generation, react, components]
+summary: Generates React UI components from a prompt using 21st.dev's component library; now part of the unified 21st MCP.
+problem: Building polished UI components from scratch. You describe a component and get one adapted from 21st.dev's community library.
+install:
+  scope: project
+  commands:
+    - npx @21st-dev/cli@latest init --client claude
+  notes: Needs an API key from 21st.dev. Old Magic keys were reset. The @21st-dev/magic package is now only a compatibility proxy to the 21st MCP server.
+detect:
+  npm: ["@21st-dev/magic", "@21st-dev/cli"]
+license: ISC
+maintainer: company
+verdict: assess
+verdict_reason: Mid-migration to a new product, and every prompt goes to a third-party service. Copy-in libraries such as shadcn/ui-based kits cover most needs without that.
+scores:
+  usefulness: 3
+  security: 3
+  maturity: 3
+  cost: 3
+security:
+  runs_code: true
+  hooks: false
+  network: third-party
+  background_process: false
+  data_leaves_machine: Every MCP message, including your component requests and the context sent with them, is forwarded to 21st.dev.
+  notes: Generated code lands in your repo; review it like any copied component.
+  red_flags:
+    - The open-source package is now a thin proxy; the logic runs on 21st.dev's servers.
+  advisories: []
+overlaps: [kokonut-ui, react-bits]
+last_reviewed: "2026-10-21"
+sources:
+  - https://github.com/21st-dev/magic-mcp
+  - https://21st.dev/mcp

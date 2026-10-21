@@ -1,0 +1,51 @@
+id: github-mcp-server
+name: GitHub MCP Server
+repo: github/github-mcp-server
+category: mcp-server
+tags: [github, issues, pull-requests]
+summary: GitHub's official MCP server - issues, pull requests, code search, Actions and more, hosted or local.
+problem: Switching between the terminal and github.com to read issues, review PRs or check CI. The agent does it through scoped tools.
+install:
+  scope: user
+  commands:
+    - 'claude mcp add --transport http github https://api.githubcopilot.com/mcp/ -H "Authorization: Bearer <fine-grained token>"'
+  notes: Use a fine-grained token limited to the repos you need, and restrict toolsets or enable read-only mode. A local Docker build is available too.
+detect:
+  mcp_urls: [https://api.githubcopilot.com/mcp/]
+license: MIT
+maintainer: official
+verdict: adopt
+verdict_reason: Official and widely used. Its power is its risk - scope the token and toolsets, and be careful with public issues as input.
+scores:
+  usefulness: 5
+  security: 3
+  maturity: 5
+  cost: 4
+security:
+  runs_code: false
+  hooks: false
+  network: third-party
+  background_process: false
+  data_leaves_machine: Your requests and token go to GitHub; repo content comes back into the model's context.
+  notes: The agent acts with your token's rights. Issues, PRs and comments written by strangers are prompt-injection vectors, especially when the token can also reach private repos; lockdown mode helps.
+  advisories:
+    - id: GHSA-w4q6-qw23-4rg7
+      cve: CVE-2026-47427
+      severity: high
+      summary: Nil pointer dereference in the completion handler lets a request crash the server (denial of service).
+      affected: "< 1.1.0"
+      patched: 1.1.0
+      published: "2026-07-28"
+      url: https://github.com/advisories/GHSA-w4q6-qw23-4rg7
+    - id: GHSA-pjp5-fpmr-3349
+      cve: CVE-2026-48529
+      severity: moderate
+      summary: A lockdown-mode singleton in the HTTP server could mix up GraphQL clients between users.
+      affected: ">= 0.22.0, < 1.1.2"
+      patched: 1.1.2
+      published: "2026-06-25"
+      url: https://github.com/advisories/GHSA-pjp5-fpmr-3349
+overlaps: []
+last_reviewed: "2026-10-21"
+sources:
+  - https://github.com/github/github-mcp-server

@@ -1,0 +1,53 @@
+id: chrome-devtools-mcp
+name: Chrome DevTools MCP
+repo: ChromeDevTools/chrome-devtools-mcp
+category: mcp-server
+tags: [browser, debugging, performance]
+summary: Google's MCP server giving the agent Chrome DevTools - console, network, performance traces and page control.
+problem: The agent fixes front-end bugs blind. With DevTools it reads console errors and network requests and records performance traces in a live Chrome.
+install:
+  scope: user
+  commands:
+    - claude mcp add chrome-devtools npx chrome-devtools-mcp@latest --no-usage-statistics
+  notes: Usage statistics are sent to Google by default; the --no-usage-statistics flag turns that off.
+detect:
+  npm: [chrome-devtools-mcp]
+license: Apache-2.0
+maintainer: company
+verdict: adopt
+verdict_reason: Best tool for debugging and performance work in the browser. Opt out of telemetry and stay on 1.1.0 or later.
+scores:
+  usefulness: 4
+  security: 3
+  maturity: 4
+  cost: 4
+security:
+  runs_code: true
+  hooks: false
+  network: third-party
+  background_process: true
+  data_leaves_machine: Usage statistics (tool success rates, latency, environment) to Google unless disabled, plus requests to every site the browser opens.
+  notes: Controls a full Chrome instance; anything in that browser profile is visible to the agent. Pages are untrusted input.
+  red_flags:
+    - Telemetry is on by default.
+  advisories:
+    - id: GHSA-8qf9-62x2-82pp
+      cve: CVE-2026-53766
+      severity: moderate
+      summary: validatePath() does not resolve symlinks before enforcing allowed roots.
+      affected: ">= 0.24.0, <= 1.0.1"
+      patched: 1.1.0
+      published: "2026-08-17"
+      url: https://github.com/advisories/GHSA-8qf9-62x2-82pp
+    - id: GHSA-3pvj-jv98-qhjq
+      cve: CVE-2026-53765
+      severity: moderate
+      summary: The daemon.pid write follows symlinks in the /tmp fallback runtime directory.
+      affected: ">= 0.20.0, <= 1.0.1"
+      patched: 1.1.0
+      published: "2026-06-17"
+      url: https://github.com/advisories/GHSA-3pvj-jv98-qhjq
+overlaps: [playwright-mcp]
+last_reviewed: "2026-10-21"
+sources:
+  - https://github.com/ChromeDevTools/chrome-devtools-mcp

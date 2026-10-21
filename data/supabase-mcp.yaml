@@ -1,0 +1,36 @@
+id: supabase-mcp
+name: Supabase MCP
+repo: supabase/mcp
+category: mcp-server
+tags: [database, postgres, backend]
+summary: Official Supabase MCP server - tables, SQL, migrations, logs, edge functions and docs for your projects.
+problem: Schema work, debugging and migrations mean jumping to the Supabase dashboard. The agent can inspect and change the project directly.
+install:
+  scope: project
+  commands:
+    - claude mcp add --transport http supabase "https://mcp.supabase.com/mcp?project_ref=<project-ref>&read_only=true"
+  notes: Scope it to one project with project_ref and start with read_only=true. Point it at a development project or branch, never production.
+detect:
+  npm: ["@supabase/mcp-server-supabase"]
+  mcp_urls: [https://mcp.supabase.com/mcp]
+license: Apache-2.0
+maintainer: official
+verdict: trial
+verdict_reason: Very handy, but it can run arbitrary SQL with your account's rights. Safe enough when scoped, read-only and kept away from production.
+scores:
+  usefulness: 4
+  security: 3
+  maturity: 3
+  cost: 5
+security:
+  runs_code: false
+  hooks: false
+  network: third-party
+  background_process: false
+  data_leaves_machine: Query results - including your users' data - come back into the model's context.
+  notes: Rows written by your users are untrusted input; a crafted row can carry prompt injection that steers write tools. Read-only mode and project scoping remove most of the blast radius.
+  advisories: []
+overlaps: []
+last_reviewed: "2026-10-21"
+sources:
+  - https://github.com/supabase/mcp

@@ -1,0 +1,38 @@
+id: anthropic-skills
+name: Anthropic Skills
+repo: anthropics/skills
+category: skill
+tags: [official, documents, frontend, skill-authoring]
+summary: Anthropic's public skills - Word, PDF, PowerPoint and Excel handling, frontend design, skill-creator and more.
+problem: Working with office documents or writing good skills from scratch. These are the skills that power Claude's own file features, plus reference examples.
+install:
+  scope: user
+  commands:
+    - /plugin marketplace add anthropics/skills
+    - /plugin install document-skills@anthropic-agent-skills
+    - /plugin install example-skills@anthropic-agent-skills
+  notes: Install only the pack you need. Some of these may already be available in your Claude Code setup.
+detect:
+  plugins: [document-skills@anthropic-agent-skills, example-skills@anthropic-agent-skills]
+  skills: [docx, pdf, pptx, xlsx, skill-creator, frontend-design]
+license: Apache-2.0 + source-available
+license_notes: Most skills are Apache-2.0. The docx, pdf, pptx and xlsx skills are source-available reference code, not open source.
+maintainer: official
+verdict: adopt
+verdict_reason: Official, high quality, and the best reference for writing your own skills.
+scores:
+  usefulness: 4
+  security: 4
+  maturity: 4
+  cost: 5
+security:
+  runs_code: true
+  hooks: false
+  network: none
+  background_process: false
+  notes: The document skills ship Python and JavaScript helper scripts that run locally on the files you give them.
+  advisories: []
+overlaps: []
+last_reviewed: "2026-10-21"
+sources:
+  - https://github.com/anthropics/skills

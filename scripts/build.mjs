@@ -12,8 +12,9 @@ const RAW_URL = "https://raw.githubusercontent.com/MPoulhazan/awesome-vetted-cla
 const CATEGORIES = {
   plugin: "Claude Code plugins",
   skill: "Skills",
-  cli: "CLIs and local services",
   "mcp-server": "MCP servers",
+  cli: "CLIs and local services",
+  ci: "CI and GitHub Actions",
   gateway: "Gateways and proxies",
   "ui-library": "UI libraries",
   "animation-library": "Animation libraries",

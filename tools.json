@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "https://github.com/MPoulhazan/awesome-vetted-claude-code",
-  "count": 13,
+  "count": 23,
   "tools": [
     {
       "id": "claude-code-setup",
@@ -62,6 +62,68 @@
         "pushed_at": "2026-10-21",
         "archived": false,
         "latest_release": null
+      },
+      "alerts": [],
+      "overall": 4.5
+    },
+    {
+      "id": "context7",
+      "name": "Context7",
+      "repo": "upstash/context7",
+      "homepage": "https://context7.com",
+      "category": "mcp-server",
+      "tags": [
+        "documentation",
+        "libraries",
+        "up-to-date"
+      ],
+      "summary": "Feeds the agent current, version-specific library documentation and code examples, as an MCP server or a CLI plus skill.",
+      "problem": "The model writes code against APIs from its training data, which are often a year old. Context7 fetches current docs for the exact library and version.",
+      "install": {
+        "scope": "user",
+        "commands": [
+          "npx ctx7 setup --claude"
+        ],
+        "notes": "Lets you pick CLI + skill mode (no MCP) or MCP mode. A free API key raises rate limits. Remove with `npx ctx7 remove`."
+      },
+      "detect": {
+        "npm": [
+          "@upstash/context7-mcp",
+          "ctx7"
+        ],
+        "mcp_urls": [
+          "https://mcp.context7.com/mcp"
+        ]
+      },
+      "license": "MIT",
+      "maintainer": "company",
+      "verdict": "adopt",
+      "verdict_reason": "Fixes a daily, real problem at no cost. Only library names and questions leave your machine.",
+      "scores": {
+        "usefulness": 5,
+        "security": 4,
+        "maturity": 4,
+        "cost": 5
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": false,
+        "network": "third-party",
+        "background_process": false,
+        "data_leaves_machine": "The library names and questions the agent looks up, sent to Upstash's Context7 service.",
+        "notes": "Documentation comes from third-party repos indexed by the service; treat it as untrusted text that could carry prompt injection.",
+        "advisories": []
+      },
+      "overlaps": [],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/upstash/context7"
+      ],
+      "live": {
+        "stars": 63389,
+        "pushed_at": "2026-10-20",
+        "archived": false,
+        "latest_release": "@upstash/context7-mcp@4.4.4"
       },
       "alerts": [],
       "overall": 4.5
@@ -240,6 +302,159 @@
       "overall": 4.3
     },
     {
+      "id": "anthropic-skills",
+      "name": "Anthropic Skills",
+      "repo": "anthropics/skills",
+      "category": "skill",
+      "tags": [
+        "official",
+        "documents",
+        "frontend",
+        "skill-authoring"
+      ],
+      "summary": "Anthropic's public skills - Word, PDF, PowerPoint and Excel handling, frontend design, skill-creator and more.",
+      "problem": "Working with office documents or writing good skills from scratch. These are the skills that power Claude's own file features, plus reference examples.",
+      "install": {
+        "scope": "user",
+        "commands": [
+          "/plugin marketplace add anthropics/skills",
+          "/plugin install document-skills@anthropic-agent-skills",
+          "/plugin install example-skills@anthropic-agent-skills"
+        ],
+        "notes": "Install only the pack you need. Some of these may already be available in your Claude Code setup."
+      },
+      "detect": {
+        "plugins": [
+          "document-skills@anthropic-agent-skills",
+          "example-skills@anthropic-agent-skills"
+        ],
+        "skills": [
+          "docx",
+          "pdf",
+          "pptx",
+          "xlsx",
+          "skill-creator",
+          "frontend-design"
+        ]
+      },
+      "license": "Apache-2.0 + source-available",
+      "license_notes": "Most skills are Apache-2.0. The docx, pdf, pptx and xlsx skills are source-available reference code, not open source.",
+      "maintainer": "official",
+      "verdict": "adopt",
+      "verdict_reason": "Official, high quality, and the best reference for writing your own skills.",
+      "scores": {
+        "usefulness": 4,
+        "security": 4,
+        "maturity": 4,
+        "cost": 5
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": false,
+        "network": "none",
+        "background_process": false,
+        "notes": "The document skills ship Python and JavaScript helper scripts that run locally on the files you give them.",
+        "advisories": []
+      },
+      "overlaps": [],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/anthropics/skills"
+      ],
+      "live": {
+        "stars": 182528,
+        "pushed_at": "2026-10-09",
+        "archived": false,
+        "latest_release": null
+      },
+      "alerts": [],
+      "overall": 4.2
+    },
+    {
+      "id": "github-mcp-server",
+      "name": "GitHub MCP Server",
+      "repo": "github/github-mcp-server",
+      "category": "mcp-server",
+      "tags": [
+        "github",
+        "issues",
+        "pull-requests"
+      ],
+      "summary": "GitHub's official MCP server - issues, pull requests, code search, Actions and more, hosted or local.",
+      "problem": "Switching between the terminal and github.com to read issues, review PRs or check CI. The agent does it through scoped tools.",
+      "install": {
+        "scope": "user",
+        "commands": [
+          "claude mcp add --transport http github https://api.githubcopilot.com/mcp/ -H \"Authorization: Bearer <fine-grained token>\""
+        ],
+        "notes": "Use a fine-grained token limited to the repos you need, and restrict toolsets or enable read-only mode. A local Docker build is available too."
+      },
+      "detect": {
+        "mcp_urls": [
+          "https://api.githubcopilot.com/mcp/"
+        ]
+      },
+      "license": "MIT",
+      "maintainer": "official",
+      "verdict": "adopt",
+      "verdict_reason": "Official and widely used. Its power is its risk - scope the token and toolsets, and be careful with public issues as input.",
+      "scores": {
+        "usefulness": 5,
+        "security": 3,
+        "maturity": 5,
+        "cost": 4
+      },
+      "security": {
+        "runs_code": false,
+        "hooks": false,
+        "network": "third-party",
+        "background_process": false,
+        "data_leaves_machine": "Your requests and token go to GitHub; repo content comes back into the model's context.",
+        "notes": "The agent acts with your token's rights. Issues, PRs and comments written by strangers are prompt-injection vectors, especially when the token can also reach private repos; lockdown mode helps.",
+        "advisories": [
+          {
+            "id": "GHSA-w4q6-qw23-4rg7",
+            "cve": "CVE-2026-47427",
+            "severity": "high",
+            "summary": "Nil pointer dereference in the completion handler lets a request crash the server (denial of service).",
+            "affected": "< 1.1.0",
+            "patched": "1.1.0",
+            "published": "2026-07-28",
+            "url": "https://github.com/advisories/GHSA-w4q6-qw23-4rg7"
+          },
+          {
+            "id": "GHSA-pjp5-fpmr-3349",
+            "cve": "CVE-2026-48529",
+            "severity": "moderate",
+            "summary": "A lockdown-mode singleton in the HTTP server could mix up GraphQL clients between users.",
+            "affected": ">= 0.22.0, < 1.1.2",
+            "patched": "1.1.2",
+            "published": "2026-06-25",
+            "url": "https://github.com/advisories/GHSA-pjp5-fpmr-3349"
+          }
+        ]
+      },
+      "overlaps": [],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/github/github-mcp-server"
+      ],
+      "live": {
+        "stars": 33806,
+        "pushed_at": "2026-10-19",
+        "archived": false,
+        "latest_release": "v2.0.2"
+      },
+      "alerts": [
+        {
+          "advisory": "GHSA-w4q6-qw23-4rg7",
+          "severity": "high",
+          "level": "update-required"
+        }
+      ],
+      "overall": 4.2
+    },
+    {
       "id": "ponytail",
       "name": "Ponytail",
       "repo": "DietrichGebert/ponytail",
@@ -310,10 +525,72 @@
         "https://www.mindstudio.ai/blog/ponytail-ai-coding-minimalism-plugin"
       ],
       "live": {
-        "stars": 169921,
+        "stars": 169952,
         "pushed_at": "2026-10-18",
         "archived": false,
         "latest_release": "v5.3.2"
+      },
+      "alerts": [],
+      "overall": 4.2
+    },
+    {
+      "id": "sentry-mcp",
+      "name": "Sentry MCP",
+      "repo": "getsentry/toolkit",
+      "homepage": "https://mcp.sentry.dev",
+      "category": "mcp-server",
+      "tags": [
+        "errors",
+        "monitoring",
+        "debugging"
+      ],
+      "summary": "Sentry's hosted MCP server - issues, stack traces, traces and Seer analysis, built for debugging in the editor.",
+      "problem": "Production errors live in a dashboard far from the code. The agent pulls the issue, the stack trace and the context, then fixes it in place.",
+      "install": {
+        "scope": "user",
+        "commands": [
+          "claude plugin marketplace add getsentry/sentry-mcp"
+        ],
+        "notes": "Remote server at mcp.sentry.dev with OAuth into your Sentry organization. The repo was renamed from getsentry/sentry-mcp to getsentry/toolkit."
+      },
+      "detect": {
+        "npm": [
+          "@sentry/mcp-server"
+        ],
+        "mcp_urls": [
+          "https://mcp.sentry.dev/mcp"
+        ]
+      },
+      "license": "FSL-1.1-Apache-2.0",
+      "license_notes": "Functional Source License - source-available, each version becomes Apache-2.0 after two years. Fine to use, not to offer as a competing service.",
+      "maintainer": "official",
+      "verdict": "adopt",
+      "verdict_reason": "Official, focused on read and debug workflows, nothing to run locally. A must if you already use Sentry.",
+      "scores": {
+        "usefulness": 4,
+        "security": 4,
+        "maturity": 4,
+        "cost": 5
+      },
+      "security": {
+        "runs_code": false,
+        "hooks": false,
+        "network": "third-party",
+        "background_process": false,
+        "data_leaves_machine": "Error events, which can contain user data and request payloads, come into the model's context.",
+        "notes": "Acts with your Sentry OAuth rights. Error messages are partly attacker-controlled text, so treat them as untrusted input.",
+        "advisories": []
+      },
+      "overlaps": [],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/getsentry/toolkit"
+      ],
+      "live": {
+        "stars": 936,
+        "pushed_at": "2026-10-21",
+        "archived": false,
+        "latest_release": "cli@0.47.0"
       },
       "alerts": [],
       "overall": 4.2
@@ -373,12 +650,95 @@
         "https://dev.to/yimtheppariyapol/addy-osmani-agent-skills-review-24-production-skills-726k-stars-22em"
       ],
       "live": {
-        "stars": 109013,
+        "stars": 109017,
         "pushed_at": "2026-10-13",
         "archived": false,
         "latest_release": "0.6.13"
       },
       "alerts": [],
+      "overall": 4
+    },
+    {
+      "id": "playwright-mcp",
+      "name": "Playwright MCP",
+      "repo": "microsoft/playwright-mcp",
+      "category": "mcp-server",
+      "tags": [
+        "browser",
+        "testing",
+        "automation"
+      ],
+      "summary": "Microsoft's MCP server that lets the agent drive a real browser through Playwright's accessibility snapshots.",
+      "problem": "The agent can't see or click your web app. With Playwright MCP it navigates, fills forms, reads the page and checks its own UI changes.",
+      "install": {
+        "scope": "user",
+        "commands": [
+          "claude mcp add playwright npx @playwright/mcp@latest"
+        ],
+        "notes": "Add --isolated to keep the browser profile in memory instead of a persistent profile with your logins. Microsoft notes the Playwright CLI is cheaper in tokens for plain test runs."
+      },
+      "detect": {
+        "plugins": [
+          "playwright@claude-plugins-official"
+        ],
+        "npm": [
+          "@playwright/mcp"
+        ]
+      },
+      "license": "Apache-2.0",
+      "maintainer": "company",
+      "verdict": "adopt",
+      "verdict_reason": "The reference browser MCP, maintained by Microsoft. Run a version after the DNS rebinding fix and prefer isolated profiles.",
+      "scores": {
+        "usefulness": 5,
+        "security": 3,
+        "maturity": 4,
+        "cost": 4
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": false,
+        "network": "third-party",
+        "background_process": true,
+        "data_leaves_machine": "Requests to every site the agent opens, with whatever session the browser profile holds.",
+        "notes": "Launches a browser that can reach any site by default. Pages are untrusted input and can carry prompt injection. --allowed-origins is explicitly not a security boundary.",
+        "red_flags": [
+          "The default profile persists to disk, so logins the agent makes stay around between sessions."
+        ],
+        "advisories": [
+          {
+            "id": "GHSA-6fg3-hvw7-2fwq",
+            "cve": "CVE-2025-9611",
+            "severity": "high",
+            "summary": "DNS rebinding lets a malicious website reach all the server's tools.",
+            "affected": "< 0.0.40",
+            "patched": "0.0.40",
+            "published": "2026-01-07",
+            "url": "https://github.com/advisories/GHSA-6fg3-hvw7-2fwq"
+          }
+        ]
+      },
+      "overlaps": [
+        "chrome-devtools-mcp"
+      ],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/microsoft/playwright-mcp",
+        "https://github.com/advisories/GHSA-6fg3-hvw7-2fwq"
+      ],
+      "live": {
+        "stars": 38445,
+        "pushed_at": "2026-10-19",
+        "archived": false,
+        "latest_release": "v0.0.83"
+      },
+      "alerts": [
+        {
+          "advisory": "GHSA-6fg3-hvw7-2fwq",
+          "severity": "high",
+          "level": "update-required"
+        }
+      ],
       "overall": 4
     },
     {
@@ -441,6 +801,89 @@
       },
       "alerts": [],
       "overall": 3.8
+    },
+    {
+      "id": "chrome-devtools-mcp",
+      "name": "Chrome DevTools MCP",
+      "repo": "ChromeDevTools/chrome-devtools-mcp",
+      "category": "mcp-server",
+      "tags": [
+        "browser",
+        "debugging",
+        "performance"
+      ],
+      "summary": "Google's MCP server giving the agent Chrome DevTools - console, network, performance traces and page control.",
+      "problem": "The agent fixes front-end bugs blind. With DevTools it reads console errors and network requests and records performance traces in a live Chrome.",
+      "install": {
+        "scope": "user",
+        "commands": [
+          "claude mcp add chrome-devtools npx chrome-devtools-mcp@latest --no-usage-statistics"
+        ],
+        "notes": "Usage statistics are sent to Google by default; the --no-usage-statistics flag turns that off."
+      },
+      "detect": {
+        "npm": [
+          "chrome-devtools-mcp"
+        ]
+      },
+      "license": "Apache-2.0",
+      "maintainer": "company",
+      "verdict": "adopt",
+      "verdict_reason": "Best tool for debugging and performance work in the browser. Opt out of telemetry and stay on 1.1.0 or later.",
+      "scores": {
+        "usefulness": 4,
+        "security": 3,
+        "maturity": 4,
+        "cost": 4
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": false,
+        "network": "third-party",
+        "background_process": true,
+        "data_leaves_machine": "Usage statistics (tool success rates, latency, environment) to Google unless disabled, plus requests to every site the browser opens.",
+        "notes": "Controls a full Chrome instance; anything in that browser profile is visible to the agent. Pages are untrusted input.",
+        "red_flags": [
+          "Telemetry is on by default."
+        ],
+        "advisories": [
+          {
+            "id": "GHSA-3pvj-jv98-qhjq",
+            "cve": "CVE-2026-53765",
+            "severity": "moderate",
+            "summary": "The daemon.pid write follows symlinks in the /tmp fallback runtime directory.",
+            "affected": ">= 0.20.0, <= 1.0.1",
+            "patched": "1.1.0",
+            "published": "2026-06-17",
+            "url": "https://github.com/advisories/GHSA-3pvj-jv98-qhjq"
+          },
+          {
+            "id": "GHSA-8qf9-62x2-82pp",
+            "cve": "CVE-2026-53766",
+            "severity": "moderate",
+            "summary": "validatePath() does not resolve symlinks before enforcing allowed roots.",
+            "affected": ">= 0.24.0, <= 1.0.1",
+            "patched": "1.1.0",
+            "published": "2026-08-17",
+            "url": "https://github.com/advisories/GHSA-8qf9-62x2-82pp"
+          }
+        ]
+      },
+      "overlaps": [
+        "playwright-mcp"
+      ],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+      ],
+      "live": {
+        "stars": 53909,
+        "pushed_at": "2026-10-20",
+        "archived": false,
+        "latest_release": "chrome-devtools-mcp-v1.11.0"
+      },
+      "alerts": [],
+      "overall": 3.7
     },
     {
       "id": "graphify",
@@ -518,10 +961,70 @@
         "https://www.augmentcode.com/learn/graphify-knowledge-graph-codebase-skill"
       ],
       "live": {
-        "stars": 130383,
+        "stars": 130406,
         "pushed_at": "2026-10-20",
         "archived": false,
         "latest_release": "v0.9.93"
+      },
+      "alerts": [],
+      "overall": 3.7
+    },
+    {
+      "id": "supabase-mcp",
+      "name": "Supabase MCP",
+      "repo": "supabase/mcp",
+      "category": "mcp-server",
+      "tags": [
+        "database",
+        "postgres",
+        "backend"
+      ],
+      "summary": "Official Supabase MCP server - tables, SQL, migrations, logs, edge functions and docs for your projects.",
+      "problem": "Schema work, debugging and migrations mean jumping to the Supabase dashboard. The agent can inspect and change the project directly.",
+      "install": {
+        "scope": "project",
+        "commands": [
+          "claude mcp add --transport http supabase \"https://mcp.supabase.com/mcp?project_ref=<project-ref>&read_only=true\""
+        ],
+        "notes": "Scope it to one project with project_ref and start with read_only=true. Point it at a development project or branch, never production."
+      },
+      "detect": {
+        "npm": [
+          "@supabase/mcp-server-supabase"
+        ],
+        "mcp_urls": [
+          "https://mcp.supabase.com/mcp"
+        ]
+      },
+      "license": "Apache-2.0",
+      "maintainer": "official",
+      "verdict": "trial",
+      "verdict_reason": "Very handy, but it can run arbitrary SQL with your account's rights. Safe enough when scoped, read-only and kept away from production.",
+      "scores": {
+        "usefulness": 4,
+        "security": 3,
+        "maturity": 3,
+        "cost": 5
+      },
+      "security": {
+        "runs_code": false,
+        "hooks": false,
+        "network": "third-party",
+        "background_process": false,
+        "data_leaves_machine": "Query results - including your users' data - come back into the model's context.",
+        "notes": "Rows written by your users are untrusted input; a crafted row can carry prompt injection that steers write tools. Read-only mode and project scoping remove most of the blast radius.",
+        "advisories": []
+      },
+      "overlaps": [],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/supabase/mcp"
+      ],
+      "live": {
+        "stars": 2966,
+        "pushed_at": "2026-10-20",
+        "archived": false,
+        "latest_release": "mcp-server-supabase-v0.14.0"
       },
       "alerts": [],
       "overall": 3.7
@@ -581,13 +1084,177 @@
         "https://scriptxeno.github.io/posts/brag-claude-code-launch-video-skill/"
       ],
       "live": {
-        "stars": 17191,
+        "stars": 17194,
         "pushed_at": "2026-10-13",
         "archived": false,
         "latest_release": null
       },
       "alerts": [],
       "overall": 3.5
+    },
+    {
+      "id": "claude-code-security-review",
+      "name": "Claude Code Security Review",
+      "repo": "anthropics/claude-code-security-review",
+      "category": "ci",
+      "tags": [
+        "security",
+        "code-review",
+        "github-actions"
+      ],
+      "summary": "Anthropic's GitHub Action that reviews pull requests for vulnerabilities, and the source of the built-in /security-review command.",
+      "problem": "Security bugs slip through code review. It reads each PR diff with Claude, flags likely vulnerabilities and comments on the PR.",
+      "install": {
+        "scope": "project",
+        "commands": [
+          "uses: anthropics/claude-code-security-review@main",
+          "/security-review"
+        ],
+        "notes": "The /security-review command already ships with Claude Code; copy security-review.md into .claude/commands/ to customize it. The Action needs a Claude API key, billed per use."
+      },
+      "license": "MIT",
+      "maintainer": "official",
+      "verdict": "adopt",
+      "verdict_reason": "Use /security-review freely. Run the Action only on trusted pull requests - Anthropic states it is not hardened against prompt injection.",
+      "scores": {
+        "usefulness": 4,
+        "security": 3,
+        "maturity": 3,
+        "cost": 3
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": false,
+        "network": "llm-api",
+        "background_process": false,
+        "data_leaves_machine": "PR diffs and surrounding code, sent to the Claude API.",
+        "notes": "A malicious PR can try to steer the reviewer. Enable \"Require approval for all external contributors\" so the workflow only runs after a maintainer looks at the PR.",
+        "red_flags": [
+          "Not hardened against prompt injection, per its own README.",
+          "The README pins @main rather than a release; pin a commit SHA in your workflow."
+        ],
+        "advisories": []
+      },
+      "overlaps": [],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/anthropics/claude-code-security-review"
+      ],
+      "live": {
+        "stars": 6463,
+        "pushed_at": "2026-02-11",
+        "archived": false,
+        "latest_release": null
+      },
+      "alerts": [],
+      "overall": 3.3
+    },
+    {
+      "id": "serena",
+      "name": "Serena",
+      "repo": "oraios/serena",
+      "category": "mcp-server",
+      "tags": [
+        "code-navigation",
+        "language-server",
+        "refactoring"
+      ],
+      "summary": "Coding toolkit that gives the agent IDE-like, symbol-level navigation and editing through language servers.",
+      "problem": "On big codebases the agent reads whole files to find one function. Serena lets it find symbols, references and definitions, and edit at symbol level.",
+      "install": {
+        "scope": "user",
+        "commands": [
+          "uv tool install -p 3.13 serena-agent"
+        ],
+        "notes": "The maintainers ask you not to install it from MCP or plugin marketplaces, whose commands are outdated. Some languages need extra language servers."
+      },
+      "detect": {
+        "pypi": [
+          "serena-agent"
+        ]
+      },
+      "license": "GPL-3.0-or-later",
+      "license_notes": "The Serena application is GPL-3.0-or-later; its SolidLSP component is MIT.",
+      "maintainer": "company",
+      "verdict": "trial",
+      "verdict_reason": "Genuinely useful on large repos, but it has had three remote-code-execution advisories in a few months. Stay on 2.0.0 or later and only open repos you trust.",
+      "scores": {
+        "usefulness": 4,
+        "security": 2,
+        "maturity": 4,
+        "cost": 4
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": false,
+        "network": "listens",
+        "background_process": true,
+        "data_leaves_machine": "Nothing beyond the model; language servers and the dashboard run locally.",
+        "notes": "Runs language servers over the whole project and a local web dashboard. Past bugs let a malicious repository or a web page run code on your machine.",
+        "red_flags": [
+          "Three RCE-class advisories in 2026 (all fixed). Opening an untrusted repository was the main attack path."
+        ],
+        "advisories": [
+          {
+            "id": "GHSA-pp25-4cg4-qcr9",
+            "severity": "critical",
+            "summary": "Server-side template injection in mode and context prompt rendering gives code execution on project activation, bypassing trusted_project_path_patterns.",
+            "affected": "<= 1.6.1",
+            "patched": "1.7.0",
+            "url": "https://github.com/oraios/serena/security/advisories/GHSA-pp25-4cg4-qcr9"
+          },
+          {
+            "id": "GHSA-37h2-6p4f-mp3q",
+            "cve": "CVE-2026-49471",
+            "severity": "high",
+            "summary": "Unauthenticated Flask dashboard on a fixed port enables DNS rebinding, memory poisoning and code execution.",
+            "affected": "< 1.5.2",
+            "patched": "1.5.2",
+            "published": "2026-07-08",
+            "url": "https://github.com/advisories/GHSA-37h2-6p4f-mp3q"
+          },
+          {
+            "id": "GHSA-pp6p-xvxf-8hhx",
+            "severity": "high",
+            "summary": "Insecure pickle deserialization of the language-server symbol cache - a malicious repository runs code on project activation.",
+            "affected": "<= 1.7.1",
+            "patched": "2.0.0",
+            "url": "https://github.com/oraios/serena/security/advisories/GHSA-pp6p-xvxf-8hhx"
+          }
+        ]
+      },
+      "overlaps": [
+        "graphify"
+      ],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/oraios/serena",
+        "https://github.com/oraios/serena/security/advisories"
+      ],
+      "live": {
+        "stars": 30518,
+        "pushed_at": "2026-10-20",
+        "archived": false,
+        "latest_release": "v2.1.0"
+      },
+      "alerts": [
+        {
+          "advisory": "GHSA-pp25-4cg4-qcr9",
+          "severity": "critical",
+          "level": "update-required"
+        },
+        {
+          "advisory": "GHSA-37h2-6p4f-mp3q",
+          "severity": "high",
+          "level": "update-required"
+        },
+        {
+          "advisory": "GHSA-pp6p-xvxf-8hhx",
+          "severity": "high",
+          "level": "update-required"
+        }
+      ],
+      "overall": 3.3
     },
     {
       "id": "task-observer",
@@ -638,13 +1305,79 @@
         "https://skillselion.com/guides/task-observer-skill-claude-code-guide"
       ],
       "live": {
-        "stars": 3469,
+        "stars": 3470,
         "pushed_at": "2026-10-16",
         "archived": false,
         "latest_release": "v3.7.0"
       },
       "alerts": [],
       "overall": 3.3
+    },
+    {
+      "id": "magic-mcp",
+      "name": "21st Magic MCP",
+      "repo": "21st-dev/magic-mcp",
+      "homepage": "https://21st.dev/mcp",
+      "category": "mcp-server",
+      "tags": [
+        "ui-generation",
+        "react",
+        "components"
+      ],
+      "summary": "Generates React UI components from a prompt using 21st.dev's component library; now part of the unified 21st MCP.",
+      "problem": "Building polished UI components from scratch. You describe a component and get one adapted from 21st.dev's community library.",
+      "install": {
+        "scope": "project",
+        "commands": [
+          "npx @21st-dev/cli@latest init --client claude"
+        ],
+        "notes": "Needs an API key from 21st.dev. Old Magic keys were reset. The @21st-dev/magic package is now only a compatibility proxy to the 21st MCP server."
+      },
+      "detect": {
+        "npm": [
+          "@21st-dev/magic",
+          "@21st-dev/cli"
+        ]
+      },
+      "license": "ISC",
+      "maintainer": "company",
+      "verdict": "assess",
+      "verdict_reason": "Mid-migration to a new product, and every prompt goes to a third-party service. Copy-in libraries such as shadcn/ui-based kits cover most needs without that.",
+      "scores": {
+        "usefulness": 3,
+        "security": 3,
+        "maturity": 3,
+        "cost": 3
+      },
+      "security": {
+        "runs_code": true,
+        "hooks": false,
+        "network": "third-party",
+        "background_process": false,
+        "data_leaves_machine": "Every MCP message, including your component requests and the context sent with them, is forwarded to 21st.dev.",
+        "notes": "Generated code lands in your repo; review it like any copied component.",
+        "red_flags": [
+          "The open-source package is now a thin proxy; the logic runs on 21st.dev's servers."
+        ],
+        "advisories": []
+      },
+      "overlaps": [
+        "kokonut-ui",
+        "react-bits"
+      ],
+      "last_reviewed": "2026-10-21",
+      "sources": [
+        "https://github.com/21st-dev/magic-mcp",
+        "https://21st.dev/mcp"
+      ],
+      "live": {
+        "stars": 6154,
+        "pushed_at": "2026-09-09",
+        "archived": false,
+        "latest_release": "v0.2.3"
+      },
+      "alerts": [],
+      "overall": 3
     },
     {
       "id": "claude-mem",
@@ -723,7 +1456,7 @@
         "https://www.augmentcode.com/learn/claude-mem-persistent-memory-claude-code"
       ],
       "live": {
-        "stars": 101976,
+        "stars": 101980,
         "pushed_at": "2026-10-21",
         "archived": false,
         "latest_release": "v15.0.1"
@@ -801,7 +1534,7 @@
         "https://silenceper.com/en/article/2026-06-14-headroom-ai-agent-context-compression/"
       ],
       "live": {
-        "stars": 76806,
+        "stars": 76812,
         "pushed_at": "2026-10-21",
         "archived": false,
         "latest_release": "v0.41.0"
@@ -881,7 +1614,7 @@
         "https://levelup.gitconnected.com/the-ai-tool-that-promises-1-6-billion-free-claude-tokens-and-why-you-shouldnt-touch-it-a63c687f7d91"
       ],
       "live": {
-        "stars": 79017,
+        "stars": 79022,
         "pushed_at": "2026-10-21",
         "archived": false,
         "latest_release": "v3.8.52"
