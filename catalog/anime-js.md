@@ -41,7 +41,7 @@ npm install animejs
 - **Category:** Animation libraries
 - **License:** MIT
 - **Maintainer:** individual
-- **Stars:** 73.7k · last push 2026-08-21 · latest release v4.5.0
+- **Stars:** 74.2k · last push 2026-08-21 · latest release v4.5.0
 - **Overlaps with:** motion - pick one
 - **Tags:** animation, vanilla-js, svg
 - **Last reviewed:** 2026-10-20

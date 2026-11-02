@@ -47,7 +47,7 @@ The original repo (gsd-build/get-shit-done, 64k stars) is archived; development 
 - **Category:** Claude Code plugins
 - **License:** MIT
 - **Maintainer:** community
-- **Stars:** 10.7k · last push 2026-10-21 · latest release v1.18.0
+- **Stars:** 11.2k · last push 2026-11-02 · latest release v1.19.0
 - **Overlaps with:** spec-kit, bmad-method, superpowers - pick one
 - **Tags:** spec-driven, context-engineering, phases
 - **Last reviewed:** 2026-10-21

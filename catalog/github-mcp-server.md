@@ -51,7 +51,7 @@ Use a fine-grained token limited to the repos you need, and restrict toolsets or
 - **Category:** MCP servers
 - **License:** MIT
 - **Maintainer:** official
-- **Stars:** 33.8k · last push 2026-10-19 · latest release v2.0.2
+- **Stars:** 34.2k · last push 2026-11-02 · latest release v2.0.3
 - **Tags:** github, issues, pull-requests
 - **Last reviewed:** 2026-10-21
 

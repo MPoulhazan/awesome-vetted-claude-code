@@ -45,7 +45,7 @@ Lets you pick CLI + skill mode (no MCP) or MCP mode. A free API key raises rate 
 - **Category:** MCP servers
 - **License:** MIT
 - **Maintainer:** company
-- **Stars:** 63.4k · last push 2026-10-20 · latest release @upstash/context7-mcp@4.4.4
+- **Stars:** 64.1k · last push 2026-11-02 · latest release @upstash/context7-sdk@0.6.0
 - **Tags:** documentation, libraries, up-to-date
 - **Last reviewed:** 2026-10-21
 

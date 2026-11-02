@@ -55,7 +55,7 @@ The plugin-only install (no hooks, no daemon) is much lighter than the full `ini
 - **Category:** Claude Code plugins
 - **License:** MIT
 - **Maintainer:** individual
-- **Stars:** 77.9k · last push 2026-10-21 · latest release v3.59.4
+- **Stars:** 80.6k · last push 2026-11-02 · latest release v3.71.0
 - **Tags:** multi-agent, swarms, orchestration, mcp
 - **Last reviewed:** 2026-10-21
 

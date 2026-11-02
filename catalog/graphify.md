@@ -59,7 +59,7 @@ The PyPI package is graphifyy (two y). `graphify install` registers a skill and,
 - **Category:** CLIs and local services
 - **License:** Apache-2.0
 - **Maintainer:** company
-- **Stars:** 130.4k · last push 2026-10-20 · latest release v0.9.93
+- **Stars:** 141.0k · last push 2026-11-01 · latest release v0.9.100
 - **Tags:** knowledge-graph, codebase-understanding, tokens
 - **Last reviewed:** 2026-10-20
 

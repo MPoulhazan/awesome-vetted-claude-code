@@ -57,7 +57,7 @@ Best fit is your own LLM backend paying per token. `headroom wrap claude` rerout
 - **Category:** CLIs and local services
 - **License:** Apache-2.0
 - **Maintainer:** company
-- **Stars:** 76.8k · last push 2026-10-21 · latest release v0.41.0
+- **Stars:** 78.6k · last push 2026-11-02 · latest release v0.42.0
 - **Tags:** compression, tokens, proxy, mcp
 - **Last reviewed:** 2026-10-20
 
