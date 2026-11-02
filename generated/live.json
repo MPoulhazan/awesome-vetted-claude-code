@@ -1,15 +1,15 @@
 {
   "agent-skills": {
     "repo": "addyosmani/agent-skills",
-    "stars": 109019,
-    "pushed_at": "2026-10-13",
+    "stars": 112735,
+    "pushed_at": "2026-11-01",
     "archived": false,
-    "latest_release": "0.6.13",
+    "latest_release": "0.6.15",
     "advisories": []
   },
   "anime-js": {
     "repo": "juliangarnier/anime",
-    "stars": 73741,
+    "stars": 74219,
     "pushed_at": "2026-08-21",
     "archived": false,
     "latest_release": "v4.5.0",
@@ -17,58 +17,58 @@
   },
   "anthropic-skills": {
     "repo": "anthropics/skills",
-    "stars": 182531,
-    "pushed_at": "2026-10-09",
+    "stars": 186669,
+    "pushed_at": "2026-10-28",
     "archived": false,
     "latest_release": null,
     "advisories": []
   },
   "bklit-ui": {
     "repo": "bklit/bklit-ui",
-    "stars": 1795,
-    "pushed_at": "2026-10-20",
+    "stars": 1878,
+    "pushed_at": "2026-11-01",
     "archived": false,
     "latest_release": null,
     "advisories": []
   },
   "bmad-method": {
     "repo": "bmad-code-org/BMAD-METHOD",
-    "stars": 54389,
-    "pushed_at": "2026-10-20",
+    "stars": 54894,
+    "pushed_at": "2026-11-01",
     "archived": false,
     "latest_release": "v6.12.4",
     "advisories": []
   },
   "brag": {
     "repo": "latent-spaces/brag",
-    "stars": 17194,
-    "pushed_at": "2026-10-13",
+    "stars": 20015,
+    "pushed_at": "2026-10-23",
     "archived": false,
-    "latest_release": null,
+    "latest_release": "v0.5.0",
     "advisories": []
   },
   "ccstatusline": {
     "repo": "sirmalloc/ccstatusline",
-    "stars": 13355,
-    "pushed_at": "2026-10-19",
+    "stars": 13495,
+    "pushed_at": "2026-11-02",
     "archived": false,
-    "latest_release": "v2.2.32",
+    "latest_release": "v2.2.33",
     "advisories": []
   },
   "ccusage": {
     "repo": "ccusage/ccusage",
-    "stars": 19101,
-    "pushed_at": "2026-10-21",
+    "stars": 19300,
+    "pushed_at": "2026-11-02",
     "archived": false,
-    "latest_release": "v20.0.37",
+    "latest_release": "v20.0.47",
     "advisories": []
   },
   "chrome-devtools-mcp": {
     "repo": "ChromeDevTools/chrome-devtools-mcp",
-    "stars": 53910,
-    "pushed_at": "2026-10-20",
+    "stars": 54658,
+    "pushed_at": "2026-11-02",
     "archived": false,
-    "latest_release": "chrome-devtools-mcp-v1.11.0",
+    "latest_release": "chrome-devtools-mcp-v1.12.0",
     "advisories": [
       {
         "id": "GHSA-3pvj-jv98-qhjq",
@@ -81,6 +81,15 @@
         "url": "https://github.com/advisories/GHSA-3pvj-jv98-qhjq"
       },
       {
+        "id": "GHSA-5hw5-4q87-m6x9",
+        "severity": "moderate",
+        "summary": "MCP roots bypass via extension-rewritten symlink output path",
+        "affected": ">= 1.1.0, <= 1.4.0",
+        "patched": "1.5.0",
+        "published": "2026-10-22",
+        "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/security/advisories/GHSA-5hw5-4q87-m6x9"
+      },
+      {
         "id": "GHSA-8qf9-62x2-82pp",
         "cve": "CVE-2026-53766",
         "severity": "moderate",
@@ -89,12 +98,21 @@
         "patched": "1.1.0",
         "published": "2026-08-17",
         "url": "https://github.com/advisories/GHSA-8qf9-62x2-82pp"
+      },
+      {
+        "id": "GHSA-xfxg-8r4q-wj4v",
+        "severity": "moderate",
+        "summary": "Service-worker initiated fetches bypass chrome-devtools-mcp global URL allowlist/blocklist",
+        "affected": ">=1.2.0, <= 1.4.0",
+        "patched": "1.4.0",
+        "published": "2026-10-22",
+        "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/security/advisories/GHSA-xfxg-8r4q-wj4v"
       }
     ]
   },
   "claude-code-router": {
     "repo": "musistudio/claude-code-router",
-    "stars": 37773,
+    "stars": 37959,
     "pushed_at": "2026-10-10",
     "archived": false,
     "latest_release": "v3.1.3",
@@ -113,7 +131,7 @@
   },
   "claude-code-security-review": {
     "repo": "anthropics/claude-code-security-review",
-    "stars": 6464,
+    "stars": 6681,
     "pushed_at": "2026-02-11",
     "archived": false,
     "latest_release": null,
@@ -121,18 +139,18 @@
   },
   "claude-code-setup": {
     "repo": "anthropics/claude-plugins-official",
-    "stars": 43435,
-    "pushed_at": "2026-10-21",
+    "stars": 45806,
+    "pushed_at": "2026-11-02",
     "archived": false,
     "latest_release": null,
     "advisories": []
   },
   "claude-mem": {
     "repo": "thedotmack/claude-mem",
-    "stars": 101983,
-    "pushed_at": "2026-10-21",
+    "stars": 110449,
+    "pushed_at": "2026-11-02",
     "archived": false,
-    "latest_release": "v15.0.1",
+    "latest_release": "v15.8.3",
     "advisories": [
       {
         "id": "GHSA-5gvr-v6qv-h5mm",
@@ -148,7 +166,7 @@
   },
   "claude-squad": {
     "repo": "smtg-ai/claude-squad",
-    "stars": 8639,
+    "stars": 8719,
     "pushed_at": "2026-08-20",
     "archived": false,
     "latest_release": "v1.0.20",
@@ -156,7 +174,7 @@
   },
   "container-use": {
     "repo": "dagger/container-use",
-    "stars": 4074,
+    "stars": 4083,
     "pushed_at": "2026-09-21",
     "archived": false,
     "latest_release": "v0.4.2",
@@ -164,18 +182,18 @@
   },
   "context7": {
     "repo": "upstash/context7",
-    "stars": 63390,
-    "pushed_at": "2026-10-20",
+    "stars": 64086,
+    "pushed_at": "2026-11-02",
     "archived": false,
-    "latest_release": "@upstash/context7-mcp@4.4.4",
+    "latest_release": "@upstash/context7-sdk@0.6.0",
     "advisories": []
   },
   "github-mcp-server": {
     "repo": "github/github-mcp-server",
-    "stars": 33806,
-    "pushed_at": "2026-10-19",
+    "stars": 34167,
+    "pushed_at": "2026-11-02",
     "archived": false,
-    "latest_release": "v2.0.2",
+    "latest_release": "v2.0.3",
     "advisories": [
       {
         "id": "GHSA-pjp5-fpmr-3349",
@@ -200,10 +218,10 @@
   },
   "graphify": {
     "repo": "Graphify-Labs/graphify",
-    "stars": 130425,
-    "pushed_at": "2026-10-20",
+    "stars": 140970,
+    "pushed_at": "2026-11-01",
     "archived": false,
-    "latest_release": "v0.9.93",
+    "latest_release": "v0.9.100",
     "advisories": [
       {
         "id": "GHSA-pcc4-rvhr-2pr8",
@@ -218,18 +236,18 @@
   },
   "gsd-core": {
     "repo": "open-gsd/gsd-core",
-    "stars": 10726,
-    "pushed_at": "2026-10-21",
+    "stars": 11160,
+    "pushed_at": "2026-11-02",
     "archived": false,
-    "latest_release": "v1.18.0",
+    "latest_release": "v1.19.0",
     "advisories": []
   },
   "headroom": {
     "repo": "headroomlabs-ai/headroom",
-    "stars": 76819,
-    "pushed_at": "2026-10-21",
+    "stars": 78646,
+    "pushed_at": "2026-11-02",
     "archived": false,
-    "latest_release": "v0.41.0",
+    "latest_release": "v0.42.0",
     "advisories": [
       {
         "id": "GHSA-h46j-26q3-rggf",
@@ -245,15 +263,15 @@
   },
   "kokonut-ui": {
     "repo": "kokonut-labs/kokonutui",
-    "stars": 2185,
-    "pushed_at": "2026-10-21",
+    "stars": 2263,
+    "pushed_at": "2026-10-31",
     "archived": false,
     "latest_release": null,
     "advisories": []
   },
   "magic-mcp": {
     "repo": "21st-dev/magic-mcp",
-    "stars": 6154,
+    "stars": 6344,
     "pushed_at": "2026-09-09",
     "archived": false,
     "latest_release": "v0.2.3",
@@ -261,24 +279,24 @@
   },
   "magic-ui": {
     "repo": "magicuidesign/magicui",
-    "stars": 22768,
-    "pushed_at": "2026-10-17",
+    "stars": 23040,
+    "pushed_at": "2026-11-02",
     "archived": false,
     "latest_release": null,
     "advisories": []
   },
   "motion": {
     "repo": "motiondivision/motion",
-    "stars": 34399,
-    "pushed_at": "2026-10-20",
+    "stars": 34806,
+    "pushed_at": "2026-11-02",
     "archived": false,
     "latest_release": null,
     "advisories": []
   },
   "omniroute": {
-    "repo": "diegosouzapw/OmniRoute",
-    "stars": 79026,
-    "pushed_at": "2026-10-21",
+    "repo": "cheaper-inference/OmniRoute",
+    "stars": 83881,
+    "pushed_at": "2026-11-02",
     "archived": false,
     "latest_release": "v3.8.52",
     "advisories": [
@@ -295,7 +313,7 @@
   },
   "opcode": {
     "repo": "winfunc/opcode",
-    "stars": 22417,
+    "stars": 22430,
     "pushed_at": "2026-09-18",
     "archived": false,
     "latest_release": "v0.2.0",
@@ -303,10 +321,10 @@
   },
   "playwright-mcp": {
     "repo": "microsoft/playwright-mcp",
-    "stars": 38445,
-    "pushed_at": "2026-10-19",
+    "stars": 38996,
+    "pushed_at": "2026-11-01",
     "archived": false,
-    "latest_release": "v0.0.83",
+    "latest_release": "v0.0.84",
     "advisories": [
       {
         "id": "GHSA-6fg3-hvw7-2fwq",
@@ -322,24 +340,24 @@
   },
   "ponytail": {
     "repo": "DietrichGebert/ponytail",
-    "stars": 169985,
-    "pushed_at": "2026-10-18",
+    "stars": 182692,
+    "pushed_at": "2026-10-29",
     "archived": false,
-    "latest_release": "v5.3.2",
+    "latest_release": "v5.3.3",
     "advisories": []
   },
   "react-bits": {
     "repo": "DavidHDev/react-bits",
-    "stars": 49812,
-    "pushed_at": "2026-10-19",
+    "stars": 51055,
+    "pushed_at": "2026-10-31",
     "archived": false,
     "latest_release": null,
     "advisories": []
   },
   "repomix": {
     "repo": "yamadashy/repomix",
-    "stars": 28941,
-    "pushed_at": "2026-10-18",
+    "stars": 29121,
+    "pushed_at": "2026-11-01",
     "archived": false,
     "latest_release": "v1.18.1",
     "advisories": [
@@ -394,10 +412,10 @@
   },
   "ruflo": {
     "repo": "ruvnet/ruflo",
-    "stars": 77918,
-    "pushed_at": "2026-10-21",
+    "stars": 80613,
+    "pushed_at": "2026-11-02",
     "archived": false,
-    "latest_release": "v3.59.4",
+    "latest_release": "v3.71.0",
     "advisories": [
       {
         "id": "GHSA-c4hm-4h84-2cf3",
@@ -413,16 +431,16 @@
   },
   "sentry-mcp": {
     "repo": "getsentry/toolkit",
-    "stars": 936,
-    "pushed_at": "2026-10-21",
+    "stars": 951,
+    "pushed_at": "2026-11-02",
     "archived": false,
     "latest_release": "cli@0.47.0",
     "advisories": []
   },
   "serena": {
     "repo": "oraios/serena",
-    "stars": 30520,
-    "pushed_at": "2026-10-20",
+    "stars": 31017,
+    "pushed_at": "2026-10-28",
     "archived": false,
     "latest_release": "v2.1.0",
     "advisories": [
@@ -458,31 +476,31 @@
   },
   "shadcn-ui": {
     "repo": "shadcn-ui/ui",
-    "stars": 126066,
-    "pushed_at": "2026-10-20",
+    "stars": 127183,
+    "pushed_at": "2026-11-02",
     "archived": false,
-    "latest_release": "shadcn@4.22.1",
+    "latest_release": "shadcn@4.23.0",
     "advisories": []
   },
   "spec-kit": {
     "repo": "github/spec-kit",
-    "stars": 142182,
-    "pushed_at": "2026-10-20",
+    "stars": 145340,
+    "pushed_at": "2026-11-02",
     "archived": false,
-    "latest_release": "v1.2.2",
+    "latest_release": "v1.2.6",
     "advisories": []
   },
   "supabase-mcp": {
     "repo": "supabase/mcp",
-    "stars": 2966,
-    "pushed_at": "2026-10-20",
+    "stars": 2990,
+    "pushed_at": "2026-10-31",
     "archived": false,
-    "latest_release": "mcp-server-supabase-v0.14.0",
+    "latest_release": "mcp-server-supabase-v0.15.0",
     "advisories": []
   },
   "superclaude": {
     "repo": "SuperClaude-Org/SuperClaude_Framework",
-    "stars": 23907,
+    "stars": 23922,
     "pushed_at": "2026-09-27",
     "archived": false,
     "latest_release": "v4.3.0",
@@ -490,32 +508,32 @@
   },
   "superpowers": {
     "repo": "obra/superpowers",
-    "stars": 302663,
-    "pushed_at": "2026-10-21",
+    "stars": 311064,
+    "pushed_at": "2026-10-29",
     "archived": false,
-    "latest_release": "v7.0.0",
+    "latest_release": "v7.0.1",
     "advisories": []
   },
   "task-observer": {
     "repo": "rebelytics/one-skill-to-rule-them-all",
-    "stars": 3470,
-    "pushed_at": "2026-10-16",
+    "stars": 3694,
+    "pushed_at": "2026-11-02",
     "archived": false,
-    "latest_release": "v3.7.0",
+    "latest_release": "v3.9.0",
     "advisories": []
   },
   "vibe-kanban": {
     "repo": "BloopAI/vibe-kanban",
-    "stars": 28413,
-    "pushed_at": "2026-09-19",
+    "stars": 28566,
+    "pushed_at": "2026-10-29",
     "archived": false,
     "latest_release": "v0.1.44-20260424091429",
     "advisories": []
   },
   "wshobson-agents": {
     "repo": "wshobson/agents",
-    "stars": 41304,
-    "pushed_at": "2026-10-19",
+    "stars": 42103,
+    "pushed_at": "2026-11-02",
     "archived": false,
     "latest_release": null,
     "advisories": []

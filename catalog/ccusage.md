@@ -45,7 +45,7 @@ Add --offline to use bundled pricing instead of fetching current model prices.
 - **Category:** CLIs and local services
 - **License:** MIT
 - **Maintainer:** individual
-- **Stars:** 19.1k · last push 2026-10-21 · latest release v20.0.37
+- **Stars:** 19.3k · last push 2026-11-02 · latest release v20.0.47
 - **Overlaps with:** ccstatusline - pick one
 - **Tags:** usage, cost, tokens, analytics
 - **Last reviewed:** 2026-10-21

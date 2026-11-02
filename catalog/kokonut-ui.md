@@ -43,7 +43,7 @@ Each component page gives its exact shadcn command. Fits any React + Tailwind pr
 - **Category:** UI libraries
 - **License:** MIT
 - **Maintainer:** company
-- **Stars:** 2.2k · last push 2026-10-21
+- **Stars:** 2.3k · last push 2026-10-31
 - **Overlaps with:** react-bits, bklit-ui - pick one
 - **Tags:** react, tailwind, shadcn, motion
 - **Last reviewed:** 2026-10-20

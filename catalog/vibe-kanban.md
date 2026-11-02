@@ -45,7 +45,7 @@ npx vibe-kanban
 - **Category:** CLIs and local services
 - **License:** Apache-2.0
 - **Maintainer:** company
-- **Stars:** 28.4k · last push 2026-09-19 · latest release v0.1.44-20260424091429
+- **Stars:** 28.6k · last push 2026-10-29 · latest release v0.1.44-20260424091429
 - **Overlaps with:** claude-squad, opcode - pick one
 - **Tags:** kanban, multi-agent, orchestration
 - **Last reviewed:** 2026-10-21

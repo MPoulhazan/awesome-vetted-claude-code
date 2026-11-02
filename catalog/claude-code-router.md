@@ -51,7 +51,7 @@ The gateway listens on 127.0.0.1:3456 and the UI on 3458. Read the Docker guide 
 - **Category:** Gateways and proxies
 - **License:** MIT
 - **Maintainer:** individual
-- **Stars:** 37.8k · last push 2026-10-10 · latest release v3.1.3
+- **Stars:** 38.0k · last push 2026-10-10 · latest release v3.1.3
 - **Overlaps with:** omniroute - pick one
 - **Tags:** llm-gateway, routing, multi-provider, proxy
 - **Last reviewed:** 2026-10-21

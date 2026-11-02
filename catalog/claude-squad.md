@@ -47,7 +47,7 @@ Needs tmux and git. The curl install script is also offered - read it before pip
 - **Category:** CLIs and local services
 - **License:** AGPL-3.0
 - **Maintainer:** company
-- **Stars:** 8.6k · last push 2026-08-20 · latest release v1.0.20
+- **Stars:** 8.7k · last push 2026-08-20 · latest release v1.0.20
 - **Overlaps with:** vibe-kanban, opcode - pick one
 - **Tags:** multi-session, tmux, worktrees, tui
 - **Last reviewed:** 2026-10-21

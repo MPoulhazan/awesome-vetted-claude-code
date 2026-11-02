@@ -44,7 +44,7 @@ Install only the skills you want with --skill <name> rather than all of them.
 - **Category:** Skills
 - **License:** MIT
 - **Maintainer:** individual
-- **Stars:** 109.0k · last push 2026-10-13 · latest release 0.6.13
+- **Stars:** 112.7k · last push 2026-11-01 · latest release 0.6.15
 - **Overlaps with:** superpowers, superclaude, wshobson-agents - pick one
 - **Tags:** workflow, spec, tdd, code-review
 - **Last reviewed:** 2026-10-20

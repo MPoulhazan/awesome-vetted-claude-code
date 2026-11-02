@@ -55,10 +55,10 @@
         "https://ui.shadcn.com"
       ],
       "live": {
-        "stars": 126066,
-        "pushed_at": "2026-10-20",
+        "stars": 127183,
+        "pushed_at": "2026-11-02",
         "archived": false,
-        "latest_release": "shadcn@4.22.1"
+        "latest_release": "shadcn@4.23.0"
       },
       "alerts": [],
       "overall": 5
@@ -115,10 +115,10 @@
         "https://github.com/ccusage/ccusage"
       ],
       "live": {
-        "stars": 19101,
-        "pushed_at": "2026-10-21",
+        "stars": 19300,
+        "pushed_at": "2026-11-02",
         "archived": false,
-        "latest_release": "v20.0.37"
+        "latest_release": "v20.0.47"
       },
       "alerts": [],
       "overall": 4.7
@@ -177,8 +177,8 @@
         "https://motion.dev"
       ],
       "live": {
-        "stars": 34399,
-        "pushed_at": "2026-10-20",
+        "stars": 34806,
+        "pushed_at": "2026-11-02",
         "archived": false,
         "latest_release": null
       },
@@ -240,8 +240,8 @@
         "https://aident.ai/blog/use-claude-code-setup-plugin-safely"
       ],
       "live": {
-        "stars": 43435,
-        "pushed_at": "2026-10-21",
+        "stars": 45806,
+        "pushed_at": "2026-11-02",
         "archived": false,
         "latest_release": null
       },
@@ -302,10 +302,10 @@
         "https://github.com/upstash/context7"
       ],
       "live": {
-        "stars": 63390,
-        "pushed_at": "2026-10-20",
+        "stars": 64086,
+        "pushed_at": "2026-11-02",
         "archived": false,
-        "latest_release": "@upstash/context7-mcp@4.4.4"
+        "latest_release": "@upstash/context7-sdk@0.6.0"
       },
       "alerts": [],
       "overall": 4.5
@@ -359,8 +359,8 @@
         "https://magicui.design"
       ],
       "live": {
-        "stars": 22768,
-        "pushed_at": "2026-10-17",
+        "stars": 23040,
+        "pushed_at": "2026-11-02",
         "archived": false,
         "latest_release": null
       },
@@ -421,10 +421,10 @@
         "https://github.com/obra/superpowers"
       ],
       "live": {
-        "stars": 302663,
-        "pushed_at": "2026-10-21",
+        "stars": 311064,
+        "pushed_at": "2026-10-29",
         "archived": false,
-        "latest_release": "v7.0.0"
+        "latest_release": "v7.0.1"
       },
       "alerts": [],
       "overall": 4.5
@@ -480,7 +480,7 @@
         "https://animejs.com"
       ],
       "live": {
-        "stars": 73741,
+        "stars": 74219,
         "pushed_at": "2026-08-21",
         "archived": false,
         "latest_release": "v4.5.0"
@@ -537,8 +537,8 @@
         "https://kokonutui.com"
       ],
       "live": {
-        "stars": 2185,
-        "pushed_at": "2026-10-21",
+        "stars": 2263,
+        "pushed_at": "2026-10-31",
         "archived": false,
         "latest_release": null
       },
@@ -594,8 +594,8 @@
         "https://reactbits.dev"
       ],
       "live": {
-        "stars": 49812,
-        "pushed_at": "2026-10-19",
+        "stars": 51055,
+        "pushed_at": "2026-10-31",
         "archived": false,
         "latest_release": null
       },
@@ -654,10 +654,10 @@
         "https://github.com/github/spec-kit"
       ],
       "live": {
-        "stars": 142182,
-        "pushed_at": "2026-10-20",
+        "stars": 145340,
+        "pushed_at": "2026-11-02",
         "archived": false,
-        "latest_release": "v1.2.2"
+        "latest_release": "v1.2.6"
       },
       "alerts": [],
       "overall": 4.3
@@ -723,8 +723,8 @@
         "https://github.com/anthropics/skills"
       ],
       "live": {
-        "stars": 182531,
-        "pushed_at": "2026-10-09",
+        "stars": 186669,
+        "pushed_at": "2026-10-28",
         "archived": false,
         "latest_release": null
       },
@@ -801,10 +801,10 @@
         "https://github.com/github/github-mcp-server"
       ],
       "live": {
-        "stars": 33806,
-        "pushed_at": "2026-10-19",
+        "stars": 34167,
+        "pushed_at": "2026-11-02",
         "archived": false,
-        "latest_release": "v2.0.2"
+        "latest_release": "v2.0.3"
       },
       "alerts": [
         {
@@ -886,10 +886,10 @@
         "https://www.mindstudio.ai/blog/ponytail-ai-coding-minimalism-plugin"
       ],
       "live": {
-        "stars": 169985,
-        "pushed_at": "2026-10-18",
+        "stars": 182692,
+        "pushed_at": "2026-10-29",
         "archived": false,
-        "latest_release": "v5.3.2"
+        "latest_release": "v5.3.3"
       },
       "alerts": [],
       "overall": 4.2
@@ -948,8 +948,8 @@
         "https://github.com/getsentry/toolkit"
       ],
       "live": {
-        "stars": 936,
-        "pushed_at": "2026-10-21",
+        "stars": 951,
+        "pushed_at": "2026-11-02",
         "archived": false,
         "latest_release": "cli@0.47.0"
       },
@@ -1013,10 +1013,10 @@
         "https://dev.to/yimtheppariyapol/addy-osmani-agent-skills-review-24-production-skills-726k-stars-22em"
       ],
       "live": {
-        "stars": 109019,
-        "pushed_at": "2026-10-13",
+        "stars": 112735,
+        "pushed_at": "2026-11-01",
         "archived": false,
-        "latest_release": "0.6.13"
+        "latest_release": "0.6.15"
       },
       "alerts": [],
       "overall": 4
@@ -1071,7 +1071,7 @@
         "https://github.com/smtg-ai/claude-squad"
       ],
       "live": {
-        "stars": 8639,
+        "stars": 8719,
         "pushed_at": "2026-08-20",
         "archived": false,
         "latest_release": "v1.0.20"
@@ -1148,10 +1148,10 @@
         "https://github.com/advisories/GHSA-6fg3-hvw7-2fwq"
       ],
       "live": {
-        "stars": 38445,
-        "pushed_at": "2026-10-19",
+        "stars": 38996,
+        "pushed_at": "2026-11-01",
         "archived": false,
-        "latest_release": "v0.0.83"
+        "latest_release": "v0.0.84"
       },
       "alerts": [
         {
@@ -1209,8 +1209,8 @@
         "https://github.com/wshobson/agents"
       ],
       "live": {
-        "stars": 41304,
-        "pushed_at": "2026-10-19",
+        "stars": 42103,
+        "pushed_at": "2026-11-02",
         "archived": false,
         "latest_release": null
       },
@@ -1270,8 +1270,8 @@
         "https://claudeskills.info/skills/bklit/bklit-ui/shadcn/"
       ],
       "live": {
-        "stars": 1795,
-        "pushed_at": "2026-10-20",
+        "stars": 1878,
+        "pushed_at": "2026-11-01",
         "archived": false,
         "latest_release": null
       },
@@ -1333,8 +1333,8 @@
         "https://github.com/bmad-code-org/BMAD-METHOD"
       ],
       "live": {
-        "stars": 54389,
-        "pushed_at": "2026-10-20",
+        "stars": 54894,
+        "pushed_at": "2026-11-01",
         "archived": false,
         "latest_release": "v6.12.4"
       },
@@ -1391,10 +1391,10 @@
         "https://github.com/sirmalloc/ccstatusline"
       ],
       "live": {
-        "stars": 13355,
-        "pushed_at": "2026-10-19",
+        "stars": 13495,
+        "pushed_at": "2026-11-02",
         "archived": false,
-        "latest_release": "v2.2.32"
+        "latest_release": "v2.2.33"
       },
       "alerts": [],
       "overall": 3.8
@@ -1504,8 +1504,8 @@
         "https://github.com/yamadashy/repomix/security/advisories"
       ],
       "live": {
-        "stars": 28941,
-        "pushed_at": "2026-10-18",
+        "stars": 29121,
+        "pushed_at": "2026-11-01",
         "archived": false,
         "latest_release": "v1.18.1"
       },
@@ -1579,6 +1579,16 @@
             "url": "https://github.com/advisories/GHSA-3pvj-jv98-qhjq"
           },
           {
+            "id": "GHSA-5hw5-4q87-m6x9",
+            "severity": "moderate",
+            "summary": "MCP roots bypass via extension-rewritten symlink output path",
+            "affected": ">= 1.1.0, <= 1.4.0",
+            "patched": "1.5.0",
+            "published": "2026-10-22",
+            "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/security/advisories/GHSA-5hw5-4q87-m6x9",
+            "auto": true
+          },
+          {
             "id": "GHSA-8qf9-62x2-82pp",
             "cve": "CVE-2026-53766",
             "severity": "moderate",
@@ -1587,6 +1597,16 @@
             "patched": "1.1.0",
             "published": "2026-08-17",
             "url": "https://github.com/advisories/GHSA-8qf9-62x2-82pp"
+          },
+          {
+            "id": "GHSA-xfxg-8r4q-wj4v",
+            "severity": "moderate",
+            "summary": "Service-worker initiated fetches bypass chrome-devtools-mcp global URL allowlist/blocklist",
+            "affected": ">=1.2.0, <= 1.4.0",
+            "patched": "1.4.0",
+            "published": "2026-10-22",
+            "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/security/advisories/GHSA-xfxg-8r4q-wj4v",
+            "auto": true
           }
         ]
       },
@@ -1598,10 +1618,10 @@
         "https://github.com/ChromeDevTools/chrome-devtools-mcp"
       ],
       "live": {
-        "stars": 53910,
-        "pushed_at": "2026-10-20",
+        "stars": 54658,
+        "pushed_at": "2026-11-02",
         "archived": false,
-        "latest_release": "chrome-devtools-mcp-v1.11.0"
+        "latest_release": "chrome-devtools-mcp-v1.12.0"
       },
       "alerts": [],
       "overall": 3.7
@@ -1654,7 +1674,7 @@
         "https://github.com/dagger/container-use"
       ],
       "live": {
-        "stars": 4074,
+        "stars": 4083,
         "pushed_at": "2026-09-21",
         "archived": false,
         "latest_release": "v0.4.2"
@@ -1738,10 +1758,10 @@
         "https://www.augmentcode.com/learn/graphify-knowledge-graph-codebase-skill"
       ],
       "live": {
-        "stars": 130425,
-        "pushed_at": "2026-10-20",
+        "stars": 140970,
+        "pushed_at": "2026-11-01",
         "archived": false,
-        "latest_release": "v0.9.93"
+        "latest_release": "v0.9.100"
       },
       "alerts": [],
       "overall": 3.7
@@ -1798,10 +1818,10 @@
         "https://github.com/supabase/mcp"
       ],
       "live": {
-        "stars": 2966,
-        "pushed_at": "2026-10-20",
+        "stars": 2990,
+        "pushed_at": "2026-10-31",
         "archived": false,
-        "latest_release": "mcp-server-supabase-v0.14.0"
+        "latest_release": "mcp-server-supabase-v0.15.0"
       },
       "alerts": [],
       "overall": 3.7
@@ -1861,10 +1881,10 @@
         "https://scriptxeno.github.io/posts/brag-claude-code-launch-video-skill/"
       ],
       "live": {
-        "stars": 17194,
-        "pushed_at": "2026-10-13",
+        "stars": 20015,
+        "pushed_at": "2026-10-23",
         "archived": false,
-        "latest_release": null
+        "latest_release": "v0.5.0"
       },
       "alerts": [],
       "overall": 3.5
@@ -1926,10 +1946,10 @@
         "https://github.com/gsd-build/get-shit-done"
       ],
       "live": {
-        "stars": 10726,
-        "pushed_at": "2026-10-21",
+        "stars": 11160,
+        "pushed_at": "2026-11-02",
         "archived": false,
-        "latest_release": "v1.18.0"
+        "latest_release": "v1.19.0"
       },
       "alerts": [],
       "overall": 3.5
@@ -1999,7 +2019,7 @@
         "https://github.com/musistudio/claude-code-router"
       ],
       "live": {
-        "stars": 37773,
+        "stars": 37959,
         "pushed_at": "2026-10-10",
         "archived": false,
         "latest_release": "v3.1.3"
@@ -2062,7 +2082,7 @@
         "https://github.com/anthropics/claude-code-security-review"
       ],
       "live": {
-        "stars": 6464,
+        "stars": 6681,
         "pushed_at": "2026-02-11",
         "archived": false,
         "latest_release": null
@@ -2153,8 +2173,8 @@
         "https://github.com/oraios/serena/security/advisories"
       ],
       "live": {
-        "stars": 30520,
-        "pushed_at": "2026-10-20",
+        "stars": 31017,
+        "pushed_at": "2026-10-28",
         "archived": false,
         "latest_release": "v2.1.0"
       },
@@ -2230,7 +2250,7 @@
         "https://github.com/SuperClaude-Org/SuperClaude_Framework"
       ],
       "live": {
-        "stars": 23907,
+        "stars": 23922,
         "pushed_at": "2026-09-27",
         "archived": false,
         "latest_release": "v4.3.0"
@@ -2287,10 +2307,10 @@
         "https://skillselion.com/guides/task-observer-skill-claude-code-guide"
       ],
       "live": {
-        "stars": 3470,
-        "pushed_at": "2026-10-16",
+        "stars": 3694,
+        "pushed_at": "2026-11-02",
         "archived": false,
-        "latest_release": "v3.7.0"
+        "latest_release": "v3.9.0"
       },
       "alerts": [],
       "overall": 3.3
@@ -2353,7 +2373,7 @@
         "https://21st.dev/mcp"
       ],
       "live": {
-        "stars": 6154,
+        "stars": 6344,
         "pushed_at": "2026-09-09",
         "archived": false,
         "latest_release": "v0.2.3"
@@ -2411,7 +2431,7 @@
         "https://github.com/winfunc/opcode"
       ],
       "live": {
-        "stars": 22417,
+        "stars": 22430,
         "pushed_at": "2026-09-18",
         "archived": false,
         "latest_release": "v0.2.0"
@@ -2472,8 +2492,8 @@
         "https://github.com/BloopAI/vibe-kanban"
       ],
       "live": {
-        "stars": 28413,
-        "pushed_at": "2026-09-19",
+        "stars": 28566,
+        "pushed_at": "2026-10-29",
         "archived": false,
         "latest_release": "v0.1.44-20260424091429"
       },
@@ -2557,10 +2577,10 @@
         "https://www.augmentcode.com/learn/claude-mem-persistent-memory-claude-code"
       ],
       "live": {
-        "stars": 101983,
-        "pushed_at": "2026-10-21",
+        "stars": 110449,
+        "pushed_at": "2026-11-02",
         "archived": false,
-        "latest_release": "v15.0.1"
+        "latest_release": "v15.8.3"
       },
       "alerts": [],
       "overall": 2.8
@@ -2635,10 +2655,10 @@
         "https://silenceper.com/en/article/2026-06-14-headroom-ai-agent-context-compression/"
       ],
       "live": {
-        "stars": 76819,
-        "pushed_at": "2026-10-21",
+        "stars": 78646,
+        "pushed_at": "2026-11-02",
         "archived": false,
-        "latest_release": "v0.41.0"
+        "latest_release": "v0.42.0"
       },
       "alerts": [
         {
@@ -2715,10 +2735,10 @@
         "https://github.com/ruvnet/ruflo/security/advisories/GHSA-c4hm-4h84-2cf3"
       ],
       "live": {
-        "stars": 77918,
-        "pushed_at": "2026-10-21",
+        "stars": 80613,
+        "pushed_at": "2026-11-02",
         "archived": false,
-        "latest_release": "v3.59.4"
+        "latest_release": "v3.71.0"
       },
       "alerts": [
         {
@@ -2797,8 +2817,8 @@
         "https://levelup.gitconnected.com/the-ai-tool-that-promises-1-6-billion-free-claude-tokens-and-why-you-shouldnt-touch-it-a63c687f7d91"
       ],
       "live": {
-        "stars": 79026,
-        "pushed_at": "2026-10-21",
+        "stars": 83881,
+        "pushed_at": "2026-11-02",
         "archived": false,
         "latest_release": "v3.8.52"
       },

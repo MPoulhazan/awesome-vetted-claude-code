@@ -44,7 +44,7 @@ The suffix picks JS or TS, then CSS or Tailwind. Use on marketing pages, sparing
 - **Category:** UI libraries
 - **License:** MIT + Commons Clause - Free for any product, including paid ones, but you may not sell or redistribute the components themselves, e.g. in a template or UI kit.
 - **Maintainer:** individual
-- **Stars:** 49.8k · last push 2026-10-19
+- **Stars:** 51.1k · last push 2026-10-31
 - **Overlaps with:** kokonut-ui - pick one
 - **Tags:** react, animation, landing-page
 - **Last reviewed:** 2026-10-20
