@@ -2,7 +2,7 @@
 
 > A security-first catalog of Claude Code plugins, skills, MCP servers and the tools people hype on social media - each one read, rated and checked for CVEs.
 
-**41 tools** · machine-readable as [`tools.json`](tools.json) · advisories refreshed weekly
+**42 tools** · machine-readable as [`tools.json`](tools.json) · advisories refreshed weekly
 
 Community-maintained. Not affiliated with or endorsed by Anthropic.
 
@@ -31,6 +31,7 @@ New tools ship every day, and many run code with your permissions, hook into eve
 | [Repomix](catalog/repomix.md) | [GHSA-w8cw-mgw9-74h7](https://github.com/yamadashy/repomix/security/advisories/GHSA-w8cw-mgw9-74h7) | Moderate | 1.18.0 |
 | [claude-mem](catalog/claude-mem.md) | [GHSA-5gvr-v6qv-h5mm](https://github.com/advisories/GHSA-5gvr-v6qv-h5mm) / CVE-2026-11330 | Low | 12.0.0 |
 | [Repomix](catalog/repomix.md) | [GHSA-rpmv-562j-qxrv](https://github.com/yamadashy/repomix/security/advisories/GHSA-rpmv-562j-qxrv) | Low | 1.18.0 |
+| [Strix](catalog/strix.md) | [GHSA-9x9x-v3ff-pj74](https://github.com/advisories/GHSA-9x9x-v3ff-pj74) / CVE-2026-15519 | Low | **No confirmed fix** |
 
 ## Catalog
 
@@ -83,6 +84,7 @@ Sorted by overall score. Click a tool for the full review: permissions, what lea
 | [ccstatusline](catalog/ccstatusline.md) | 🟢 Adopt | **3.8** | 4/5 | 13.4k | Customizable Claude Code status line - model, git branch, token usage, context and more, with powerline themes. |
 | [Repomix](catalog/repomix.md) | 🔵 Trial | **3.8** | 3/5 ⚠ | 28.9k | Packs a whole repository into one AI-friendly file, with token counts and secret scanning; also runs as an MCP server. |
 | [graphify](catalog/graphify.md) | 🔵 Trial | **3.7** | 3/5 | 130.4k | Turns a folder of code, docs, schemas and PDFs into a queryable knowledge graph your agent can navigate. |
+| [Strix](catalog/strix.md) | 🔵 Trial | **3.3** | 3/5 | – | Autonomous AI pentesting agents that attack your app in a Docker sandbox and report only findings proven with a working exploit. |
 | [opcode (formerly Claudia)](catalog/opcode.md) | 🟡 Assess | **3** | 3/5 | 22.4k | Desktop GUI for Claude Code - projects and sessions, custom agents, background runs, usage analytics and MCP management. |
 | [Vibe Kanban](catalog/vibe-kanban.md) | 🔴 Hold | **3** | 3/5 | 28.4k | Kanban board that hands tasks to coding agents, each in its own worktree, and lets you review their diffs. |
 | [Headroom](catalog/headroom.md) | 🟡 Assess | **2.8** | 2/5 ⚠ | 76.8k | Compresses tool outputs, logs, files and RAG chunks before they reach the model. Library, proxy, agent wrapper or MCP server. |
