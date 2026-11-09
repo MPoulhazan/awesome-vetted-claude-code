@@ -43,7 +43,7 @@ The interactive setup writes the statusLine command into your Claude Code settin
 - **Category:** CLIs and local services
 - **License:** MIT
 - **Maintainer:** individual
-- **Stars:** 13.4k · last push 2026-10-19 · latest release v2.2.32
+- **Stars:** 13.6k · last push 2026-11-09 · latest release v2.2.34
 - **Overlaps with:** ccusage - pick one
 - **Tags:** statusline, ui, tokens
 - **Last reviewed:** 2026-10-21

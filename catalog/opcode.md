@@ -47,7 +47,7 @@ The last tagged release is v0.2.0 from August 2025; newer code means building fr
 - **Category:** CLIs and local services
 - **License:** AGPL-3.0
 - **Maintainer:** company
-- **Stars:** 22.4k · last push 2026-09-18 · latest release v0.2.0
+- **Stars:** 22.4k · last push 2026-11-06 · latest release v0.2.0
 - **Overlaps with:** claude-squad, vibe-kanban - pick one
 - **Tags:** desktop-app, sessions, gui, usage
 - **Last reviewed:** 2026-10-21

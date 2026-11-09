@@ -60,7 +60,7 @@ In MCP mode, run with --sandbox to confine file tools to the project. Never pack
 - **Category:** CLIs and local services
 - **License:** MIT
 - **Maintainer:** individual
-- **Stars:** 28.9k · last push 2026-10-18 · latest release v1.18.1
+- **Stars:** 29.2k · last push 2026-11-08 · latest release v1.19.0
 - **Overlaps with:** graphify - pick one
 - **Tags:** context, packing, repository, mcp
 - **Last reviewed:** 2026-10-21

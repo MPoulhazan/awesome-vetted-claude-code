@@ -58,7 +58,7 @@ The `npx claude-mem install` route asks you to sign in to a hosted memory servic
 - **Category:** Claude Code plugins
 - **License:** Apache-2.0
 - **Maintainer:** company
-- **Stars:** 102.0k · last push 2026-10-21 · latest release v15.0.1
+- **Stars:** 115.3k · last push 2026-11-09 · latest release v15.13.0
 - **Overlaps with:** claude-code-auto-memory - pick one
 - **Tags:** memory, context, hooks
 - **Last reviewed:** 2026-10-20

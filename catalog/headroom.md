@@ -34,6 +34,7 @@ A local proxy in the path of all model traffic. `headroom learn` writes into CLA
 | Advisory | Severity | Summary | Affected | Fixed in |
 |---|---|---|---|---|
 | [GHSA-h46j-26q3-rggf](https://github.com/advisories/GHSA-h46j-26q3-rggf)<br>CVE-2026-71416 | ⚠ High | Cross-Site WebSocket Hijacking - a web page you visit can talk to the local Headroom service. | < 0.35.0 | 0.35.0 |
+| [GHSA-8g49-pg6g-xgrf](https://github.com/headroomlabs-ai/headroom/security/advisories/GHSA-8g49-pg6g-xgrf) | Moderate | headroom MCP Server vulnerable to arbitrary file read in headroom_read tool _(auto-detected, not reviewed yet)_ | >= 0.5.20, < 0.43.0 | 0.43.0 |
 
 ## Install
 
@@ -57,7 +58,7 @@ Best fit is your own LLM backend paying per token. `headroom wrap claude` rerout
 - **Category:** CLIs and local services
 - **License:** Apache-2.0
 - **Maintainer:** company
-- **Stars:** 76.8k · last push 2026-10-21 · latest release v0.41.0
+- **Stars:** 79.2k · last push 2026-11-09 · latest release v0.43.1
 - **Tags:** compression, tokens, proxy, mcp
 - **Last reviewed:** 2026-10-20
 

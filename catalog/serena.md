@@ -60,7 +60,7 @@ The maintainers ask you not to install it from MCP or plugin marketplaces, whose
 - **Category:** MCP servers
 - **License:** GPL-3.0-or-later - The Serena application is GPL-3.0-or-later; its SolidLSP component is MIT.
 - **Maintainer:** company
-- **Stars:** 30.5k · last push 2026-10-20 · latest release v2.1.0
+- **Stars:** 31.2k · last push 2026-11-09 · latest release v2.1.0
 - **Overlaps with:** graphify - pick one
 - **Tags:** code-navigation, language-server, refactoring
 - **Last reviewed:** 2026-10-21

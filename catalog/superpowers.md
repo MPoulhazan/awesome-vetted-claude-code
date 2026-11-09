@@ -41,7 +41,7 @@ Recommended scope: User-wide (`~/.claude`)
 - **Category:** Claude Code plugins
 - **License:** MIT
 - **Maintainer:** individual
-- **Stars:** 302.7k · last push 2026-10-21 · latest release v7.0.0
+- **Stars:** 315.0k · last push 2026-11-03 · latest release v7.0.2
 - **Overlaps with:** agent-skills, superclaude, bmad-method, spec-kit, gsd-core - pick one
 - **Tags:** workflow, tdd, planning, methodology
 - **Last reviewed:** 2026-10-21

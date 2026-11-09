@@ -51,7 +51,7 @@ The /security-review command already ships with Claude Code; copy security-revie
 - **Category:** CI and GitHub Actions
 - **License:** MIT
 - **Maintainer:** official
-- **Stars:** 6.5k · last push 2026-02-11
+- **Stars:** 6.8k · last push 2026-02-11
 - **Tags:** security, code-review, github-actions
 - **Last reviewed:** 2026-10-21
 

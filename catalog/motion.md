@@ -43,7 +43,7 @@ Projects still on the framer-motion package can keep it; new projects should use
 - **Category:** Animation libraries
 - **License:** MIT
 - **Maintainer:** company
-- **Stars:** 34.4k · last push 2026-10-20
+- **Stars:** 35.0k · last push 2026-11-09
 - **Overlaps with:** anime-js - pick one
 - **Tags:** animation, react, gestures, layout
 - **Last reviewed:** 2026-10-21

@@ -49,7 +49,7 @@ Needs an API key from 21st.dev. Old Magic keys were reset. The @21st-dev/magic p
 - **Category:** MCP servers
 - **License:** ISC
 - **Maintainer:** company
-- **Stars:** 6.2k · last push 2026-09-09 · latest release v0.2.3
+- **Stars:** 6.4k · last push 2026-09-09 · latest release v0.2.3
 - **Overlaps with:** kokonut-ui, react-bits - pick one
 - **Tags:** ui-generation, react, components
 - **Last reviewed:** 2026-10-21

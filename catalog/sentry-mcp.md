@@ -45,7 +45,7 @@ Remote server at mcp.sentry.dev with OAuth into your Sentry organization. The re
 - **Category:** MCP servers
 - **License:** FSL-1.1-Apache-2.0 - Functional Source License - source-available, each version becomes Apache-2.0 after two years. Fine to use, not to offer as a competing service.
 - **Maintainer:** official
-- **Stars:** 936 · last push 2026-10-21 · latest release cli@0.47.0
+- **Stars:** 961 · last push 2026-11-09 · latest release cli@0.49.0
 - **Tags:** errors, monitoring, debugging
 - **Last reviewed:** 2026-10-21
 

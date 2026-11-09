@@ -44,7 +44,7 @@ Stable is v6.12; v7 is in preview with frequent changes. Needs uv for setup and 
 - **Category:** Skills
 - **License:** MIT - The code is MIT; the BMad names are trademarks of BMad Code, LLC.
 - **Maintainer:** company
-- **Stars:** 54.4k · last push 2026-10-20 · latest release v6.12.4
+- **Stars:** 55.2k · last push 2026-11-08 · latest release v6.12.4
 - **Overlaps with:** spec-kit, gsd-core, superpowers - pick one
 - **Tags:** agile, planning, spec-driven, multi-agent
 - **Last reviewed:** 2026-10-21

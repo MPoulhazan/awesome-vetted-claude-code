@@ -45,7 +45,7 @@ Install only the pack you need. Some of these may already be available in your C
 - **Category:** Skills
 - **License:** Apache-2.0 + source-available - Most skills are Apache-2.0. The docx, pdf, pptx and xlsx skills are source-available reference code, not open source.
 - **Maintainer:** official
-- **Stars:** 182.5k · last push 2026-10-09
+- **Stars:** 190.6k · last push 2026-11-06
 - **Tags:** official, documents, frontend, skill-authoring
 - **Last reviewed:** 2026-10-21
 

@@ -62,7 +62,7 @@ Needs Docker and your own LLM key (OpenAI, Anthropic, local models...). The repo
 - **Category:** CLIs and local services
 - **License:** Apache-2.0
 - **Maintainer:** company
-- **Stars:** –
+- **Stars:** 74.6k · last push 2026-11-09 · latest release v1.7.0
 - **Overlaps with:** claude-code-security-review - pick one
 - **Tags:** security, pentest, owasp, ai-agents, ci, skills
 - **Last reviewed:** 2026-11-05

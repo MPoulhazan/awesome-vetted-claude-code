@@ -46,7 +46,7 @@ Then ask "recommend automations for this repo" in each project.
 - **Category:** Claude Code plugins
 - **License:** Apache-2.0
 - **Maintainer:** official
-- **Stars:** 43.4k · last push 2026-10-21
+- **Stars:** 46.6k · last push 2026-11-08
 - **Tags:** onboarding, automation, recommendations
 - **Last reviewed:** 2026-10-20
 

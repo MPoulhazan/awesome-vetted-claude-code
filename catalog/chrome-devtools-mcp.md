@@ -35,7 +35,9 @@ Controls a full Chrome instance; anything in that browser profile is visible to 
 | Advisory | Severity | Summary | Affected | Fixed in |
 |---|---|---|---|---|
 | [GHSA-3pvj-jv98-qhjq](https://github.com/advisories/GHSA-3pvj-jv98-qhjq)<br>CVE-2026-53765 | Moderate | The daemon.pid write follows symlinks in the /tmp fallback runtime directory. | >= 0.20.0, <= 1.0.1 | 1.1.0 |
+| [GHSA-5hw5-4q87-m6x9](https://github.com/ChromeDevTools/chrome-devtools-mcp/security/advisories/GHSA-5hw5-4q87-m6x9) | Moderate | MCP roots bypass via extension-rewritten symlink output path _(auto-detected, not reviewed yet)_ | >= 1.1.0, <= 1.4.0 | 1.5.0 |
 | [GHSA-8qf9-62x2-82pp](https://github.com/advisories/GHSA-8qf9-62x2-82pp)<br>CVE-2026-53766 | Moderate | validatePath() does not resolve symlinks before enforcing allowed roots. | >= 0.24.0, <= 1.0.1 | 1.1.0 |
+| [GHSA-xfxg-8r4q-wj4v](https://github.com/ChromeDevTools/chrome-devtools-mcp/security/advisories/GHSA-xfxg-8r4q-wj4v) | Moderate | Service-worker initiated fetches bypass chrome-devtools-mcp global URL allowlist/blocklist _(auto-detected, not reviewed yet)_ | >=1.2.0, <= 1.4.0 | 1.4.0 |
 
 ## Install
 
@@ -52,7 +54,7 @@ Usage statistics are sent to Google by default; the --no-usage-statistics flag t
 - **Category:** MCP servers
 - **License:** Apache-2.0
 - **Maintainer:** company
-- **Stars:** 53.9k · last push 2026-10-20 · latest release chrome-devtools-mcp-v1.11.0
+- **Stars:** 55.0k · last push 2026-11-09 · latest release chrome-devtools-mcp-v1.12.0
 - **Overlaps with:** playwright-mcp - pick one
 - **Tags:** browser, debugging, performance
 - **Last reviewed:** 2026-10-21

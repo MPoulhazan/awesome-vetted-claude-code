@@ -45,7 +45,7 @@ Scope it to one project with project_ref and start with read_only=true. Point it
 - **Category:** MCP servers
 - **License:** Apache-2.0
 - **Maintainer:** official
-- **Stars:** 3.0k · last push 2026-10-20 · latest release mcp-server-supabase-v0.14.0
+- **Stars:** 3.0k · last push 2026-11-09 · latest release mcp-server-supabase-v0.16.1
 - **Tags:** database, postgres, backend
 - **Last reviewed:** 2026-10-21
 
