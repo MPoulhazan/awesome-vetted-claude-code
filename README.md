@@ -13,6 +13,7 @@ New tools ship every day, and many run code with your permissions, hook into eve
 | Tool | Advisory | Severity | Fixed in |
 |---|---|---|---|
 | [OmniRoute](catalog/omniroute.md) | [GHSA-hf57-cqmx-p4gr](https://github.com/advisories/GHSA-hf57-cqmx-p4gr) / CVE-2026-88062 | 🚨 Critical | **No confirmed fix** |
+| [Ruflo (formerly claude-flow)](catalog/ruflo.md) | [GHSA-5pxg-x8g8-fw4j](https://github.com/ruvnet/ruflo/security/advisories/GHSA-5pxg-x8g8-fw4j) | 🚨 Critical | 3.71.4 |
 | [Ruflo (formerly claude-flow)](catalog/ruflo.md) | [GHSA-c4hm-4h84-2cf3](https://github.com/ruvnet/ruflo/security/advisories/GHSA-c4hm-4h84-2cf3) / CVE-2026-59726 | 🚨 Critical | 3.16.3 |
 | [Serena](catalog/serena.md) | [GHSA-pp25-4cg4-qcr9](https://github.com/oraios/serena/security/advisories/GHSA-pp25-4cg4-qcr9) | 🚨 Critical | 1.7.0 |
 | [Claude Code Router](catalog/claude-code-router.md) | [GHSA-8hmm-4crw-vm2c](https://github.com/advisories/GHSA-8hmm-4crw-vm2c) / CVE-2025-57755 | ⚠ High | 1.0.34 |
@@ -21,14 +22,24 @@ New tools ship every day, and many run code with your permissions, hook into eve
 | [Playwright MCP](catalog/playwright-mcp.md) | [GHSA-6fg3-hvw7-2fwq](https://github.com/advisories/GHSA-6fg3-hvw7-2fwq) / CVE-2025-9611 | ⚠ High | 0.0.40 |
 | [Repomix](catalog/repomix.md) | [GHSA-4p5g-gh74-q524](https://github.com/yamadashy/repomix/security/advisories/GHSA-4p5g-gh74-q524) | ⚠ High | 1.18.1 |
 | [Repomix](catalog/repomix.md) | [GHSA-9mm9-rqhj-j5mx](https://github.com/advisories/GHSA-9mm9-rqhj-j5mx) / CVE-2026-49987 | ⚠ High | 1.14.1 |
+| [Ruflo (formerly claude-flow)](catalog/ruflo.md) | [GHSA-6rwv-52g2-vx7j](https://github.com/ruvnet/ruflo/security/advisories/GHSA-6rwv-52g2-vx7j) | ⚠ High | 3.71.4 |
+| [Ruflo (formerly claude-flow)](catalog/ruflo.md) | [GHSA-8jjw-xqg5-7pvx](https://github.com/ruvnet/ruflo/security/advisories/GHSA-8jjw-xqg5-7pvx) | ⚠ High | 3.71.4 |
+| [Ruflo (formerly claude-flow)](catalog/ruflo.md) | [GHSA-hgp6-gm2j-hx55](https://github.com/ruvnet/ruflo/security/advisories/GHSA-hgp6-gm2j-hx55) | ⚠ High | 3.71.4 |
+| [Ruflo (formerly claude-flow)](catalog/ruflo.md) | [GHSA-vqpp-qh58-2p7h](https://github.com/ruvnet/ruflo/security/advisories/GHSA-vqpp-qh58-2p7h) | ⚠ High | 3.71.4 |
 | [Serena](catalog/serena.md) | [GHSA-37h2-6p4f-mp3q](https://github.com/advisories/GHSA-37h2-6p4f-mp3q) / CVE-2026-49471 | ⚠ High | 1.5.2 |
 | [Serena](catalog/serena.md) | [GHSA-pp6p-xvxf-8hhx](https://github.com/oraios/serena/security/advisories/GHSA-pp6p-xvxf-8hhx) | ⚠ High | 2.0.0 |
 | [Chrome DevTools MCP](catalog/chrome-devtools-mcp.md) | [GHSA-3pvj-jv98-qhjq](https://github.com/advisories/GHSA-3pvj-jv98-qhjq) / CVE-2026-53765 | Moderate | 1.1.0 |
+| [Chrome DevTools MCP](catalog/chrome-devtools-mcp.md) | [GHSA-5hw5-4q87-m6x9](https://github.com/ChromeDevTools/chrome-devtools-mcp/security/advisories/GHSA-5hw5-4q87-m6x9) | Moderate | 1.5.0 |
 | [Chrome DevTools MCP](catalog/chrome-devtools-mcp.md) | [GHSA-8qf9-62x2-82pp](https://github.com/advisories/GHSA-8qf9-62x2-82pp) / CVE-2026-53766 | Moderate | 1.1.0 |
+| [Chrome DevTools MCP](catalog/chrome-devtools-mcp.md) | [GHSA-xfxg-8r4q-wj4v](https://github.com/ChromeDevTools/chrome-devtools-mcp/security/advisories/GHSA-xfxg-8r4q-wj4v) | Moderate | 1.4.0 |
 | [GitHub MCP Server](catalog/github-mcp-server.md) | [GHSA-pjp5-fpmr-3349](https://github.com/advisories/GHSA-pjp5-fpmr-3349) / CVE-2026-48529 | Moderate | 1.1.2 |
 | [graphify](catalog/graphify.md) | [GHSA-pcc4-rvhr-2pr8](https://github.com/advisories/GHSA-pcc4-rvhr-2pr8) | Moderate | 0.9.70 |
+| [Headroom](catalog/headroom.md) | [GHSA-8g49-pg6g-xgrf](https://github.com/headroomlabs-ai/headroom/security/advisories/GHSA-8g49-pg6g-xgrf) | Moderate | 0.43.0 |
 | [Repomix](catalog/repomix.md) | [GHSA-hwpp-h97w-2h3j](https://github.com/advisories/GHSA-hwpp-h97w-2h3j) / CVE-2026-49988 | Moderate | 1.14.1 |
 | [Repomix](catalog/repomix.md) | [GHSA-w8cw-mgw9-74h7](https://github.com/yamadashy/repomix/security/advisories/GHSA-w8cw-mgw9-74h7) | Moderate | 1.18.0 |
+| [Ruflo (formerly claude-flow)](catalog/ruflo.md) | [GHSA-hmmg-9p82-2m6q](https://github.com/ruvnet/ruflo/security/advisories/GHSA-hmmg-9p82-2m6q) | Moderate | 0.9.2 |
+| [Ruflo (formerly claude-flow)](catalog/ruflo.md) | [GHSA-jwwq-crgq-c4c7](https://github.com/ruvnet/ruflo/security/advisories/GHSA-jwwq-crgq-c4c7) | Moderate | 3.71.4 |
+| [Ruflo (formerly claude-flow)](catalog/ruflo.md) | [GHSA-rx87-v2fr-76xf](https://github.com/ruvnet/ruflo/security/advisories/GHSA-rx87-v2fr-76xf) | Moderate | 3.71.4 |
 | [claude-mem](catalog/claude-mem.md) | [GHSA-5gvr-v6qv-h5mm](https://github.com/advisories/GHSA-5gvr-v6qv-h5mm) / CVE-2026-11330 | Low | 12.0.0 |
 | [Repomix](catalog/repomix.md) | [GHSA-rpmv-562j-qxrv](https://github.com/yamadashy/repomix/security/advisories/GHSA-rpmv-562j-qxrv) | Low | 1.18.0 |
 | [Strix](catalog/strix.md) | [GHSA-9x9x-v3ff-pj74](https://github.com/advisories/GHSA-9x9x-v3ff-pj74) / CVE-2026-15519 | Low | **No confirmed fix** |
@@ -41,83 +52,83 @@ Sorted by overall score. Click a tool for the full review: permissions, what lea
 
 | Tool | Verdict | Overall | Security | Stars | What it does |
 |---|---|---|---|---|---|
-| [claude-code-setup](catalog/claude-code-setup.md) | 🟢 Adopt | **4.5** | 5/5 | 43.4k | Official plugin that reads a repo and recommends hooks, skills, MCP servers and subagents for it. |
-| [Superpowers](catalog/superpowers.md) | 🟢 Adopt | **4.5** | 4/5 | 302.7k | Skills framework and development methodology - brainstorm, plan, test-first, subagent-driven execution, review. |
-| [Ponytail](catalog/ponytail.md) | 🔵 Trial | **4.2** | 4/5 | 170.0k | Ruleset that makes the agent write the least code a task needs, checking existing code and platform features first. |
-| [wshobson/agents](catalog/wshobson-agents.md) | 🔵 Trial | **4** | 4/5 | 41.3k | Plugin marketplace with about 90 plugins - 200 specialist subagents, 185 skills and 100 commands across languages and domains. |
-| [GSD Core (Get Shit Done)](catalog/gsd-core.md) | 🔵 Trial | **3.5** | 3/5 | 10.7k | Lightweight meta-prompting and spec-driven system that splits work into phases with fresh context for each. |
+| [claude-code-setup](catalog/claude-code-setup.md) | 🟢 Adopt | **4.5** | 5/5 | 46.6k | Official plugin that reads a repo and recommends hooks, skills, MCP servers and subagents for it. |
+| [Superpowers](catalog/superpowers.md) | 🟢 Adopt | **4.5** | 4/5 | 315.0k | Skills framework and development methodology - brainstorm, plan, test-first, subagent-driven execution, review. |
+| [Ponytail](catalog/ponytail.md) | 🔵 Trial | **4.2** | 4/5 | 187.5k | Ruleset that makes the agent write the least code a task needs, checking existing code and platform features first. |
+| [wshobson/agents](catalog/wshobson-agents.md) | 🔵 Trial | **4** | 4/5 | 42.4k | Plugin marketplace with about 90 plugins - 200 specialist subagents, 185 skills and 100 commands across languages and domains. |
+| [GSD Core (Get Shit Done)](catalog/gsd-core.md) | 🔵 Trial | **3.5** | 3/5 | 11.4k | Lightweight meta-prompting and spec-driven system that splits work into phases with fresh context for each. |
 | [SuperClaude Framework](catalog/superclaude.md) | 🟡 Assess | **3.3** | 4/5 | 23.9k | Configuration framework adding about 30 slash commands, specialist agents, behavior modes and optional MCP servers. |
-| [claude-mem](catalog/claude-mem.md) | 🟡 Assess | **2.8** | 2/5 | 102.0k | Captures what the agent does in each session, compresses it with AI and injects relevant context into later sessions. |
-| [Ruflo (formerly claude-flow)](catalog/ruflo.md) | 🟡 Assess | **2.5** | 2/5 ⚠ | 77.9k | Agent orchestration platform - swarms, 98 agents, 300+ MCP tools, hooks, a daemon with background workers and cross-machine federation. |
+| [claude-mem](catalog/claude-mem.md) | 🟡 Assess | **2.8** | 2/5 | 115.3k | Captures what the agent does in each session, compresses it with AI and injects relevant context into later sessions. |
+| [Ruflo (formerly claude-flow)](catalog/ruflo.md) | 🟡 Assess | **2.5** | 2/5 ⚠ | 81.3k | Agent orchestration platform - swarms, 98 agents, 300+ MCP tools, hooks, a daemon with background workers and cross-machine federation. |
 
 ### Skills
 
 | Tool | Verdict | Overall | Security | Stars | What it does |
 |---|---|---|---|---|---|
-| [Anthropic Skills](catalog/anthropic-skills.md) | 🟢 Adopt | **4.2** | 4/5 | 182.5k | Anthropic's public skills - Word, PDF, PowerPoint and Excel handling, frontend design, skill-creator and more. |
-| [Agent Skills (Addy Osmani)](catalog/agent-skills.md) | 🔵 Trial | **4** | 4/5 | 109.0k | About 25 engineering-discipline skills and /spec, /plan, /build, /test, /review, /ship commands. |
-| [BMad Method](catalog/bmad-method.md) | 🔵 Trial | **3.8** | 4/5 | 54.4k | Agile, AI-driven delivery method - analyst, PM, architect and dev agents producing briefs, PRDs, architecture and stories. |
-| [brag](catalog/brag.md) | 🔵 Trial | **3.5** | 4/5 | 17.2k | Skill that turns the project you just built into a short launch video with music, motion and share copy. |
-| [task-observer](catalog/task-observer.md) | 🟡 Assess | **3.3** | 4/5 | 3.5k | Meta-skill that watches your sessions and logs what should become a new skill or a skill fix, for your review. |
+| [Anthropic Skills](catalog/anthropic-skills.md) | 🟢 Adopt | **4.2** | 4/5 | 190.6k | Anthropic's public skills - Word, PDF, PowerPoint and Excel handling, frontend design, skill-creator and more. |
+| [Agent Skills (Addy Osmani)](catalog/agent-skills.md) | 🔵 Trial | **4** | 4/5 | 114.4k | About 25 engineering-discipline skills and /spec, /plan, /build, /test, /review, /ship commands. |
+| [BMad Method](catalog/bmad-method.md) | 🔵 Trial | **3.8** | 4/5 | 55.2k | Agile, AI-driven delivery method - analyst, PM, architect and dev agents producing briefs, PRDs, architecture and stories. |
+| [brag](catalog/brag.md) | 🔵 Trial | **3.5** | 4/5 | 20.8k | Skill that turns the project you just built into a short launch video with music, motion and share copy. |
+| [task-observer](catalog/task-observer.md) | 🟡 Assess | **3.3** | 4/5 | 3.8k | Meta-skill that watches your sessions and logs what should become a new skill or a skill fix, for your review. |
 
 ### MCP servers
 
 | Tool | Verdict | Overall | Security | Stars | What it does |
 |---|---|---|---|---|---|
-| [Context7](catalog/context7.md) | 🟢 Adopt | **4.5** | 4/5 | 63.4k | Feeds the agent current, version-specific library documentation and code examples, as an MCP server or a CLI plus skill. |
-| [GitHub MCP Server](catalog/github-mcp-server.md) | 🟢 Adopt | **4.2** | 3/5 ⚠ | 33.8k | GitHub's official MCP server - issues, pull requests, code search, Actions and more, hosted or local. |
-| [Sentry MCP](catalog/sentry-mcp.md) | 🟢 Adopt | **4.2** | 4/5 | 936 | Sentry's hosted MCP server - issues, stack traces, traces and Seer analysis, built for debugging in the editor. |
-| [Playwright MCP](catalog/playwright-mcp.md) | 🟢 Adopt | **4** | 3/5 ⚠ | 38.4k | Microsoft's MCP server that lets the agent drive a real browser through Playwright's accessibility snapshots. |
-| [Chrome DevTools MCP](catalog/chrome-devtools-mcp.md) | 🟢 Adopt | **3.7** | 3/5 | 53.9k | Google's MCP server giving the agent Chrome DevTools - console, network, performance traces and page control. |
+| [Context7](catalog/context7.md) | 🟢 Adopt | **4.5** | 4/5 | 64.4k | Feeds the agent current, version-specific library documentation and code examples, as an MCP server or a CLI plus skill. |
+| [GitHub MCP Server](catalog/github-mcp-server.md) | 🟢 Adopt | **4.2** | 3/5 ⚠ | 34.4k | GitHub's official MCP server - issues, pull requests, code search, Actions and more, hosted or local. |
+| [Sentry MCP](catalog/sentry-mcp.md) | 🟢 Adopt | **4.2** | 4/5 | 961 | Sentry's hosted MCP server - issues, stack traces, traces and Seer analysis, built for debugging in the editor. |
+| [Playwright MCP](catalog/playwright-mcp.md) | 🟢 Adopt | **4** | 3/5 ⚠ | 39.4k | Microsoft's MCP server that lets the agent drive a real browser through Playwright's accessibility snapshots. |
+| [Chrome DevTools MCP](catalog/chrome-devtools-mcp.md) | 🟢 Adopt | **3.7** | 3/5 | 55.0k | Google's MCP server giving the agent Chrome DevTools - console, network, performance traces and page control. |
 | [container-use](catalog/container-use.md) | 🔵 Trial | **3.7** | 4/5 | 4.1k | Dagger's MCP server that gives each agent its own container and git branch, so several can work safely in parallel. |
 | [Supabase MCP](catalog/supabase-mcp.md) | 🔵 Trial | **3.7** | 3/5 | 3.0k | Official Supabase MCP server - tables, SQL, migrations, logs, edge functions and docs for your projects. |
-| [Serena](catalog/serena.md) | 🔵 Trial | **3.3** | 2/5 ⚠ | 30.5k | Coding toolkit that gives the agent IDE-like, symbol-level navigation and editing through language servers. |
-| [21st Magic MCP](catalog/magic-mcp.md) | 🟡 Assess | **3** | 3/5 | 6.2k | Generates React UI components from a prompt using 21st.dev's component library; now part of the unified 21st MCP. |
+| [Serena](catalog/serena.md) | 🔵 Trial | **3.3** | 2/5 ⚠ | 31.2k | Coding toolkit that gives the agent IDE-like, symbol-level navigation and editing through language servers. |
+| [21st Magic MCP](catalog/magic-mcp.md) | 🟡 Assess | **3** | 3/5 | 6.4k | Generates React UI components from a prompt using 21st.dev's component library; now part of the unified 21st MCP. |
 
 ### CLIs and local services
 
 | Tool | Verdict | Overall | Security | Stars | What it does |
 |---|---|---|---|---|---|
-| [ccusage](catalog/ccusage.md) | 🟢 Adopt | **4.7** | 5/5 | 19.1k | Reads Claude Code's local logs and reports token usage and estimated cost by day, month, session or billing block. |
-| [Spec Kit](catalog/spec-kit.md) | 🟢 Adopt | **4.3** | 5/5 | 142.2k | GitHub's toolkit for spec-driven development - constitution, spec, plan, tasks, then implementation. |
-| [Claude Squad](catalog/claude-squad.md) | 🔵 Trial | **4** | 4/5 | 8.6k | Terminal app that runs several Claude Code, Codex or other agents in parallel, each in its own tmux session and git worktree. |
-| [ccstatusline](catalog/ccstatusline.md) | 🟢 Adopt | **3.8** | 4/5 | 13.4k | Customizable Claude Code status line - model, git branch, token usage, context and more, with powerline themes. |
-| [Repomix](catalog/repomix.md) | 🔵 Trial | **3.8** | 3/5 ⚠ | 28.9k | Packs a whole repository into one AI-friendly file, with token counts and secret scanning; also runs as an MCP server. |
-| [graphify](catalog/graphify.md) | 🔵 Trial | **3.7** | 3/5 | 130.4k | Turns a folder of code, docs, schemas and PDFs into a queryable knowledge graph your agent can navigate. |
-| [Strix](catalog/strix.md) | 🔵 Trial | **3.3** | 3/5 | – | Autonomous AI pentesting agents that attack your app in a Docker sandbox and report only findings proven with a working exploit. |
+| [ccusage](catalog/ccusage.md) | 🟢 Adopt | **4.7** | 5/5 | 19.4k | Reads Claude Code's local logs and reports token usage and estimated cost by day, month, session or billing block. |
+| [Spec Kit](catalog/spec-kit.md) | 🟢 Adopt | **4.3** | 5/5 | 149.0k | GitHub's toolkit for spec-driven development - constitution, spec, plan, tasks, then implementation. |
+| [Claude Squad](catalog/claude-squad.md) | 🔵 Trial | **4** | 4/5 | 8.8k | Terminal app that runs several Claude Code, Codex or other agents in parallel, each in its own tmux session and git worktree. |
+| [ccstatusline](catalog/ccstatusline.md) | 🟢 Adopt | **3.8** | 4/5 | 13.6k | Customizable Claude Code status line - model, git branch, token usage, context and more, with powerline themes. |
+| [Repomix](catalog/repomix.md) | 🔵 Trial | **3.8** | 3/5 ⚠ | 29.2k | Packs a whole repository into one AI-friendly file, with token counts and secret scanning; also runs as an MCP server. |
+| [graphify](catalog/graphify.md) | 🔵 Trial | **3.7** | 3/5 | 144.9k | Turns a folder of code, docs, schemas and PDFs into a queryable knowledge graph your agent can navigate. |
+| [Strix](catalog/strix.md) | 🔵 Trial | **3.3** | 3/5 | 74.6k | Autonomous AI pentesting agents that attack your app in a Docker sandbox and report only findings proven with a working exploit. |
 | [opcode (formerly Claudia)](catalog/opcode.md) | 🟡 Assess | **3** | 3/5 | 22.4k | Desktop GUI for Claude Code - projects and sessions, custom agents, background runs, usage analytics and MCP management. |
-| [Vibe Kanban](catalog/vibe-kanban.md) | 🔴 Hold | **3** | 3/5 | 28.4k | Kanban board that hands tasks to coding agents, each in its own worktree, and lets you review their diffs. |
-| [Headroom](catalog/headroom.md) | 🟡 Assess | **2.8** | 2/5 ⚠ | 76.8k | Compresses tool outputs, logs, files and RAG chunks before they reach the model. Library, proxy, agent wrapper or MCP server. |
+| [Vibe Kanban](catalog/vibe-kanban.md) | 🔴 Hold | **3** | 3/5 | 28.6k | Kanban board that hands tasks to coding agents, each in its own worktree, and lets you review their diffs. |
+| [Headroom](catalog/headroom.md) | 🟡 Assess | **2.8** | 2/5 ⚠ | 79.2k | Compresses tool outputs, logs, files and RAG chunks before they reach the model. Library, proxy, agent wrapper or MCP server. |
 
 ### CI and GitHub Actions
 
 | Tool | Verdict | Overall | Security | Stars | What it does |
 |---|---|---|---|---|---|
-| [Claude Code Security Review](catalog/claude-code-security-review.md) | 🟢 Adopt | **3.3** | 3/5 | 6.5k | Anthropic's GitHub Action that reviews pull requests for vulnerabilities, and the source of the built-in /security-review command. |
+| [Claude Code Security Review](catalog/claude-code-security-review.md) | 🟢 Adopt | **3.3** | 3/5 | 6.8k | Anthropic's GitHub Action that reviews pull requests for vulnerabilities, and the source of the built-in /security-review command. |
 
 ### Gateways and proxies
 
 | Tool | Verdict | Overall | Security | Stars | What it does |
 |---|---|---|---|---|---|
-| [Claude Code Router](catalog/claude-code-router.md) | 🟡 Assess | **3.3** | 3/5 ⚠ | 37.8k | Local gateway that routes Claude Code and other agents to the model and provider you choose, with a web UI. |
-| [OmniRoute](catalog/omniroute.md) | 🔴 Hold | **1.5** | 1/5 🚨 | 79.0k | Self-hosted OpenAI-compatible gateway in front of hundreds of LLM providers, with quota-aware fallback. |
+| [Claude Code Router](catalog/claude-code-router.md) | 🟡 Assess | **3.3** | 3/5 ⚠ | 38.1k | Local gateway that routes Claude Code and other agents to the model and provider you choose, with a web UI. |
+| [OmniRoute](catalog/omniroute.md) | 🔴 Hold | **1.5** | 1/5 🚨 | 85.9k | Self-hosted OpenAI-compatible gateway in front of hundreds of LLM providers, with quota-aware fallback. |
 
 ### UI libraries
 
 | Tool | Verdict | Overall | Security | Stars | What it does |
 |---|---|---|---|---|---|
-| [shadcn/ui](catalog/shadcn-ui.md) | 🟢 Adopt | **5** | 5/5 | 126.1k | Accessible, composable React components you copy into your codebase with a CLI, plus the registry format most kits build on. |
-| [Magic UI](catalog/magic-ui.md) | 🟢 Adopt | **4.5** | 5/5 | 22.8k | Free, open-source animated components and effects for React, Tailwind and Motion, installed through the shadcn CLI. |
-| [Kokonut UI](catalog/kokonut-ui.md) | 🔵 Trial | **4.3** | 5/5 | 2.2k | Polished React components built on Tailwind, shadcn/ui and Motion, copied into your project. |
-| [React Bits](catalog/react-bits.md) | 🟢 Adopt | **4.3** | 5/5 | 49.8k | Large library of animated, interactive React components - text effects, backgrounds, cursors. |
-| [Bklit UI](catalog/bklit-ui.md) | 🟡 Assess | **3.8** | 5/5 | 1.8k | Open-source shadcn-style chart and utility components, plus a shadcn skill for agents. |
+| [shadcn/ui](catalog/shadcn-ui.md) | 🟢 Adopt | **5** | 5/5 | 127.7k | Accessible, composable React components you copy into your codebase with a CLI, plus the registry format most kits build on. |
+| [Magic UI](catalog/magic-ui.md) | 🟢 Adopt | **4.5** | 5/5 | 23.2k | Free, open-source animated components and effects for React, Tailwind and Motion, installed through the shadcn CLI. |
+| [Kokonut UI](catalog/kokonut-ui.md) | 🔵 Trial | **4.3** | 5/5 | 2.3k | Polished React components built on Tailwind, shadcn/ui and Motion, copied into your project. |
+| [React Bits](catalog/react-bits.md) | 🟢 Adopt | **4.3** | 5/5 | 51.6k | Large library of animated, interactive React components - text effects, backgrounds, cursors. |
+| [Bklit UI](catalog/bklit-ui.md) | 🟡 Assess | **3.8** | 5/5 | 1.9k | Open-source shadcn-style chart and utility components, plus a shadcn skill for agents. |
 
 ### Animation libraries
 
 | Tool | Verdict | Overall | Security | Stars | What it does |
 |---|---|---|---|---|---|
-| [Motion (formerly Framer Motion)](catalog/motion.md) | 🟢 Adopt | **4.7** | 5/5 | 34.4k | Production animation library for React and JavaScript - gestures, layout and scroll animations, springs. |
-| [anime.js](catalog/anime-js.md) | 🟢 Adopt | **4.3** | 5/5 | 73.7k | Lightweight JavaScript animation engine for DOM, SVG, CSS and JS objects; v4 is a modular ESM rewrite. |
+| [Motion (formerly Framer Motion)](catalog/motion.md) | 🟢 Adopt | **4.7** | 5/5 | 35.0k | Production animation library for React and JavaScript - gestures, layout and scroll animations, springs. |
+| [anime.js](catalog/anime-js.md) | 🟢 Adopt | **4.3** | 5/5 | 74.5k | Lightweight JavaScript animation engine for DOM, SVG, CSS and JS objects; v4 is a modular ESM rewrite. |
 
 ## How tools are rated
 

@@ -42,7 +42,7 @@ specify init . --integration claude
 - **Category:** CLIs and local services
 - **License:** MIT
 - **Maintainer:** official
-- **Stars:** 142.2k · last push 2026-10-20 · latest release v1.2.2
+- **Stars:** 149.0k · last push 2026-11-09 · latest release v1.3.2
 - **Overlaps with:** bmad-method, gsd-core, superpowers - pick one
 - **Tags:** spec-driven, planning, github
 - **Last reviewed:** 2026-10-21

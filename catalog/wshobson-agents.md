@@ -44,7 +44,7 @@ Install only the plugins you need; installing many floods every session with age
 - **Category:** Claude Code plugins
 - **License:** MIT
 - **Maintainer:** individual
-- **Stars:** 41.3k · last push 2026-10-19
+- **Stars:** 42.4k · last push 2026-11-09
 - **Overlaps with:** superclaude, agent-skills - pick one
 - **Tags:** subagents, marketplace, specialists
 - **Last reviewed:** 2026-10-21

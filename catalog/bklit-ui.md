@@ -44,7 +44,7 @@ Component pages give the exact command. The skill teaches the agent to drive the
 - **Category:** UI libraries
 - **License:** MIT
 - **Maintainer:** individual
-- **Stars:** 1.8k · last push 2026-10-20
+- **Stars:** 1.9k · last push 2026-11-08
 - **Overlaps with:** kokonut-ui - pick one
 - **Tags:** react, charts, shadcn
 - **Last reviewed:** 2026-10-20

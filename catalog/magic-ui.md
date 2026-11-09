@@ -43,7 +43,7 @@ Each component page gives its exact command. A paid Pro tier of templates exists
 - **Category:** UI libraries
 - **License:** MIT
 - **Maintainer:** company
-- **Stars:** 22.8k · last push 2026-10-17
+- **Stars:** 23.2k · last push 2026-11-09
 - **Overlaps with:** react-bits, kokonut-ui - pick one
 - **Tags:** react, animation, landing-page, shadcn
 - **Last reviewed:** 2026-10-21
