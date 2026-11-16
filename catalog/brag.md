@@ -44,7 +44,7 @@ Needs FFmpeg on PATH. /brag uses Hyperframes; /brag-slim needs nothing beyond to
 - **Category:** Skills
 - **License:** MIT
 - **Maintainer:** community
-- **Stars:** 17.2k · last push 2026-10-13
+- **Stars:** 21.7k · last push 2026-11-15 · latest release v0.6.0
 - **Tags:** launch, video, marketing
 - **Last reviewed:** 2026-10-20
 

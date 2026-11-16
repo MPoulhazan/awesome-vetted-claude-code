@@ -43,7 +43,7 @@ Installing is not enough - add the activation line from references/environments.
 - **Category:** Skills
 - **License:** CC-BY-4.0
 - **Maintainer:** individual
-- **Stars:** 3.5k · last push 2026-10-16 · latest release v3.7.0
+- **Stars:** 3.9k · last push 2026-11-16 · latest release v3.11.0
 - **Tags:** meta-skill, skills, continuous-improvement
 - **Last reviewed:** 2026-10-20
 
