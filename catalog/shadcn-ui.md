@@ -44,7 +44,7 @@ Third-party registries (Kokonut UI, Magic UI, React Bits...) install through the
 - **Category:** UI libraries
 - **License:** MIT
 - **Maintainer:** company
-- **Stars:** 126.1k · last push 2026-10-20 · latest release shadcn@4.22.1
+- **Stars:** 128.9k · last push 2026-11-23 · latest release shadcn@4.23.0
 - **Tags:** react, tailwind, components, registry
 - **Last reviewed:** 2026-10-21
 

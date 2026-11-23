@@ -1,74 +1,74 @@
 {
   "agent-skills": {
     "repo": "addyosmani/agent-skills",
-    "stars": 109019,
-    "pushed_at": "2026-10-13",
+    "stars": 119963,
+    "pushed_at": "2026-11-18",
     "archived": false,
-    "latest_release": "0.6.13",
+    "latest_release": "0.6.17",
     "advisories": []
   },
   "anime-js": {
     "repo": "juliangarnier/anime",
-    "stars": 73741,
-    "pushed_at": "2026-08-21",
+    "stars": 75003,
+    "pushed_at": "2026-11-02",
     "archived": false,
     "latest_release": "v4.5.0",
     "advisories": []
   },
   "anthropic-skills": {
     "repo": "anthropics/skills",
-    "stars": 182531,
-    "pushed_at": "2026-10-09",
+    "stars": 199387,
+    "pushed_at": "2026-11-16",
     "archived": false,
     "latest_release": null,
     "advisories": []
   },
   "bklit-ui": {
     "repo": "bklit/bklit-ui",
-    "stars": 1795,
-    "pushed_at": "2026-10-20",
+    "stars": 2016,
+    "pushed_at": "2026-11-15",
     "archived": false,
     "latest_release": null,
     "advisories": []
   },
   "bmad-method": {
     "repo": "bmad-code-org/BMAD-METHOD",
-    "stars": 54389,
-    "pushed_at": "2026-10-20",
+    "stars": 55659,
+    "pushed_at": "2026-11-23",
     "archived": false,
     "latest_release": "v6.12.4",
     "advisories": []
   },
   "brag": {
     "repo": "latent-spaces/brag",
-    "stars": 17194,
-    "pushed_at": "2026-10-13",
+    "stars": 22339,
+    "pushed_at": "2026-11-15",
     "archived": false,
-    "latest_release": null,
+    "latest_release": "v0.6.0",
     "advisories": []
   },
   "ccstatusline": {
     "repo": "sirmalloc/ccstatusline",
-    "stars": 13355,
-    "pushed_at": "2026-10-19",
+    "stars": 13676,
+    "pushed_at": "2026-11-23",
     "archived": false,
-    "latest_release": "v2.2.32",
+    "latest_release": "v2.2.34",
     "advisories": []
   },
   "ccusage": {
     "repo": "ccusage/ccusage",
-    "stars": 19101,
-    "pushed_at": "2026-10-21",
+    "stars": 19559,
+    "pushed_at": "2026-11-23",
     "archived": false,
-    "latest_release": "v20.0.37",
+    "latest_release": "v20.1.0",
     "advisories": []
   },
   "chrome-devtools-mcp": {
     "repo": "ChromeDevTools/chrome-devtools-mcp",
-    "stars": 53910,
-    "pushed_at": "2026-10-20",
+    "stars": 59001,
+    "pushed_at": "2026-11-23",
     "archived": false,
-    "latest_release": "chrome-devtools-mcp-v1.11.0",
+    "latest_release": "chrome-devtools-mcp-v1.13.0",
     "advisories": [
       {
         "id": "GHSA-3pvj-jv98-qhjq",
@@ -81,6 +81,15 @@
         "url": "https://github.com/advisories/GHSA-3pvj-jv98-qhjq"
       },
       {
+        "id": "GHSA-5hw5-4q87-m6x9",
+        "severity": "moderate",
+        "summary": "MCP roots bypass via extension-rewritten symlink output path",
+        "affected": ">= 1.1.0, <= 1.4.0",
+        "patched": "1.5.0",
+        "published": "2026-10-22",
+        "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/security/advisories/GHSA-5hw5-4q87-m6x9"
+      },
+      {
         "id": "GHSA-8qf9-62x2-82pp",
         "cve": "CVE-2026-53766",
         "severity": "moderate",
@@ -89,15 +98,24 @@
         "patched": "1.1.0",
         "published": "2026-08-17",
         "url": "https://github.com/advisories/GHSA-8qf9-62x2-82pp"
+      },
+      {
+        "id": "GHSA-xfxg-8r4q-wj4v",
+        "severity": "moderate",
+        "summary": "Service-worker initiated fetches bypass chrome-devtools-mcp global URL allowlist/blocklist",
+        "affected": ">=1.2.0, <= 1.4.0",
+        "patched": "1.4.0",
+        "published": "2026-10-22",
+        "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/security/advisories/GHSA-xfxg-8r4q-wj4v"
       }
     ]
   },
   "claude-code-router": {
     "repo": "musistudio/claude-code-router",
-    "stars": 37773,
-    "pushed_at": "2026-10-10",
+    "stars": 38335,
+    "pushed_at": "2026-11-21",
     "archived": false,
-    "latest_release": "v3.1.3",
+    "latest_release": "v3.1.6",
     "advisories": [
       {
         "id": "GHSA-8hmm-4crw-vm2c",
@@ -113,7 +131,7 @@
   },
   "claude-code-security-review": {
     "repo": "anthropics/claude-code-security-review",
-    "stars": 6464,
+    "stars": 7068,
     "pushed_at": "2026-02-11",
     "archived": false,
     "latest_release": null,
@@ -121,18 +139,18 @@
   },
   "claude-code-setup": {
     "repo": "anthropics/claude-plugins-official",
-    "stars": 43435,
-    "pushed_at": "2026-10-21",
+    "stars": 48051,
+    "pushed_at": "2026-11-23",
     "archived": false,
     "latest_release": null,
     "advisories": []
   },
   "claude-mem": {
     "repo": "thedotmack/claude-mem",
-    "stars": 101983,
-    "pushed_at": "2026-10-21",
+    "stars": 119286,
+    "pushed_at": "2026-11-23",
     "archived": false,
-    "latest_release": "v15.0.1",
+    "latest_release": "v16.1.0",
     "advisories": [
       {
         "id": "GHSA-5gvr-v6qv-h5mm",
@@ -148,34 +166,34 @@
   },
   "claude-squad": {
     "repo": "smtg-ai/claude-squad",
-    "stars": 8639,
-    "pushed_at": "2026-08-20",
+    "stars": 8857,
+    "pushed_at": "2026-11-13",
     "archived": false,
     "latest_release": "v1.0.20",
     "advisories": []
   },
   "container-use": {
     "repo": "dagger/container-use",
-    "stars": 4074,
-    "pushed_at": "2026-09-21",
+    "stars": 4104,
+    "pushed_at": "2026-11-14",
     "archived": false,
     "latest_release": "v0.4.2",
     "advisories": []
   },
   "context7": {
     "repo": "upstash/context7",
-    "stars": 63390,
-    "pushed_at": "2026-10-20",
+    "stars": 65336,
+    "pushed_at": "2026-11-23",
     "archived": false,
-    "latest_release": "@upstash/context7-mcp@4.4.4",
+    "latest_release": "@upstash/context7-opencode@0.2.2",
     "advisories": []
   },
   "github-mcp-server": {
     "repo": "github/github-mcp-server",
-    "stars": 33806,
-    "pushed_at": "2026-10-19",
+    "stars": 34695,
+    "pushed_at": "2026-11-21",
     "archived": false,
-    "latest_release": "v2.0.2",
+    "latest_release": "v2.2.0",
     "advisories": [
       {
         "id": "GHSA-pjp5-fpmr-3349",
@@ -200,11 +218,20 @@
   },
   "graphify": {
     "repo": "Graphify-Labs/graphify",
-    "stars": 130425,
-    "pushed_at": "2026-10-20",
+    "stars": 152440,
+    "pushed_at": "2026-11-23",
     "archived": false,
-    "latest_release": "v0.9.93",
+    "latest_release": "v0.9.118",
     "advisories": [
+      {
+        "id": "GHSA-g6c9-j4vm-mwq4",
+        "severity": "high",
+        "summary": "Indexing a repository stats UNC paths chosen by the repository (bash `source` lines and a `.git` gitdir), coercing outbound SMB authentication on Windows",
+        "affected": ">= 0.9.50, < 0.9.115",
+        "patched": "0.9.115",
+        "published": "2026-11-23",
+        "url": "https://github.com/Graphify-Labs/graphify/security/advisories/GHSA-g6c9-j4vm-mwq4"
+      },
       {
         "id": "GHSA-pcc4-rvhr-2pr8",
         "severity": "moderate",
@@ -218,19 +245,28 @@
   },
   "gsd-core": {
     "repo": "open-gsd/gsd-core",
-    "stars": 10726,
-    "pushed_at": "2026-10-21",
+    "stars": 11793,
+    "pushed_at": "2026-11-23",
     "archived": false,
-    "latest_release": "v1.18.0",
+    "latest_release": "v1.23.0",
     "advisories": []
   },
   "headroom": {
     "repo": "headroomlabs-ai/headroom",
-    "stars": 76819,
-    "pushed_at": "2026-10-21",
+    "stars": 80651,
+    "pushed_at": "2026-11-23",
     "archived": false,
-    "latest_release": "v0.41.0",
+    "latest_release": "v0.45.0",
     "advisories": [
+      {
+        "id": "GHSA-8g49-pg6g-xgrf",
+        "severity": "moderate",
+        "summary": "headroom MCP Server vulnerable to arbitrary file read in headroom_read tool",
+        "affected": ">= 0.5.20, < 0.43.0",
+        "patched": "0.43.0",
+        "published": "2026-11-09",
+        "url": "https://github.com/headroomlabs-ai/headroom/security/advisories/GHSA-8g49-pg6g-xgrf"
+      },
       {
         "id": "GHSA-h46j-26q3-rggf",
         "cve": "CVE-2026-71416",
@@ -245,15 +281,15 @@
   },
   "kokonut-ui": {
     "repo": "kokonut-labs/kokonutui",
-    "stars": 2185,
-    "pushed_at": "2026-10-21",
+    "stars": 2404,
+    "pushed_at": "2026-11-21",
     "archived": false,
     "latest_release": null,
     "advisories": []
   },
   "magic-mcp": {
     "repo": "21st-dev/magic-mcp",
-    "stars": 6154,
+    "stars": 6648,
     "pushed_at": "2026-09-09",
     "archived": false,
     "latest_release": "v0.2.3",
@@ -261,26 +297,26 @@
   },
   "magic-ui": {
     "repo": "magicuidesign/magicui",
-    "stars": 22768,
-    "pushed_at": "2026-10-17",
+    "stars": 23491,
+    "pushed_at": "2026-11-23",
     "archived": false,
     "latest_release": null,
     "advisories": []
   },
   "motion": {
     "repo": "motiondivision/motion",
-    "stars": 34399,
-    "pushed_at": "2026-10-20",
+    "stars": 35490,
+    "pushed_at": "2026-11-23",
     "archived": false,
     "latest_release": null,
     "advisories": []
   },
   "omniroute": {
-    "repo": "diegosouzapw/OmniRoute",
-    "stars": 79026,
-    "pushed_at": "2026-10-21",
+    "repo": "cheaper-inference/OmniRoute",
+    "stars": 89833,
+    "pushed_at": "2026-11-23",
     "archived": false,
-    "latest_release": "v3.8.52",
+    "latest_release": "v3.8.54",
     "advisories": [
       {
         "id": "GHSA-hf57-cqmx-p4gr",
@@ -295,18 +331,18 @@
   },
   "opcode": {
     "repo": "winfunc/opcode",
-    "stars": 22417,
-    "pushed_at": "2026-09-18",
+    "stars": 22462,
+    "pushed_at": "2026-11-06",
     "archived": false,
     "latest_release": "v0.2.0",
     "advisories": []
   },
   "playwright-mcp": {
     "repo": "microsoft/playwright-mcp",
-    "stars": 38445,
-    "pushed_at": "2026-10-19",
+    "stars": 40058,
+    "pushed_at": "2026-11-18",
     "archived": false,
-    "latest_release": "v0.0.83",
+    "latest_release": "v0.0.86",
     "advisories": [
       {
         "id": "GHSA-6fg3-hvw7-2fwq",
@@ -322,26 +358,26 @@
   },
   "ponytail": {
     "repo": "DietrichGebert/ponytail",
-    "stars": 169985,
-    "pushed_at": "2026-10-18",
+    "stars": 197420,
+    "pushed_at": "2026-11-22",
     "archived": false,
-    "latest_release": "v5.3.2",
+    "latest_release": "v5.3.3",
     "advisories": []
   },
   "react-bits": {
     "repo": "DavidHDev/react-bits",
-    "stars": 49812,
-    "pushed_at": "2026-10-19",
+    "stars": 52560,
+    "pushed_at": "2026-11-23",
     "archived": false,
     "latest_release": null,
     "advisories": []
   },
   "repomix": {
     "repo": "yamadashy/repomix",
-    "stars": 28941,
-    "pushed_at": "2026-10-18",
+    "stars": 29399,
+    "pushed_at": "2026-11-23",
     "archived": false,
-    "latest_release": "v1.18.1",
+    "latest_release": "v1.19.0",
     "advisories": [
       {
         "id": "GHSA-4p5g-gh74-q524",
@@ -394,11 +430,38 @@
   },
   "ruflo": {
     "repo": "ruvnet/ruflo",
-    "stars": 77918,
-    "pushed_at": "2026-10-21",
+    "stars": 82318,
+    "pushed_at": "2026-11-23",
     "archived": false,
-    "latest_release": "v3.59.4",
+    "latest_release": "v3.80.2",
     "advisories": [
+      {
+        "id": "GHSA-5pxg-x8g8-fw4j",
+        "severity": "critical",
+        "summary": "browser_open passes caller-supplied Chromium launch flags, allowing command execution",
+        "affected": "<= 3.71.3",
+        "patched": "3.71.4",
+        "published": "2026-11-05",
+        "url": "https://github.com/ruvnet/ruflo/security/advisories/GHSA-5pxg-x8g8-fw4j"
+      },
+      {
+        "id": "GHSA-6rwv-52g2-vx7j",
+        "severity": "high",
+        "summary": "Prototype pollution through \"__proto__\" ids in the agent, task and terminal stores",
+        "affected": "<= 3.71.3",
+        "patched": "3.71.4",
+        "published": "2026-11-05",
+        "url": "https://github.com/ruvnet/ruflo/security/advisories/GHSA-6rwv-52g2-vx7j"
+      },
+      {
+        "id": "GHSA-8jjw-xqg5-7pvx",
+        "severity": "high",
+        "summary": "ruvocal mcp-bridge: a web page can drive the bridge on loopback when no token is set (CORS * and DNS rebinding)",
+        "affected": "<= 3.71.3",
+        "patched": "3.71.4",
+        "published": "2026-11-05",
+        "url": "https://github.com/ruvnet/ruflo/security/advisories/GHSA-8jjw-xqg5-7pvx"
+      },
       {
         "id": "GHSA-c4hm-4h84-2cf3",
         "cve": "CVE-2026-59726",
@@ -408,21 +471,75 @@
         "patched": "3.16.3",
         "published": "2026-07-01",
         "url": "https://github.com/ruvnet/ruflo/security/advisories/GHSA-c4hm-4h84-2cf3"
+      },
+      {
+        "id": "GHSA-hgp6-gm2j-hx55",
+        "severity": "high",
+        "summary": "ruvocal: SSRF through user-supplied MCP server URLs",
+        "affected": "<= 3.71.3",
+        "patched": "3.71.4",
+        "published": "2026-11-05",
+        "url": "https://github.com/ruvnet/ruflo/security/advisories/GHSA-hgp6-gm2j-hx55"
+      },
+      {
+        "id": "GHSA-hmmg-9p82-2m6q",
+        "severity": "moderate",
+        "summary": "x.ruv.io gateway: client-supplied X-Forwarded-For bypasses every per-IP limit",
+        "affected": "<= 0.9.1",
+        "patched": "0.9.2",
+        "published": "2026-11-05",
+        "url": "https://github.com/ruvnet/ruflo/security/advisories/GHSA-hmmg-9p82-2m6q"
+      },
+      {
+        "id": "GHSA-jwwq-crgq-c4c7",
+        "severity": "moderate",
+        "summary": "Federation BBS: a pinned peer can forge the origin of an envelope",
+        "affected": "<= 3.71.3",
+        "patched": "3.71.4",
+        "published": "2026-11-05",
+        "url": "https://github.com/ruvnet/ruflo/security/advisories/GHSA-jwwq-crgq-c4c7"
+      },
+      {
+        "id": "GHSA-rx87-v2fr-76xf",
+        "severity": "moderate",
+        "summary": "Repository-controlled files are injected into the model's context as the user's own memory or learned patterns",
+        "affected": "<= 3.71.3",
+        "patched": "3.71.4",
+        "published": "2026-11-05",
+        "url": "https://github.com/ruvnet/ruflo/security/advisories/GHSA-rx87-v2fr-76xf"
+      },
+      {
+        "id": "GHSA-v68m-49gm-5hgw",
+        "severity": "moderate",
+        "summary": "Startup update check executes code from node_modules in the current working directory",
+        "affected": ">= 3.0.0-alpha.83, < 3.80.1",
+        "patched": "3.80.1",
+        "published": "2026-11-23",
+        "url": "https://github.com/ruvnet/ruflo/security/advisories/GHSA-v68m-49gm-5hgw"
+      },
+      {
+        "id": "GHSA-vqpp-qh58-2p7h",
+        "severity": "high",
+        "summary": "memory_export writes to an arbitrary path and memory_import reads one",
+        "affected": "<= 3.71.3",
+        "patched": "3.71.4",
+        "published": "2026-11-05",
+        "url": "https://github.com/ruvnet/ruflo/security/advisories/GHSA-vqpp-qh58-2p7h"
       }
     ]
   },
   "sentry-mcp": {
     "repo": "getsentry/toolkit",
-    "stars": 936,
-    "pushed_at": "2026-10-21",
+    "stars": 974,
+    "pushed_at": "2026-11-23",
     "archived": false,
-    "latest_release": "cli@0.47.0",
+    "latest_release": "cli@0.50.0",
     "advisories": []
   },
   "serena": {
     "repo": "oraios/serena",
-    "stars": 30520,
-    "pushed_at": "2026-10-20",
+    "stars": 31641,
+    "pushed_at": "2026-11-23",
     "archived": false,
     "latest_release": "v2.1.0",
     "advisories": [
@@ -458,31 +575,39 @@
   },
   "shadcn-ui": {
     "repo": "shadcn-ui/ui",
-    "stars": 126066,
-    "pushed_at": "2026-10-20",
+    "stars": 128855,
+    "pushed_at": "2026-11-23",
     "archived": false,
-    "latest_release": "shadcn@4.22.1",
+    "latest_release": "shadcn@4.23.0",
     "advisories": []
   },
   "spec-kit": {
     "repo": "github/spec-kit",
-    "stars": 142182,
-    "pushed_at": "2026-10-20",
+    "stars": 151141,
+    "pushed_at": "2026-11-23",
     "archived": false,
-    "latest_release": "v1.2.2",
+    "latest_release": "v1.4.4",
+    "advisories": []
+  },
+  "strix": {
+    "repo": "usestrix/strix",
+    "stars": 77242,
+    "pushed_at": "2026-11-23",
+    "archived": false,
+    "latest_release": "v1.7.1",
     "advisories": []
   },
   "supabase-mcp": {
     "repo": "supabase/mcp",
-    "stars": 2966,
-    "pushed_at": "2026-10-20",
+    "stars": 3024,
+    "pushed_at": "2026-11-23",
     "archived": false,
-    "latest_release": "mcp-server-supabase-v0.14.0",
+    "latest_release": "mcp-server-supabase-v0.19.0",
     "advisories": []
   },
   "superclaude": {
     "repo": "SuperClaude-Org/SuperClaude_Framework",
-    "stars": 23907,
+    "stars": 23952,
     "pushed_at": "2026-09-27",
     "archived": false,
     "latest_release": "v4.3.0",
@@ -490,32 +615,32 @@
   },
   "superpowers": {
     "repo": "obra/superpowers",
-    "stars": 302663,
-    "pushed_at": "2026-10-21",
+    "stars": 324891,
+    "pushed_at": "2026-11-03",
     "archived": false,
-    "latest_release": "v7.0.0",
+    "latest_release": "v7.0.2",
     "advisories": []
   },
   "task-observer": {
     "repo": "rebelytics/one-skill-to-rule-them-all",
-    "stars": 3470,
-    "pushed_at": "2026-10-16",
+    "stars": 4006,
+    "pushed_at": "2026-11-23",
     "archived": false,
-    "latest_release": "v3.7.0",
+    "latest_release": "v3.12.0",
     "advisories": []
   },
   "vibe-kanban": {
     "repo": "BloopAI/vibe-kanban",
-    "stars": 28413,
-    "pushed_at": "2026-09-19",
+    "stars": 28795,
+    "pushed_at": "2026-11-15",
     "archived": false,
-    "latest_release": "v0.1.44-20260424091429",
+    "latest_release": "v0.1.46.1794744340",
     "advisories": []
   },
   "wshobson-agents": {
     "repo": "wshobson/agents",
-    "stars": 41304,
-    "pushed_at": "2026-10-19",
+    "stars": 42840,
+    "pushed_at": "2026-11-23",
     "archived": false,
     "latest_release": null,
     "advisories": []

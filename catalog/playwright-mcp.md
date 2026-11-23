@@ -54,7 +54,7 @@ Add --isolated to keep the browser profile in memory instead of a persistent pro
 - **Category:** MCP servers
 - **License:** Apache-2.0
 - **Maintainer:** company
-- **Stars:** 38.4k · last push 2026-10-19 · latest release v0.0.83
+- **Stars:** 40.1k · last push 2026-11-18 · latest release v0.0.86
 - **Overlaps with:** chrome-devtools-mcp - pick one
 - **Tags:** browser, testing, automation
 - **Last reviewed:** 2026-10-21

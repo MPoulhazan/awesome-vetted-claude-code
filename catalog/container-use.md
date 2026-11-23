@@ -44,7 +44,7 @@ Needs Docker. Marked experimental by its maintainers.
 - **Category:** MCP servers
 - **License:** Apache-2.0
 - **Maintainer:** company
-- **Stars:** 4.1k · last push 2026-09-21 · latest release v0.4.2
+- **Stars:** 4.1k · last push 2026-11-14 · latest release v0.4.2
 - **Overlaps with:** claude-squad - pick one
 - **Tags:** sandbox, containers, isolation, multi-agent
 - **Last reviewed:** 2026-10-21

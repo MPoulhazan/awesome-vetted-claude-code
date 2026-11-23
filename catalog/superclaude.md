@@ -44,7 +44,7 @@ Writes into ~/.claude. MCP servers are a separate, optional install step - revie
 - **Category:** Claude Code plugins
 - **License:** MIT
 - **Maintainer:** community
-- **Stars:** 23.9k · last push 2026-09-27 · latest release v4.3.0
+- **Stars:** 24.0k · last push 2026-09-27 · latest release v4.3.0
 - **Overlaps with:** superpowers, agent-skills, wshobson-agents - pick one
 - **Tags:** workflow, personas, commands
 - **Last reviewed:** 2026-10-21
