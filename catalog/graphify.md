@@ -6,6 +6,9 @@
 
 Strong for onboarding or auditing a big repo. Keep it up to date - a file-exfiltration bug was fixed in 0.9.70 - and avoid indexing untrusted repos.
 
+> [!WARNING]
+> **GHSA-g6c9-j4vm-mwq4** (high): update to the fixed version or later.
+
 ## Scores
 
 | Usefulness | Security | Maturity | Cost |
@@ -35,6 +38,7 @@ Installs PreToolUse hooks that fire before search and Read calls; they fail open
 
 | Advisory | Severity | Summary | Affected | Fixed in |
 |---|---|---|---|---|
+| [GHSA-g6c9-j4vm-mwq4](https://github.com/Graphify-Labs/graphify/security/advisories/GHSA-g6c9-j4vm-mwq4) | ⚠ High | Indexing a repository stats UNC paths chosen by the repository (bash `source` lines and a `.git` gitdir), coercing outbound SMB authentication on Windows _(auto-detected, not reviewed yet)_ | >= 0.9.50, < 0.9.115 | 0.9.115 |
 | [GHSA-pcc4-rvhr-2pr8](https://github.com/advisories/GHSA-pcc4-rvhr-2pr8) | Moderate | Fortran extractor include handling allows arbitrary host-file read and exfiltration when indexing an untrusted repo (the maintainers rate it high). | >= 0.7.2, < 0.9.70 | 0.9.70 |
 
 ## Install
@@ -59,7 +63,7 @@ The PyPI package is graphifyy (two y). `graphify install` registers a skill and,
 - **Category:** CLIs and local services
 - **License:** Apache-2.0
 - **Maintainer:** company
-- **Stars:** 130.4k · last push 2026-10-20 · latest release v0.9.93
+- **Stars:** 152.4k · last push 2026-11-23 · latest release v0.9.118
 - **Tags:** knowledge-graph, codebase-understanding, tokens
 - **Last reviewed:** 2026-10-20
 
